@@ -26,6 +26,13 @@ body {
   height: 60%;
 }
 
+#sun {
+  width: 30%;
+  bottom: 0%;
+  left: 28%;
+  z-index:  1;
+}
+
 #cloud-one {
   width: 20%;
   bottom: 30%;
@@ -69,6 +76,18 @@ body {
   opacity: 70%;
 }
 
+#stars {
+  width: 15%;
+  bottom: 80%;
+  left: 0%;
+}
+
+#stars-two {
+  width: 15%;
+  bottom: 80%;
+  left: 90%;
+}
+
 #birds {
   width: 15%;
   bottom: 10%;
@@ -79,17 +98,17 @@ body {
   width: 6vh;
   bottom: 0%;
   left: 43%;
-  border-radius: 25px;
+  border-radius: 50%;
   padding: 1px;
-  box-shadow: 2px 2px 4px black, 4px 4px 4px rgb(247, 151, 6);
+  box-shadow: 3px 3px 4px black, 5px 5px 5px rgb(247, 151, 6);
 }
 
 #linkedin {
   width: 6vh;
   bottom: 0%;
   left: 17%;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px black, 4px 4px 4px rgb(247, 151, 6);
+  border-radius: 10%;
+  box-shadow: 3px 3px 4px black, 5px 5px 5px rgb(247, 151, 6);
 }
 
 #mail {
@@ -97,36 +116,92 @@ body {
   bottom: 0%;
   left: 68%;
   padding: 1px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 4px black, 4px 4px 4px rgb(247, 151, 6);
+  border-radius: 10%;
+  box-shadow: 3px 3px 4px black, 5px 5px 5px rgb(247, 151, 6);
 }
 
-/* #graphql {
-  width: 5%;
-  bottom: 30%;
-  left: 32%;
-} */
+#html {
+  width: 8vh;
+  bottom: 5%;
+  left: 10%;
+}
 
-#sun {
-  position: absolute;
-  width: 30%;
-  bottom: 0%;
-  left: 28%;
-  z-index:  1;
+#css {
+  width: 12vh;
+  bottom: 3%;
+  left: 19%;
+}
+
+#javascript {
+  width: 8vh;
+  bottom: 5%;
+  left: 31%;
+}
+
+#react {
+  width: 8vh;
+  bottom: 5%;
+  left: 42%;
+}
+
+#node {
+  width: 8vh;
+  bottom: 5%;
+  left: 53%;
+}
+
+#postgresql {
+  width: 8vh;
+  bottom: 5%;
+  left: 64%;
+}
+
+#python {
+  width: 8vh;
+  bottom: 5%;
+  left: 75%;
+}
+
+#git {
+  width: 8vh;
+  bottom: 5%;
+  left: 86%;
 }
 
 .about-me {
-  height: 600px;
-  background-image: linear-gradient(#168f06,#49f7b4);
+  height: 100vh;
+  background-image: linear-gradient(#327e26,#f8f8f8);
   padding: 5px;
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
+}
+
+.info {
+  width: 40%;
+  height: 60%;
+  margin-top: 30vh;
+  border: solid black 2px;
+  border-radius: 20px;
+  background-color:antiquewhite;
+  box-shadow: 3px 3px 4px black, 5px 5px 5px rgb(247, 151, 6);
+
+}
+
+.tech {
+  width: 40%;
+  height: 60%;
+  margin-top: 30vh;
+  border: solid black 2px;
+  border-radius: 20px;
+  background-color:antiquewhite;
+  box-shadow: 3px 3px 4px black, 5px 5px 5px rgb(247, 151, 6);
+
 }
 
 #name {
   font-size: 7vh;
   font-weight:900;
-  text-shadow: 2px 2px 4px black, 4px 4px 4px rgb(247, 151, 6);
+  text-shadow: 3px 3px 4px black, 5px 5px 5px rgb(247, 151, 6);
   margin-top: 2vh;
   margin-bottom: -3vh;
 }
@@ -139,6 +214,16 @@ body {
   padding-bottom: 5vh;
 }
 
+.subtitles {
+  text-align: left;
+  margin-left: 3vw;
+  font-size: 4vh;
+  font-weight:900;
+  text-shadow: 1px 1px 1px black;
+  font-family:'Arial';
+  margin-bottom: 0;
+}
+
 header {
   font-family: 'Merienda', cursive;
   color: white;
@@ -147,6 +232,13 @@ header {
   z-index: 3;
   align-items: center;
   padding: 0;
+}
+
+.text {
+  font-size: 2.5vh;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 a:hover {

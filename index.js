@@ -6,10 +6,11 @@ const cloudFour = document.getElementById('cloud-four')
 const cloudFive = document.getElementById('cloud-five')
 const cloudSix = document.getElementById('cloud-six')
 const birds = document.getElementById('birds')
-const redbirds = document.getElementById('redbirds')
+const javascript = document.getElementById('javascript')
+const react = document.getElementById('react')
+const stars = document.getElementById('stars')
+const starstwo = document.getElementById('stars-two')
 
-// const javascript = document.getElementById('javascript')
-// const react = document.getElementById('react')
 // const graphql = document.getElementById('graphql')
 
 
@@ -35,10 +36,13 @@ function move() {
   cloudSix.style.left = 14 + incrementer * -0.16 + '%'
   birds.style.bottom = 10 + incrementer * 0.2 + '%'
   birds.style.left = 10 + incrementer * 0.66 + '%'
-  redbirds.style.bottom = 0 + incrementer * 0.2 + '%'
-  redbirds.style.left = 65 + incrementer * -0.36 + '%'
-//   javascript.style.left = 20 + incrementer * -2.2 + '%'
-//   react.style.left = 26 + incrementer * -1.5 + '%'
+  stars.style.bottom = 80 + incrementer * 0.2 + '%'
+  stars.style.left = 0 + incrementer * -0.36 + '%'
+  starstwo.style.bottom = 80 + incrementer * 0.2 + '%'
+  starstwo.style.left = 90 + incrementer * 0.36 + '%'
+  javascript.style.left = 12 + incrementer * -0.2 + '%'
+  javascript.style.bottom = 7 + incrementer * -0.2 + '%'
+  react.style.left = 32 + incrementer * -1.5 + '%'
 //   graphql.style.left = 32 + incrementer * -1 + '%'
 }
 
