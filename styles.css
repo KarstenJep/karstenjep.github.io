@@ -187,6 +187,13 @@ body {
 
 }
 
+.info img {
+  height: 22vh;
+  border-radius: 15px;
+  margin-left: 35%;
+  border: solid black 2px;
+}
+
 .tech {
   width: 40%;
   height: 60%;

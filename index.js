@@ -5,21 +5,22 @@ const cloudThree = document.getElementById('cloud-three')
 const cloudFour = document.getElementById('cloud-four')
 const cloudFive = document.getElementById('cloud-five')
 const cloudSix = document.getElementById('cloud-six')
-const birds = document.getElementById('birds')
-const javascript = document.getElementById('javascript')
-const react = document.getElementById('react')
 const stars = document.getElementById('stars')
 const starstwo = document.getElementById('stars-two')
-
-// const graphql = document.getElementById('graphql')
+const birds = document.getElementById('birds')
+const html = document.getElementById('html')
+const css = document.getElementById('css')
+const javascript = document.getElementById('javascript')
+const react = document.getElementById('react')
+const node = document.getElementById('node')
+const postgresql = document.getElementById('postgresql')
+const python = document.getElementById('python')
+const git = document.getElementById('git')
 
 
 function move() {
   const incrementer = window.scrollY
 
-  // the '10' refers to the height from the bottom of the sky section. We added this
-  // in the css file. Feel free to move all styling to the JS file if you prefer to keep the
-  // the '10' consistent.
   sun.style.bottom = 0 + incrementer * 0.1 + '%'
   sun.style.left = 28 + incrementer * -0.03 + '%'
   cloudOne.style.bottom = 30 + incrementer * 0.12 + '%'
@@ -40,10 +41,22 @@ function move() {
   stars.style.left = 0 + incrementer * -0.36 + '%'
   starstwo.style.bottom = 80 + incrementer * 0.2 + '%'
   starstwo.style.left = 90 + incrementer * 0.36 + '%'
-  javascript.style.left = 12 + incrementer * -0.2 + '%'
-  javascript.style.bottom = 7 + incrementer * -0.2 + '%'
-  react.style.left = 32 + incrementer * -1.5 + '%'
-//   graphql.style.left = 32 + incrementer * -1 + '%'
+  html.style.left = 10 + incrementer * -1 + '%'
+  html.style.bottom = 5 + incrementer * 0.2 + '%'
+  css.style.left = 19 + incrementer * -1 + '%'
+  css.style.bottom = 4 + incrementer * 0.3 + '%'
+  javascript.style.left = 31 + incrementer * -1 + '%'
+  javascript.style.bottom = 5 + incrementer * 0.4 + '%'
+  react.style.left = 42 + incrementer * -1 + '%'
+  react.style.bottom = 5 + incrementer * 0.5 + '%'
+  node.style.left = 53 + incrementer * 1 + '%'
+  node.style.bottom = 5 + incrementer * 0.5 + '%'
+  postgresql.style.left = 64 + incrementer * 1 + '%'
+  postgresql.style.bottom = 5 + incrementer * 0.4 + '%'
+  python.style.left = 75 + incrementer * 1 + '%'
+  python.style.bottom = 5 + incrementer * 0.3 + '%'
+  git.style.left = 86 + incrementer * 1 + '%'
+  git.style.bottom = 5 + incrementer * 0.2 + '%'
 }
 
 window.addEventListener('scroll', move)
