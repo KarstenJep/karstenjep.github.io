@@ -123,6 +123,14 @@ body {
   filter:drop-shadow(1px 1px 2px black);
 }
 
+#pg {
+  width: 3vh;
+  bottom: 45%;
+  left: 70%;
+  z-index: 1;
+  filter:drop-shadow(1px 1px 2px black);
+}
+
 #github {
   width: 6vh;
   filter:drop-shadow(3px 3px 5px black);
@@ -297,7 +305,7 @@ header {
 
 a:hover {
   color: black;
-  box-shadow: black;
+  font-size: 3vh;
 }
 
 /* #4ff749 'Merienda'*/
