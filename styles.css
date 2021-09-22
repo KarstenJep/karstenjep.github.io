@@ -195,7 +195,7 @@ body {
   border: solid black 2px;
   border-radius: 20px;
   background-color:antiquewhite;
-  box-shadow: 3px 3px 5px black;
+  box-shadow: 3px 3px 5px black, 5px 5px 7px green;
   display:inline-flex;
 }
 
@@ -213,7 +213,7 @@ body {
   border: solid black 2px;
   border-radius: 20px;
   background-color:antiquewhite;
-  box-shadow: 3px 3px 5px black;
+  box-shadow: 3px 3px 5px black, 5px 5px 7px green;
   display:inline-flex;
 }
 
