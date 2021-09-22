@@ -120,7 +120,7 @@ body {
 }
 
 .soc {
-  padding-right: 1vw;
+  padding-right: 1vh;
 }
 
 #linkedin {
@@ -259,14 +259,14 @@ header {
 
 .socials {
   font-family: 'Arial';
-  padding-left: 27vw;
-  padding-top: 25vh;
+  padding-left: 32vw;
+  padding-top: 22vh;
 
 }
 
 .socials a {
   color: white;
-  padding: 2.5vw;
+  padding: 1.5vw;
   font-size: 2.5vh;
 }
 
