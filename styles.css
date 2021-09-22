@@ -24,6 +24,7 @@ body {
 
 #mountains {
   height: 60%;
+  filter:drop-shadow(3px 3px 5px black);
 }
 
 #sun {
@@ -38,6 +39,7 @@ body {
   bottom: 30%;
   left: 75%;
   opacity: 70%;
+  filter:drop-shadow(2px 2px 3px black);
 }
 
 #cloud-two {
@@ -45,6 +47,7 @@ body {
   bottom: 60%;
   left: 75%;
   opacity: 70%;
+  filter:drop-shadow(2px 2px 3px black);
 }
 
 #cloud-three {
@@ -52,6 +55,7 @@ body {
   bottom: 35%;
   left: 0%;
   opacity: 70%;
+  filter:drop-shadow(2px 2px 3px black);
 }
 
 #cloud-four {
@@ -59,6 +63,7 @@ body {
   bottom: 40%;
   left: 15%;
   opacity: 70%;
+  filter:drop-shadow(2px 2px 3px black);
 }
 
 #cloud-five {
@@ -67,6 +72,7 @@ body {
   left: 45%;
   opacity: 70%;
   z-index: 1;
+  filter:drop-shadow(2px 2px 3px black);
 }
 
 #cloud-six {
@@ -74,6 +80,7 @@ body {
   bottom: 55%;
   left: 14%;
   opacity: 70%;
+  filter:drop-shadow(2px 2px 3px black);
 }
 
 #stars {
@@ -98,6 +105,7 @@ body {
   width: 7vh;
   bottom: 10%;
   left: 2%;
+  filter:drop-shadow(1px 1px 2px black);
 }
 
 #rocket {
@@ -105,12 +113,14 @@ body {
   bottom: 20%;
   left: 80%;
   z-index: 1;
+  filter:drop-shadow(1px 1px 2px black);
 }
 
 #airplane {
   width: 7vh;
   bottom: 70%;
   left: -20%;
+  filter:drop-shadow(1px 1px 2px black);
 }
 
 #github {
@@ -137,48 +147,56 @@ body {
   width: 8vh;
   bottom: 5%;
   left: 10%;
+  filter:drop-shadow(3px 3px 5px black);
 }
 
 #css {
   width: 12vh;
   bottom: 3%;
   left: 19%;
+  filter:drop-shadow(3px 3px 5px black);
 }
 
 #javascript {
   width: 8vh;
   bottom: 5%;
   left: 31%;
+  filter:drop-shadow(3px 3px 5px black);
 }
 
 #react {
   width: 8vh;
   bottom: 5%;
   left: 42%;
+  filter:drop-shadow(3px 3px 5px black);
 }
 
 #node {
   width: 8vh;
   bottom: 5%;
   left: 53%;
+  filter:drop-shadow(3px 3px 5px black);
 }
 
 #postgresql {
   width: 8vh;
   bottom: 5%;
   left: 64%;
+  filter:drop-shadow(3px 3px 5px black);
 }
 
 #python {
   width: 8vh;
   bottom: 5%;
   left: 75%;
+  filter:drop-shadow(3px 3px 5px black);
 }
 
 #git {
   width: 8vh;
   bottom: 5%;
   left: 86%;
+  filter:drop-shadow(3px 3px 5px black);
 }
 
 .about-me {
