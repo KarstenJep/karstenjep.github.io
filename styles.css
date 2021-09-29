@@ -108,6 +108,13 @@ body {
   filter:drop-shadow(1px 1px 2px black);
 }
 
+#elephant {
+  width: 15vh;
+  bottom: 30%;
+  left: 2%;
+  /* filter:drop-shadow(1px 1px 2px black); */
+}
+
 #rocket {
   width: 10vh;
   bottom: 20%;
@@ -146,10 +153,6 @@ body {
   filter:drop-shadow(3px 3px 5px black);
 }
 
-#mail {
-  width: 7vh;
-  filter:drop-shadow(3px 3px 5px black);
-}
 #mail {
   width: 7vh;
   filter:drop-shadow(3px 3px 5px black);
