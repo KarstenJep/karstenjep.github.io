@@ -41,6 +41,8 @@ function move() {
   cloudSix.style.left = 14 + incrementer * -0.16 + '%'
   birds.style.bottom = 10 + incrementer * 0.1 + '%'
   birds.style.left = 10 + incrementer * 0.33 + '%'
+  moon.style.bottom = 88 + incrementer * 0.2 + '%'
+  moon.style.left = 0 + incrementer * -0.36 + '%'
   stars.style.bottom = 80 + incrementer * 0.2 + '%'
   stars.style.left = 0 + incrementer * -0.36 + '%'
   starstwo.style.bottom = 80 + incrementer * 0.2 + '%'
