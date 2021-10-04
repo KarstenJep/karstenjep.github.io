@@ -271,10 +271,9 @@ body {
   text-align: center;
   font-size: 3vh;
   font-weight:900;
-  margin-left: 7vh;
-  margin-right: 7vh;
-  padding-bottom: 1vh;
+  margin: 0vh auto 0vh;
   text-shadow: 3px 3px 5px black;
+  padding-top: 1vh;
 }
 
 .subtitles {
@@ -293,7 +292,7 @@ header {
   top: 0;
   z-index: 3;
   align-items: center;
-  padding-top: 2vh;
+  padding-top: 1vh;
 }
 
 .socials {
@@ -321,5 +320,31 @@ a:hover {
   font-size: 3vh;
 }
 
-/* #4ff749 'Merienda'*/
+/* Scroll Down Indicator */
+.section {
+  position: relative;
+  z-index: 2;
+}
+.section::before {
+  animation: bounce 1s ease infinite;
+  bottom: 10vh;
+  color: #fff;
+  content: '╲╱';
+  font-size: 5vh;
+  font-weight:950;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  margin-left: -3rem;
+  filter:drop-shadow(5px 5px 6px black);
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+}
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+}
 
