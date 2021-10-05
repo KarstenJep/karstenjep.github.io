@@ -261,9 +261,9 @@ body {
 }
 
 #name {
-  font-size: 7vh;
+  font-size: 6vh;
   font-weight:900;
-  text-shadow: 3px 3px 4px black;
+  /* text-shadow: 3px 3px 4px white; */
   margin: 2vh;
 }
 
@@ -271,9 +271,8 @@ body {
   text-align: center;
   font-size: 3vh;
   font-weight:900;
-  margin: 0vh auto 0vh;
-  text-shadow: 3px 3px 5px black;
-  padding-top: 1vh;
+  margin: -1vh auto 0vh;
+  /* text-shadow: 3px 3px 5px black; */
 }
 
 .subtitles {
@@ -287,12 +286,19 @@ body {
 
 header {
   font-family: 'Arial', cursive;
-  color: white;
+  color: black;
   position: fixed;
+  background-color: antiquewhite;
+  border-radius: 0 0 30px 30px;
+  border: solid black 2px;
+  box-shadow: 3px 3px 5px black;
+  margin-top: -2vh;
   top: 0;
   z-index: 3;
   align-items: center;
-  padding-top: 1vh;
+  padding-bottom: 2vh;
+  opacity: .9;
+  
 }
 
 .socials {
