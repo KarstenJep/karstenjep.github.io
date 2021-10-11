@@ -200,46 +200,121 @@ body {
   filter:drop-shadow(3px 3px 5px black);
 }
 
+#lake {
+  height: 115vh;
+  filter:drop-shadow(3px 3px 5px black);
+}
+
+/* #fishing {
+  width: 14vh;
+  bottom: 40%;
+  left: 90%;
+  filter:drop-shadow(3px 3px 5px black);
+  z-index: 3;
+} */
+
+#beach{
+  height: 105vh;
+  filter:drop-shadow(3px 3px 5px black);
+}
+
 .about-me {
   height: 100vh;
-  background-image: linear-gradient(#327e26,#f8f8f8);
+  background-image: linear-gradient(#53864b,#f8f8f8);
   overflow-x: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me img {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
 }
 
 .info {
-  width: 90%;
-  margin-top: 4vh;
-  margin-bottom: 4vh;
-  margin-left: 5%;
+  width: 50%;
+  margin: 28vh 25vh 16vh;
   border: solid black 2px;
   border-radius: 20px;
   background-color:whitesmoke;
-  box-shadow: 3px 3px 5px black, 5px 5px 7px green;
-  display:inline-flex;
+  box-shadow: 3px 3px 5px black;
+  display:inline-table;
+  z-index: 2;
 }
 
-.info img {
-  height: 10vw;
+#hs {
+  width: 32vh;
   border-radius: 15px;
-  margin: 1vw;
   border: solid black 2px;
+  bottom: 18%;
+  left: 41%;
+}
+
+#me {
+  width: 15vh;
+  border-radius: 15px;
+  bottom: 25%;
+  left: 50%;
+  border: solid black 2px;
+}
+
+.projects {
+  height: 100vh;
+  background-image: linear-gradient(#3b708f,#f8f8f8);
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.projects img {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
 }
 
 .tech {
   width: 90%;
-  margin-left: 5%;
-  margin-bottom: 4vh;
+  margin: 30vh 2vh 4vh;
   border: solid black 2px;
   border-radius: 20px;
   background-color:whitesmoke;
-  box-shadow: 3px 3px 5px black, 5px 5px 7px green;
-  display:flex;
+  box-shadow: 3px 3px 5px black;
+  display:table-column;
+  z-index: 2;
 }
 
-.logo {
-  margin: 1vw;
-  float: right;
-  padding-right: 20%;
+.tech a {
+  font-size: 4vh;
+  margin-top: 10%;
+}
+
+#wh {
+  width: 12vh;
+  bottom: 9%;
+  left: 9%;
+}
+
+#oel {
+  width: 13vh;
+  bottom: 9%;
+  left: 34%;
+}
+
+#todo {
+  width: 10vh;
+  bottom: 9%;
+  left: 60%;
+}
+
+#camera {
+  width: 11vh;
+  bottom: 9%;
+  left: 85%;
 }
 
 #name {
@@ -257,12 +332,11 @@ body {
 }
 
 .subtitles {
-  text-align: left;
-  margin-left: 1vw;
-  font-size: 3vh;
+  text-align: center;
+  font-size: 3.5vh;
   font-weight:900;
   text-shadow: 1px 1px 1px black;
-  font-family:'Arial';
+  font-family: 'BioRhyme';
 }
 
 header {
@@ -277,7 +351,7 @@ header {
   z-index: 3;
   align-items: center;
   padding-bottom: 3vh;
-  opacity: .8;
+  opacity: .9;
 }
 
 .socials {
@@ -290,7 +364,7 @@ header {
 }
 
 .socials img:hover {
-  filter: drop-shadow(0px 2px 4px black);
+  filter: drop-shadow(0px 4px 6px black);
 }
 
 #github {
@@ -314,6 +388,7 @@ header {
   margin-left: 3vw;
   margin-right: 3vw;
   min-width: 45%;
+  text-align: center;
 }
 
 /* Scroll Down Indicator */
@@ -329,7 +404,7 @@ header {
   font-size: 5vh;
   font-weight:950;
   height: 4rem;
-  left: 50%;
+  /* left: 20%; */
   letter-spacing: -1px;
   line-height: 4rem;
   margin-left: -3rem;

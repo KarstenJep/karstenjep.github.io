@@ -20,6 +20,7 @@ const node = document.getElementById('node')
 const postgresql = document.getElementById('postgresql')
 const python = document.getElementById('python')
 const git = document.getElementById('git')
+const fishing = document.getElementById('fishing')
 
 
 function move() {
@@ -72,6 +73,8 @@ function move() {
   // python.style.bottom = 5 + incrementer * 0.15 + '%'
   git.style.left = 86 + incrementer * .25 + '%'
   // git.style.bottom = 5 + incrementer * 0.1 + '%'
+  // fishing.style.left = 90 + incrementer * .25 + '%'
+  // fishing.style.bottom = 08 + incrementer * 0.1 + '%'
 }
 
 window.addEventListener('scroll', move)
