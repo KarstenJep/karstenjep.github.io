@@ -205,13 +205,13 @@ body {
   filter:drop-shadow(3px 3px 5px black);
 }
 
-/* #fishing {
+#fishing {
   width: 14vh;
   bottom: 40%;
   left: 90%;
   filter:drop-shadow(3px 3px 5px black);
   z-index: 3;
-} */
+}
 
 #beach{
   height: 105vh;
@@ -319,6 +319,12 @@ body {
   width: 11vh;
   bottom: 9%;
   left: 85%;
+}
+
+#film {
+  width: 12vh;
+  bottom: 9%;
+  left: 84%;
 }
 
 #name {
