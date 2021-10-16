@@ -8,9 +8,9 @@ body {
 .sky {
   overflow-x: hidden;
   position: relative;
-  background-image: linear-gradient( #80bfd8, #f3b55f);
+  background-image: linear-gradient( #80bfd8, #f3b55f, #53864b, #35adf3);
   width: 100%;
-  height: 100vh;
+  height: 220vh;
   display: flex;
   justify-content: center;
 }
@@ -23,20 +23,21 @@ body {
 }
 
 #mountains {
-  height: 60%;
-  filter:drop-shadow(3px 3px 5px black);
+  height: 40%;
+  filter:drop-shadow(3px -4px 5px black);
+  bottom: 40%;
 }
 
 #sun {
   width: 30%;
-  bottom: 0%;
+  bottom: 45%;
   left: 28%;
   z-index:  1;
 }
 
 #cloud-one {
   width: 20%;
-  bottom: 30%;
+  bottom: 64%;
   left: 75%;
   opacity: 60%;
   filter:drop-shadow(2px 2px 3px black);
@@ -44,7 +45,7 @@ body {
 
 #cloud-two {
   width: 25%;
-  bottom: 60%;
+  bottom: 80%;
   left: 75%;
   opacity: 60%;
   filter:drop-shadow(2px 2px 3px black);
@@ -52,7 +53,7 @@ body {
 
 #cloud-three {
   width: 10%;
-  bottom: 35%;
+  bottom: 65%;
   left: 0%;
   opacity: 60%;
   filter:drop-shadow(2px 2px 3px black);
@@ -60,15 +61,15 @@ body {
 
 #cloud-four {
   width: 24%;
-  bottom: 40%;
-  left: 15%;
+  bottom: 80%;
+  left: 6%;
   opacity: 60%;
   filter:drop-shadow(2px 2px 3px black);
 }
 
 #cloud-five {
   width: 23%;
-  bottom: 40%;
+  bottom: 70%;
   left: 45%;
   opacity: 60%;
   z-index: 1;
@@ -77,47 +78,47 @@ body {
 
 #cloud-six {
   width: 15%;
-  bottom: 55%;
-  left: 14%;
+  bottom: 85%;
+  left: 2%;
   opacity: 60%;
   filter:drop-shadow(2px 2px 3px black);
 }
 
 #moon {
   width: 5%;
-  bottom: 92%;
+  bottom: 96%;
   left: 0%;
   opacity: 80%;
 }
 
 #stars {
-  width: 15%;
-  bottom: 80%;
-  left: 0%;
+  width: 14%;
+  bottom: 90%;
+  left: -2%;
 }
 
 #stars-two {
   width: 15%;
-  bottom: 80%;
+  bottom: 90%;
   left: 90%;
 }
 
 #birds {
-  width: 25vh;
-  bottom: 10%;
-  left: 10%;
+  width: 28vh;
+  bottom: 40%;
+  left: -20%;
 }
 
 #moose {
-  width: 7vh;
-  bottom: 10%;
-  left: 2%;
+  width: 9vh;
+  bottom: 42%;
+  left: 14%;
   filter:drop-shadow(1px 1px 2px black);
 }
 
-#elephant {
-  width: 8vh;
-  bottom: 30%;
+#bicycle {
+  width: 6vh;
+  bottom: 24%;
   left: -20%;
 }
 
@@ -131,71 +132,71 @@ body {
 
 #airplane {
   width: 7vh;
-  bottom: 70%;
+  bottom: 80%;
   left: -20%;
   filter:drop-shadow(1px 1px 2px black);
 }
 
 #pg {
   width: 3vh;
-  bottom: 45%;
-  left: 70%;
+  bottom: 75%;
+  left: 71%;
   z-index: 1;
   filter:drop-shadow(1px 1px 2px black);
 }
 
 #html {
   width: 8vh;
-  bottom: 5%;
+  bottom: 57%;
   left: 10%;
   filter:drop-shadow(3px 3px 5px black);
 }
 
 #css {
   width: 12vh;
-  bottom: 3%;
+  bottom: 56%;
   left: 19%;
   filter:drop-shadow(3px 3px 5px black);
 }
 
 #javascript {
   width: 8vh;
-  bottom: 5%;
+  bottom: 57%;
   left: 31%;
   filter:drop-shadow(3px 3px 5px black);
 }
 
 #react {
   width: 8vh;
-  bottom: 5%;
+  bottom: 57%;
   left: 42%;
   filter:drop-shadow(3px 3px 5px black);
 }
 
 #node {
   width: 8vh;
-  bottom: 5%;
+  bottom: 57%;
   left: 53%;
   filter:drop-shadow(3px 3px 5px black);
 }
 
 #postgresql {
   width: 8vh;
-  bottom: 5%;
+  bottom: 57%;
   left: 64%;
   filter:drop-shadow(3px 3px 5px black);
 }
 
 #python {
   width: 8vh;
-  bottom: 5%;
+  bottom: 57%;
   left: 75%;
   filter:drop-shadow(3px 3px 5px black);
 }
 
 #git {
   width: 8vh;
-  bottom: 5%;
+  bottom: 57%;
   left: 86%;
   filter:drop-shadow(3px 3px 5px black);
 }
@@ -214,13 +215,13 @@ body {
 }
 
 #beach{
-  height: 105vh;
+  height: 110vh;
   filter:drop-shadow(3px 3px 5px black);
 }
 
 .about-me {
   height: 100vh;
-  background-image: linear-gradient(#53864b,#f8f8f8);
+  background-image: linear-gradient(#53864b,#f8f8f8, #35adf3);
   overflow-x: hidden;
   position: relative;
   display: flex;
@@ -236,7 +237,7 @@ body {
 
 .info {
   width: 50%;
-  margin: 28vh 25vh 16vh;
+  margin: 160vh 25vh 6vh;
   border: solid black 2px;
   border-radius: 20px;
   background-color:whitesmoke;
@@ -249,7 +250,7 @@ body {
   width: 32vh;
   border-radius: 15px;
   border: solid black 2px;
-  bottom: 18%;
+  bottom: 4%;
   left: 41%;
 }
 
@@ -262,8 +263,8 @@ body {
 }
 
 .projects {
-  height: 100vh;
-  background-image: linear-gradient(#3b708f,#f8f8f8);
+  height: 110vh;
+  background-image: linear-gradient(#35adf3,#f8f8f8);
   overflow-x: hidden;
   position: relative;
   display: flex;
@@ -279,7 +280,7 @@ body {
 
 .tech {
   width: 90%;
-  margin: 30vh 2vh 4vh;
+  margin: 38vh 2vh 4vh;
   border: solid black 2px;
   border-radius: 20px;
   background-color:whitesmoke;
