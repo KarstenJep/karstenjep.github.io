@@ -409,16 +409,15 @@ header {
 }
 .section::before {
   animation: bounce 1s ease infinite;
-  bottom: 10vh;
+  bottom: 128vh;
   color: #fff;
   content: '╲╱';
   font-size: 5vh;
   font-weight:950;
   height: 4rem;
-  /* left: 20%; */
   letter-spacing: -1px;
   line-height: 4rem;
-  margin-left: -3rem;
+  margin-left: 34vw;
   filter:drop-shadow(5px 5px 6px black);
   position: absolute;
   text-align: center;
