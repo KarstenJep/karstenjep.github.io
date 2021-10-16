@@ -35,6 +35,13 @@ body {
   z-index:  1;
 }
 
+#sunTwo {
+  width: 20%;
+  bottom: 0%;
+  left: 85%;
+  z-index:  1;
+}
+
 #cloud-one {
   width: 20%;
   bottom: 64%;
@@ -80,6 +87,30 @@ body {
   width: 15%;
   bottom: 85%;
   left: 2%;
+  opacity: 60%;
+  filter:drop-shadow(2px 2px 3px black);
+}
+
+#cloudSeven {
+  width: 12%;
+  bottom: 0%;
+  left: -20%;
+  opacity: 60%;
+  filter:drop-shadow(2px 2px 3px black);
+}
+
+#cloudEight {
+  width: 9%;
+  bottom: 0%;
+  left: 120%;
+  opacity: 60%;
+  filter:drop-shadow(2px 2px 3px black);
+}
+
+#cloudNine {
+  width: 8%;
+  bottom: 0%;
+  left: -20%;
   opacity: 60%;
   filter:drop-shadow(2px 2px 3px black);
 }
@@ -130,6 +161,14 @@ body {
   filter:drop-shadow(1px 1px 2px black);
 }
 
+#pg {
+  width: 3vh;
+  bottom: 75%;
+  left: 71%;
+  z-index: 1;
+  filter:drop-shadow(1px 1px 2px black);
+}
+
 #airplane {
   width: 7vh;
   bottom: 80%;
@@ -137,10 +176,17 @@ body {
   filter:drop-shadow(1px 1px 2px black);
 }
 
-#pg {
-  width: 3vh;
-  bottom: 75%;
-  left: 71%;
+#airBalloon {
+  width: 5vh;
+  bottom: 0%;
+  left: 10%;
+  filter:drop-shadow(3px 3px 5px black);
+}
+
+#parrot {
+  width: 5vh;
+  bottom: 0%;
+  left: -20%;
   z-index: 1;
   filter:drop-shadow(1px 1px 2px black);
 }
@@ -333,6 +379,10 @@ body {
   font-weight:900;
   margin: 2vh;
   margin-top: -1vh;
+}
+
+.jan {
+  margin: 20vh auto 10vh;
 }
 
 #subtitle {
