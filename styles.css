@@ -394,11 +394,11 @@ header {
 
 .socials {
   display: flex;
-  margin-left: 12%;
+  margin-left: 10%;
 }
 
 .soc {
-  margin: 1.5% 12%;
+  margin: 2% 13%;
 }
 
 .socials img:hover {
@@ -406,17 +406,17 @@ header {
 }
 
 #github {
-  width: 5vh;
-  padding-bottom: 1vh;
+  width: 4.5vh;
+  padding-bottom: 1.5vh;
 }
 
 #linkedin {
-  width: 5vh;
-  padding-bottom: 1vh;
+  width: 4.5vh;
+  padding-bottom: 1.5vh;
 }
 
 #mail {
-  width: 5vh;
+  width: 5.5vh;
   padding-bottom: 1vh;
 }
 
