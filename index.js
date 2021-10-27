@@ -1,3 +1,4 @@
+// Import images to JS
 const sun = document.getElementById('sun')
 const cloudOne = document.getElementById('cloud-one')
 const cloudTwo = document.getElementById('cloud-two')
@@ -26,7 +27,9 @@ const bicycle = document.getElementById('bicycle')
 
 function move() {
   const incrementer = window.scrollY
-  // Sky Images
+  // Using original element CSS placement with y axis position to dictate where image moves 
+  
+  // element.axis = original axis position + scrolling position * rate of change (speed)
   sun.style.bottom = 45 + incrementer * 0.1 + '%'
   sun.style.left = 28 + incrementer * -0.03 + '%'
   sunTwo.style.bottom = 0 + incrementer * 0.003 + '%'

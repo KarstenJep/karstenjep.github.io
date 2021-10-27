@@ -1,9 +1,9 @@
 /* Contact Page */
-
   .river {
     height: 100vh;
     z-index: 0;
   }
+  
   .contact {
     height: 100vh;
     background-color: #53864b;
@@ -140,6 +140,7 @@
     width: 6vh;
     padding-bottom: 1.5vh;
   }
+
   #name {
     font-size: 6vh;
     font-weight:900;
