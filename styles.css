@@ -353,8 +353,7 @@ body {
 #name {
   font-size: 6vh;
   font-weight:900;
-  margin: 2vh;
-  margin-top: -1vh;
+  margin: -1vh 1vh 1.5vh;
 }
 
 .jan {
@@ -394,30 +393,30 @@ header {
 
 .socials {
   display: flex;
-  margin-left: 10%;
+  margin-left: 14%;
 }
 
 .soc {
-  margin: 2% 13%;
+  margin: 1% 12%;
 }
 
 .socials img:hover {
-  filter: drop-shadow(0px 4px 6px black);
+  filter: drop-shadow(0px 4px 8px black);
 }
 
 #github {
-  width: 4.5vh;
-  padding-bottom: 1.5vh;
+  width: 4vh;
+  padding-bottom: 1.25vh;
 }
 
 #linkedin {
-  width: 4.5vh;
-  padding-bottom: 1.5vh;
+  width: 4vh;
+  padding-bottom: 1.25vh;
 }
 
 #mail {
-  width: 5.5vh;
-  padding-bottom: 1vh;
+  width: 5vh;
+  padding-bottom: .75vh;
 }
 
 .text {
@@ -437,10 +436,10 @@ header {
 }
 .section::before {
   animation: bounce 1s ease infinite;
-  bottom: 128vh;
+  bottom: 130vh;
   color: #fff;
   content: '╲╱';
-  font-size: 5vh;
+  font-size: 4vh;
   font-weight:950;
   height: 4rem;
   letter-spacing: -1px;
