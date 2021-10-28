@@ -1,10 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Amatic+SC:wght@700&family=Architects+Daughter&family=Merienda:wght@700&family=Russo+One&family=Staatliches&display=swap');
-
 body {
   margin: 0;
   padding: 0;
 }
 
+/* Header background settings */
+header {
+  font-family: 'BioRhyme';
+  color: black;
+  position: fixed;
+  background-color: whitesmoke;
+  border-radius: 0 0 30px 30px;
+  border: solid black 2px;
+  box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.7);
+  top: 0;
+  z-index: 3;
+  padding-bottom: 3vh;
+  opacity: .9;
+}
+
+#name {
+  font-size: 6vh;
+  font-weight:900;
+  margin: -1vh 1vh 1.5vh;
+}
+
+#title {
+  text-align: center;
+  font-size: 3vh;
+  font-weight:900;
+  margin: -3vh auto 2vh;
+}
+
+.socials {
+  display: flex;
+  margin-left: 12%;
+}
+
+.socials img:hover {
+  filter: drop-shadow(0px 1px 3px black);
+}
+
+.soc {
+  margin: 1% 13%;
+}
+
+/* Indvidual images in "Socials" section */
+#github {
+  width: 4.5vh;
+  padding-bottom: 1vh;
+}
+
+#linkedin {
+  width: 4.5vh;
+  padding-bottom: 1vh;
+}
+
+#mail {
+  width: 5vh;
+  padding-bottom: .75vh;
+}
+
+/* Background settings for the animated section of the website  */
 .sky {
   overflow-x: hidden;
   position: relative;
@@ -15,13 +71,132 @@ body {
   justify-content: center;
 }
 
+/* Default settings for images in animated section */
 .sky img {
   position: absolute;
-  width: 100%;
   bottom: 0;
   z-index: 2;
 }
 
+/* Container for "About Me" section */
+.info {
+  width: 50%;
+  margin: 160vh 25vh 6vh;
+  border: solid black 2px;
+  border-radius: 30px;
+  background-color:whitesmoke;
+  box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.7);
+  display:inline-table;
+  z-index: 2;
+}
+
+/* Head shot image in "About me" section */
+#hs {
+  width: 38vh;
+  border-radius: 15px;
+  bottom: 3%;
+  left: 39%;
+}
+
+/* Headings in "About Me" and "Projects" sections */
+.subtitles {
+  text-align: center;
+  font-size: 3.5vh;
+  font-weight:900;
+  margin-bottom: 1vh;
+  text-shadow: 1px 1px 1px black;
+  font-family: 'BioRhyme';
+}
+
+/* Text in "About Me" and "Projects" sections */
+.text {
+  font-size: 2.5vh;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 0vh;
+  min-width: 45%;
+  text-align: center;
+}
+
+/* Background Setting for "Projects" section. No animation */
+.projects {
+  height: 110vh;
+  background-image: linear-gradient(#35adf3,#f8f8f8);
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Default setting for images in "Projects" section */
+.projects img {
+  position: absolute;
+  /* width: 100%;
+  bottom: 0; */
+  /* z-index: 2; */
+}
+
+/* Background Image at bottom of site. No animation. */
+#beach{
+  height: 110vh;
+  filter:drop-shadow(3px 3px 5px black);
+}
+
+/* Card for displaying each project */
+.tech {
+  width: 90%;
+  margin: 38vh 2vh 4vh;
+  border: solid black 2px;
+  border-radius: 20px;
+  background-color:whitesmoke;
+  box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.7);
+  display:table-column;
+  z-index: 2;
+}
+
+/* Project link */
+.tech a {
+  font-size: 4vh;
+  color: black;
+}
+
+.tech a:hover {
+  filter:drop-shadow(0px 1px 3px black);
+}
+
+/* Project Images */
+#wh {
+  width: 12vh;
+  bottom: 9%;
+  left: 9%;
+}
+
+#oel {
+  width: 13vh;
+  bottom: 9%;
+  left: 34%;
+}
+
+#todo {
+  width: 10vh;
+  bottom: 9%;
+  left: 60%;
+}
+
+/* #camera {
+  width: 11vh;
+  bottom: 9%;
+  left: 85%;
+} */
+
+#film {
+  width: 12vh;
+  bottom: 9%;
+  left: 84%;
+}
+
+/****************** Individual settings for each image in animated section *******************/
 #mountains {
   height: 40%;
   filter:drop-shadow(3px -4px 5px black);
@@ -134,6 +309,7 @@ body {
   left: 90%;
 }
 
+/* Animal, Vehicle images */
 #birds {
   width: 28vh;
   bottom: 40%;
@@ -191,6 +367,7 @@ body {
   filter:drop-shadow(1px 1px 2px black);
 }
 
+/* Tech Logos */
 #html {
   width: 8vh;
   bottom: 57%;
@@ -247,7 +424,7 @@ body {
   filter:drop-shadow(3px 3px 5px black);
 }
 
-#lake {
+/* #lake {
   height: 115vh;
   filter:drop-shadow(3px 3px 5px black);
 }
@@ -258,178 +435,9 @@ body {
   left: 90%;
   filter:drop-shadow(3px 3px 5px black);
   z-index: 3;
-}
+} */
 
-#beach{
-  height: 110vh;
-  filter:drop-shadow(3px 3px 5px black);
-}
-
-.info {
-  width: 50%;
-  margin: 160vh 25vh 6vh;
-  border: solid black 2px;
-  border-radius: 30px;
-  background-color:whitesmoke;
-  box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.7);
-  display:inline-table;
-  z-index: 2;
-}
-
-#hs {
-  width: 38vh;
-  border-radius: 15px;
-  bottom: 3%;
-  left: 39%;
-}
-
-
-.projects {
-  height: 110vh;
-  background-image: linear-gradient(#35adf3,#f8f8f8);
-  overflow-x: hidden;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.projects img {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  z-index: 2;
-}
-
-.tech {
-  width: 90%;
-  margin: 38vh 2vh 4vh;
-  border: solid black 2px;
-  border-radius: 20px;
-  background-color:whitesmoke;
-  box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.7);
-  display:table-column;
-  z-index: 2;
-}
-
-.tech a {
-  font-size: 4vh;
-  color: black;
-}
-
-.tech a:hover {
-  filter:drop-shadow(0px 2px 4px black);
-}
-
-#wh {
-  width: 12vh;
-  bottom: 9%;
-  left: 9%;
-}
-
-#oel {
-  width: 13vh;
-  bottom: 9%;
-  left: 34%;
-}
-
-#todo {
-  width: 10vh;
-  bottom: 9%;
-  left: 60%;
-}
-
-#camera {
-  width: 11vh;
-  bottom: 9%;
-  left: 85%;
-}
-
-#film {
-  width: 12vh;
-  bottom: 9%;
-  left: 84%;
-}
-
-#name {
-  font-size: 6vh;
-  font-weight:900;
-  margin: -1vh 1vh 1.5vh;
-}
-
-.jan {
-  margin: 20vh auto 10vh;
-}
-
-#subtitle {
-  text-align: center;
-  font-size: 3vh;
-  font-weight:900;
-  margin: -3vh auto 2vh;
-}
-
-.subtitles {
-  text-align: center;
-  font-size: 3.5vh;
-  font-weight:900;
-  margin-bottom: 1vh;
-  text-shadow: 1px 1px 1px black;
-  font-family: 'BioRhyme';
-}
-
-header {
-  font-family: 'BioRhyme';
-  color: black;
-  position: fixed;
-  background-color: whitesmoke;
-  border-radius: 0 0 30px 30px;
-  border: solid black 2px;
-  box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.7);
-  top: 0;
-  z-index: 3;
-  /* align-items: center; */
-  padding-bottom: 3vh;
-  opacity: .9;
-}
-
-.socials {
-  display: flex;
-  margin-left: 14%;
-}
-
-.soc {
-  margin: 1% 12%;
-}
-
-.socials img:hover {
-  filter: drop-shadow(0px 4px 8px black);
-}
-
-#github {
-  width: 4vh;
-  padding-bottom: 1.25vh;
-}
-
-#linkedin {
-  width: 4vh;
-  padding-bottom: 1.25vh;
-}
-
-#mail {
-  width: 5vh;
-  padding-bottom: .75vh;
-}
-
-.text {
-  font-size: 2.5vh;
-  font-family:Arial, Helvetica, sans-serif;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  margin-top: 0vh;
-  min-width: 45%;
-  text-align: center;
-}
-
-/* Scroll Down Indicator */
+/* Scroll Down Arrow */
 .section {
   position: relative;
   z-index: 2;

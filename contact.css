@@ -1,9 +1,74 @@
-/* Contact Page */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Background settings for header */
+header {
+  font-family: 'BioRhyme';
+  color: black;
+  position: fixed;
+  background-color: whitesmoke;
+  border-radius: 0 0 30px 30px;
+  border: solid black 2px;
+  box-shadow: 0px 3px 5px black;
+  top: 0;
+  z-index: 2;
+  align-items: center;
+  padding-bottom: 3vh;
+  opacity: .9;
+}
+
+/* Header contents */
+#name {
+  font-size: 6vh;
+  font-weight:900;
+  margin: -1vh 1vh 1.5vh;
+}
+
+#title {
+  text-align: center;
+  font-size: 3vh;
+  font-weight:900;
+  margin: -3vh auto 2vh;
+}
+
+.socials {
+  display: flex;
+  margin-left: 14%;
+}
+
+.socials img:hover {
+  filter: drop-shadow(0px 1px 3px black);
+}
+
+.soc {
+  margin: 1% 12%;
+}
+
+/* Images in "socials" section */
+#linkedin {
+  width: 4vh;
+  padding-bottom: 1.25vh;
+}
+
+#home {
+  width: 5vh;
+  padding-bottom: .75vh;
+}
+
+#github {
+  width: 4vh;
+  padding-bottom: 1.25vh;
+}
+
+/* Background image */
   .river {
     height: 100vh;
     z-index: 0;
   }
   
+  /* Background settings */
   .contact {
     height: 100vh;
     background-color: #53864b;
@@ -12,24 +77,29 @@
     display: flex;
     justify-content: center;
   }
+
+  /* Default settings for images in "Contact" section */
   .contact img {
     position: absolute;
     width: 100%;
     bottom: 0;
-   
   }
 
+  /* Form title */
+  #sayHi {
+    color: whitesmoke;
+    filter: drop-shadow(0 1px 3px black);
+    font-size: xx-large;
+    margin: 1.5vh;
+  }  
+
+  /* Form settings */
   .form-submit {
     width: 50%;
     z-index: 1;
     margin-top: 20vh;
     filter: drop-shadow(0px 3px 5px black);
     opacity: .9;
-  }
-
-  .form-submit form {
-    width: 100%;
-   
   }
   
   .form-submit .form-row {
@@ -78,6 +148,7 @@
     border-radius: 10px;
   }
   
+  /* Mobile settings */
   @media only screen and (max-width: 600px) {
     .form-submit {
         width: 80%;
@@ -94,62 +165,3 @@
     }
   }
   
-  header {
-    font-family: 'BioRhyme';
-    color: black;
-    position: fixed;
-    background-color: whitesmoke;
-    border-radius: 0 0 30px 30px;
-    border: solid black 2px;
-    box-shadow: 0px 3px 5px black;
-    top: 0;
-    z-index: 2;
-    align-items: center;
-    padding-bottom: 3vh;
-    opacity: .9;
-  }
-  .socials {
-    display: flex;
-    margin-left: 14%;
-  }
-  
-  .soc {
-    margin: 1% 12%;
-  }
-  
-  .socials img:hover {
-    filter: drop-shadow(0px 4px 6px black);
-  }
-
-  body {
-      margin: 0;
-      padding: 0;
-  }
-
-  #github {
-    width: 4vh;
-    padding-bottom: 1.25vh;
-  }
-  
-  #linkedin {
-    width: 4vh;
-    padding-bottom: 1.25vh;
-  }
-  
-  #home {
-    width: 5vh;
-    padding-bottom: .75vh;
-  }
-
-  #name {
-    font-size: 6vh;
-    font-weight:900;
-    margin: -1vh 1vh 1.5vh;
-  }
-
-  #subtitle {
-    text-align: center;
-    font-size: 3vh;
-    font-weight:900;
-    margin: -3vh auto 2vh;
-  }
