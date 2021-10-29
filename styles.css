@@ -81,7 +81,7 @@ header {
 /* Container for "About Me" section */
 .info {
   width: 50%;
-  margin: 160vh 25vh 6vh;
+  margin: 156vh 25vh 10vh;
   border: solid black 2px;
   border-radius: 30px;
   background-color:whitesmoke;
@@ -94,7 +94,7 @@ header {
 #hs {
   width: 38vh;
   border-radius: 15px;
-  bottom: 3%;
+  bottom: 4.7%;
   left: 39%;
 }
 
@@ -132,8 +132,8 @@ header {
 /* Default setting for images in "Projects" section */
 .projects img {
   position: absolute;
-  /* width: 100%;
-  bottom: 0; */
+  width: 100%;
+  /* bottom: 0; */
   /* z-index: 2; */
 }
 
@@ -441,10 +441,11 @@ header {
 .section {
   position: relative;
   z-index: 2;
+  left: 35%;
 }
 .section::before {
   animation: bounce 1s ease infinite;
-  bottom: 130vh;
+  bottom: 132vh;
   color: #fff;
   content: '╲╱';
   font-size: 4vh;
@@ -452,7 +453,6 @@ header {
   height: 4rem;
   letter-spacing: -1px;
   line-height: 4rem;
-  margin-left: 35vw;
   filter:drop-shadow(5px 5px 6px black);
   position: absolute;
   text-align: center;
