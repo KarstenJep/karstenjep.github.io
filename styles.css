@@ -33,31 +33,36 @@ header {
 
 .socials {
   display: flex;
-  margin-left: 12%;
+  margin-left: 15%;
 }
 
 .socials img:hover {
-  filter: drop-shadow(0px 1px 3px black);
+  box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.7);
 }
 
 .soc {
-  margin: 1% 13%;
+  margin: 1% 12%;
 }
 
 /* Indvidual images in "Socials" section */
 #github {
-  width: 4.5vh;
-  padding-bottom: 1vh;
+  width: 4vh;
+  margin-bottom: 1.25vh;
+  border-radius: 20%;
+
 }
 
 #linkedin {
-  width: 4.5vh;
-  padding-bottom: 1vh;
+  width: 4vh;
+  margin-bottom: 1.25vh;
+  border-radius: 20%;
+
 }
 
 #mail {
   width: 5vh;
-  padding-bottom: .75vh;
+  margin-bottom: .75vh;
+  border-radius: 20%;
 }
 
 /* Background settings for the animated section of the website  */
