@@ -7,7 +7,6 @@ import App from './App';
 
 // reducer!
 const userReducer = (state = [], action) => {
-  console.log(`Hey!!! I'm a reducer y'all!!!`);
   switch (action.type) {
     case 'USER':
         return action.payload;
