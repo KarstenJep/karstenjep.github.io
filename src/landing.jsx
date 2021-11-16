@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './header.jsx';
 import { useHistory } from 'react-router';
+import { useSelector, useDispatch } from 'react-redux';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
@@ -9,8 +10,27 @@ import './landing.css';
 
 export default function LandingPage() {
   
+  const [username, setUsername] = useState('');
   const history = useHistory();
+  // "dispatch" is how we talk to redux from react
+  const dispatch = useDispatch();
 
+  const handleSubmit = (event) => {
+      // Don't reload on form submit
+      event.preventDefault();
+
+      // Tell redux that we want to add the new element
+      dispatch({
+          type: 'USER',
+          // Pass in the element name, that we're tracking in state
+          payload: username
+      });
+      // Send user to home page
+      history.push(`/home/1`)
+      // Clear the form field
+      setUsername('');
+  };
+  
   return (
     <>
       <Header />
@@ -24,8 +44,8 @@ export default function LandingPage() {
                 label="Name"
                 variant="filled"
                 color="primary"
-                // value={username}
-                // onChange={(event) => setUsername(event.target.value)}
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
                 size="large"
           />
         </Box>
@@ -36,7 +56,7 @@ export default function LandingPage() {
             value="Log In" 
             variant="contained" 
             color="secondary"
-            onClick={() => history.push(`/home/1`)}
+            onClick={(e) => handleSubmit(e)}
             >
             Submit
           </Button>

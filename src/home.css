@@ -153,8 +153,7 @@ body {
   }
 
   .guest {
-      margin-top: 36vh;
-      left: 36%;
+      margin: 32vh auto 2vh;
       font-size: 10vh;
       font-family: 'BioRhyme';
       position: absolute;
