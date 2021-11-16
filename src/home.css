@@ -1,0 +1,410 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Background settings for the animated section of the website  */
+  .sky {
+    overflow-x: hidden;
+    position: relative;
+    background-image: linear-gradient( #80bfd8, #f3b55f, #35722c, #35adf3);
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Default settings for images in animated section */
+  .sky img {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+  
+  /* Container for "About Me" section */
+  .info {
+    width: 50%;
+    margin: 164vh 25vh 52vh;
+    border: solid black 2px;
+    border-radius: 30px;
+    background-color:whitesmoke;
+    box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.7);
+    display:inline-table;
+    z-index: 2;
+  }
+  
+  /* Head shot image in "About me" section */
+  .hs {
+    width: 38vh;
+    /* box-shadow: 0px 0px -10px -10px whitesmoke; */
+    border-radius: 15px;
+    margin-bottom: 0;
+    left: 39%;
+    border: solid black 2px;
+    box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.7);
+  }
+  
+  /* Headings in "About Me" and "Projects" sections */
+  .subtitles {
+    text-align: center;
+    font-size: 3.5vh;
+    font-weight:900;
+    margin-bottom: 1vh;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'BioRhyme';
+  }
+  
+  /* Text in "About Me" and "Projects" sections */
+  .text {
+    font-size: 2.5vh;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 0vh;
+    min-width: 45%;
+    text-align: center;
+  }
+  
+  /* Background Setting for "Projects" section. No animation */
+  .projects {
+    height: 110vh;
+    background-image: linear-gradient(#35adf3,#f8f8f8);
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Default setting for images in "Projects" section */
+  .projects img {
+    position: absolute;
+    width: 100%;
+    /* bottom: 0; */
+    /* z-index: 2; */
+  }
+  
+  /* Background Image at bottom of site. No animation. */
+  .beach{
+    height: 110vh;
+    filter:drop-shadow(3px 3px 5px black);
+  }
+  
+  /* Card for displaying each project */
+  .tech {
+    width: 90%;
+    margin: 38vh 2vh 4vh;
+    border: solid black 2px;
+    border-radius: 20px;
+    background-color:whitesmoke;
+    box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.7);
+    display:table-column;
+    z-index: 2;
+  }
+  
+  /* Project link */
+  .tech a {
+    font-size: 4vh;
+    color: black;
+  }
+  
+  .tech a:hover {
+    filter:drop-shadow(0px 1px 3px black);
+  }
+  
+  /* Project Images */
+  .wh {
+    bottom: 8%;
+    left: 10%;
+  }
+  
+  .oel {
+    /* width: 1px; */
+    bottom: 8%;
+    left: 35%;
+  }
+  
+  .todo {
+    /* width: 1vh; */
+    bottom: 8%;
+    left: 60%;
+  }
+  
+  /* .camera {
+    width: 11vh;
+    bottom: 9%;
+    left: 85%;
+  } */
+  
+  .film {
+    /* width: 1vh; */
+    bottom: 8%;
+    left: 85%;
+  }
+  
+  /****************** Individual settings for each image in animated section *******************/
+  .mountains {
+    height: 39%;
+    /* height: 87vh;  */
+    filter:drop-shadow(3px -4px 6px black);
+    margin-bottom: 112vh;
+    border-bottom: rgb(0, 128, 0, .3) solid 10px ;
+    /* margin-bottom: 68%; */
+   
+  }
+
+  .guest {
+      margin-top: 36vh;
+      left: 36%;
+      font-size: 10vh;
+      font-family: 'BioRhyme';
+      position: absolute;
+  }
+  
+  .sun {
+    width: 30%;
+    margin-bottom: 132vh;
+    left: 28%;
+  } 
+  
+  .sunTwo {
+    width: 20%;
+    margin-bottom: 0vh;
+    left: 85%;
+    z-index:  1;
+  }
+  
+  .cloudOne {
+    width: 20%;
+    margin-bottom: 175vh;
+    /* 100% */
+    left: 75%;
+    opacity: 60%;
+    filter:drop-shadow(2px 2px 3px black);
+  }
+  
+  .cloudTwo {
+    width: 25%;
+    margin-bottom: 215vh;
+    left: 75%;
+    opacity: 60%;
+    filter:drop-shadow(2px 2px 3px black);
+  }
+  
+  .cloudThree {
+    width: 10%;
+    margin-bottom: 175vh;
+    left: 0%;
+    opacity: 60%;
+    filter:drop-shadow(2px 2px 3px black);
+  }
+  
+  .cloudFour {
+    width: 24%;
+    margin-bottom: 210vh;
+    left: 6%;
+    opacity: 60%;
+    filter:drop-shadow(2px 2px 3px black);
+  }
+  
+  .cloudFive {
+    width: 23%;
+    margin-bottom: 180vh;
+    left: 45%;
+    opacity: 60%;
+    z-index: 1;
+    filter:drop-shadow(2px 2px 3px black);
+  }
+  
+  .cloudSix {
+    width: 15%;
+    margin-bottom: 220vh;
+    left: 2%;
+    opacity: 60%;
+    filter:drop-shadow(2px 2px 3px black);
+  }
+  
+  .cloudSeven {
+    width: 12%;
+    margin-bottom: 30vh;
+    left: -20%;
+    opacity: 60%;
+    filter:drop-shadow(2px 2px 3px black);
+  }
+  
+  .cloudEight {
+    width: 9%;
+    margin-bottom: 30vh;
+    left: 120%;
+    opacity: 60%;
+    filter:drop-shadow(2px 2px 3px black);
+  }
+  
+  .cloudNine {
+    width: 8%;
+    margin-bottom: 30vh;
+    left: -20%;
+    opacity: 60%;
+    filter:drop-shadow(2px 2px 3px black);
+  }
+  
+  .moon {
+    width: 5%;
+    margin-bottom: 240vh;
+    left: 0%;
+    opacity: 80%;
+  }
+  
+  .stars {
+    width: 14%;
+    margin-bottom: 230vh;
+    left: -4%;
+  }
+  
+  .starsTwo {
+    width: 15%;
+    margin-bottom: 230vh;
+    left: 90%;
+  }
+  
+  /* Animal, Vehicle images */
+  .birds {
+    width: 28vh;
+    margin-bottom: 75%;
+    left: -20%;
+  }
+  
+  .moose {
+    width: 9vh;
+    margin-bottom: 68%;
+    left: 15%;
+    filter:drop-shadow(1px 1px 2px black);
+  }
+  
+  .bicycle {
+    width: 6vh;
+    margin-bottom: 76%;
+    left: -40%;
+  }
+  
+  .rocket {
+    width: 6vh;
+    margin-bottom: 95%;
+    left: 85%;
+    filter:drop-shadow(1px 1px 2px black);
+  }
+  
+  .pg {
+    width: 3vh;
+    margin-bottom: 110%;
+    left: 76%;
+    filter:drop-shadow(1px 1px 2px black);
+  }
+  
+  .airplane {
+    width: 7vh;
+    margin-bottom: 30%;
+    left: -80%;
+    filter:drop-shadow(1px 1px 2px black);
+  }
+  
+  .airBalloon {
+    width: 5vh;
+    margin-bottom: 0%;
+    left: 10%;
+    filter:drop-shadow(3px 3px 5px black);
+  }
+  
+  .parrot {
+    width: 5vh;
+    margin-bottom: 0%;
+    left: -20%;
+    z-index: 1;
+    filter:drop-shadow(1px 1px 2px black);
+  }
+  
+  /* Tech Logos */
+  .html {
+    width: 8vh;
+    margin-bottom: 158vh;
+    /* 90% */
+    left: 10%;
+    filter:drop-shadow(3px 3px 5px black);
+  }
+  
+  .css {
+    width: 12vh;
+    margin-bottom: 156vh;
+    left: 19%;
+    filter:drop-shadow(3px 3px 5px black);
+  }
+  
+  .javascript {
+    width: 8vh;
+    margin-bottom: 158vh;
+    left: 31%;
+    filter:drop-shadow(3px 3px 5px black);
+  }
+  
+  .react {
+    width: 8vh;
+    margin-bottom: 158vh;
+    left: 42%;
+    filter:drop-shadow(3px 3px 5px black);
+  }
+  
+  .node {
+    width: 8vh;
+    margin-bottom: 158vh;
+    left: 53%;
+    filter:drop-shadow(3px 3px 5px black);
+  }
+  
+  .postgresql {
+    width: 8vh;
+    margin-bottom: 158vh;
+    left: 64%;
+    filter:drop-shadow(3px 3px 5px black);
+  }
+  
+  .python {
+    width: 8vh;
+    margin-bottom: 158vh;
+    left: 75%;
+    filter:drop-shadow(3px 3px 5px black);
+  }
+  
+  .git {
+    width: 8vh;
+    margin-bottom: 158vh;
+    left: 86%;
+    filter:drop-shadow(3px 3px 5px black);
+  }
+  
+  /* Scroll Down Arrow */
+  .section {
+    position: relative;
+    z-index: 2;
+    left: 35%;
+  }
+  .section::before {
+    animation: bounce 1s ease infinite;
+    bottom: 162vh;
+    color: #fff;
+    content: '╲╱';
+    font-size: 4.5vh;
+    font-weight:950;
+    height: 4rem;
+    letter-spacing: -1px;
+    line-height: 4rem;
+    filter:drop-shadow(5px 5px 6px black);
+    position: absolute;
+    text-align: center;
+    width: 6rem;
+  }
+  @keyframes bounce {
+    50% {
+      transform: translateY(-50%);
+    }
+  }
+  
+  
