@@ -18,10 +18,10 @@ export default function LandingPage() {
   const handleSubmit = (e) => {
       // Don't reload on form submit
       e.preventDefault();
-      // Tell redux that we want to add the new element
+      // Tell redux that we want to add the new user
       dispatch({
           type: 'USER',
-          // Pass in the element name, that we're tracking in state
+          // Pass in the username, that we're tracking in state
           payload: username
       });
       // Send user to home page
@@ -35,8 +35,10 @@ export default function LandingPage() {
       <Header />
       <div className="landingBackground">
         <div className="login">
+        {/* Helper Text */}
         <h3>Submit Your Name To Continue</h3>
         <Box p={2} mt={-3}>
+          {/* User Input */}
           <TextField
                 className="input"
                 type="text"
@@ -48,6 +50,7 @@ export default function LandingPage() {
                 size="large"
           />
         </Box>
+        {/* Submit User Btn */}
         <Button 
             style={{backgroundColor: 'skyblue', fontFamily: 'BioRhyme', color: 'black'}}
             size="large" 
