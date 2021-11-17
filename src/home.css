@@ -152,9 +152,12 @@ body {
    
   }
 
-  .guest {
-      margin: 36vh auto 4vh;
+  .username {
+      margin: 32vh auto 4vh;
       font-size: 10vh;
+      background: linear-gradient(to right, #0c82dc, #df7e00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-family: 'BioRhyme';
       position: absolute;
   }

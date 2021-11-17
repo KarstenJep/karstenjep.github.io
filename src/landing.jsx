@@ -15,10 +15,9 @@ export default function LandingPage() {
   // "dispatch" is how we talk to redux from react
   const dispatch = useDispatch();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (e) => {
       // Don't reload on form submit
-      event.preventDefault();
-
+      e.preventDefault();
       // Tell redux that we want to add the new element
       dispatch({
           type: 'USER',
@@ -50,12 +49,12 @@ export default function LandingPage() {
           />
         </Box>
         <Button 
-            style={{backgroundColor: 'black', fontFamily: 'BioRhyme'}}
+            style={{backgroundColor: 'skyblue', fontFamily: 'BioRhyme', color: 'black'}}
             size="large" 
             type="submit" 
             value="Log In" 
             variant="contained" 
-            color="secondary"
+            color="primary"
             onClick={(e) => handleSubmit(e)}
             >
             Submit
