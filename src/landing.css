@@ -32,7 +32,7 @@
     display:inline-flex;
     align-items: center;
     justify-content:center;
-    padding-top:100px;
+    padding-top:20px;
     padding-bottom: 0px;
    }
 
@@ -43,9 +43,9 @@
     height:120px; 
     border-radius:50%;
     position:relative;
-    top:-160px;
+    top:-120px;
     -webkit-filter: blur(6px);
-    z-index:11;
+    z-index:0;
     left:-50px;
     animation: 15000ms cloudAnimation linear infinite;
     opacity:0.76;
@@ -79,7 +79,7 @@
 
 @keyframes cloudAnimation {
     0%{
-        transform: translate(-100px,0);
+        transform: translate(-300px,0);
     }
     100% {
         transform: translate(600px,0);
