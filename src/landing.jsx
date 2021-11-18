@@ -34,12 +34,16 @@ export default function LandingPage() {
     <>
       <Header />
       <div className="landingBackground">
-        <div className="login">
-        {/* Helper Text */}
-        <h3>Submit Your Name To Continue</h3>
-        <Box p={2} mt={-3}>
-          {/* User Input */}
-          <TextField
+          <div class="cloud-content">
+                <div class="cloud"></div>
+                <div class="cloud x"></div>
+          </div>
+          <div className="login">
+          {/* Helper Text */}
+          <h3>Enter Your First Name To Continue</h3>
+          <Box p={2} mt={-3}>
+            {/* User Input */}
+            <TextField
                 className="input"
                 type="text"
                 label="Name"
@@ -48,21 +52,21 @@ export default function LandingPage() {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 size="large"
-          />
-        </Box>
-        {/* Submit User Btn */}
-        <Button 
-            style={{backgroundColor: 'skyblue', fontFamily: 'BioRhyme', color: 'black'}}
-            size="large" 
-            type="submit" 
-            value="Log In" 
-            variant="contained" 
-            color="primary"
-            onClick={(e) => handleSubmit(e)}
-            >
-            Submit
-          </Button>
-      </div>
+            />
+          </Box>
+          {/* Submit User Btn */}
+          <Button 
+              style={{backgroundColor: 'skyblue', fontFamily: 'BioRhyme', color: 'black'}}
+              size="large" 
+              type="submit" 
+              value="Log In" 
+              variant="contained" 
+              color="primary"
+              onClick={(e) => handleSubmit(e)}
+              >
+              Submit
+            </Button>
+        </div>
     </div>
     </>
   )
