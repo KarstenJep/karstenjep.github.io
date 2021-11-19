@@ -20,7 +20,6 @@ export default function Portfolio() {
     const [techTD, setTechTD] = useState(false)
     const [techML, setTechML] = useState(false)
 
-
     return (
         <>
         <section className="projects">
@@ -48,7 +47,7 @@ export default function Portfolio() {
                 </Button>
                 <img src={wh} alt="me" className="wh" style={{width: '15vh'}}/>
             </div>
-            
+
             {/* OEL */}
             <div className="tech">
                 <h3 className="subtitles">Our Economic Lives</h3>

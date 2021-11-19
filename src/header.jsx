@@ -1,10 +1,10 @@
 import React from 'react';
 import { useHistory, useParams } from 'react-router';
-import Button from '@mui/material/Button'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import HomeIcon from '@mui/icons-material/Home';
+import Button from '@mui/material/Button'
 import './header.css';
 
 
@@ -14,20 +14,12 @@ export default function Header() {
     // using params to determine which button to show (based on the current page)
     const {id} = useParams();
 
-    const linkedIn = () => {
-        window.location.href="https://www.linkedin.com/in/karsten-jepsen-067a67a2/";
-    }
-
     const email = () => {
         history.push('/contact/2');
     }
 
     const home = () => {
         history.push('/home/1');
-    }
-
-    const github = () => {
-        window.location.href="https://github.com/KarstenJep";
     }
 
 
@@ -49,7 +41,7 @@ export default function Header() {
                         size="small"
                         style={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '10px'}}
                         endIcon={<LinkedInIcon />}
-                        onClick={() => linkedIn()}
+                        onClick={() => window.location.href="https://www.linkedin.com/in/karsten-jepsen-067a67a2/"}
                     >
                       LinkedIn
                     </Button>
@@ -77,7 +69,7 @@ export default function Header() {
                         size="small"
                         style={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '10px'}}
                         endIcon={<GitHubIcon />}
-                        onClick={() => github()}
+                        onClick={() => window.location.href="https://github.com/KarstenJep"}
                     >
                       Github
                     </Button>
