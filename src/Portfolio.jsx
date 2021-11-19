@@ -23,102 +23,121 @@ export default function Portfolio() {
     return (
         <>
         <section className="projects">
-            <img src={beach} alt="beach" className="beach"/>
-             {/* What's Hop'nin? */}
+            {/* What's Hop'nin? */}
             <div className="tech">
+                <div className="contents">
+                    <img src={wh} alt="me" className="wh"/>
+                </div>
                 <h3 className="subtitles">What's Hop'nin'?</h3>
-                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" style={{ margin: '2vh 5vh'}}>
-                    <FormControlLabel value="description" control={<Radio color="success" />} label="Description" onChange={() => setTechWH(false)}/>
-                    <FormControlLabel value="tech" control={<Radio color="success" />} label="Tech" onChange={() => setTechWH(true)}/>
-                </RadioGroup>
+                <div className="contents">
+                    <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio" >
+                        <FormControlLabel value="description" control={<Radio color="success" />} label="Description" onChange={() => setTechWH(false)}/>
+                        <FormControlLabel value="tech" control={<Radio color="success" />} label="Tech" onChange={() => setTechWH(true)}/>
+                    </RadioGroup>
+                </div>
                 { !techWH ? 
                 <p className="text">A scheduling app made for Big Wood Brewery to help the brewers track hop additions!</p>
                 :
-                <p className="text">[ ReactJs, Redux, Sagas, Node, Express, Postgresql, Material UI, CSS, Moment.js ]</p>
+                <p className="text">[ ReactJs, Redux, Sagas, Node, Express, Postgresql, Material-UI, CSS, Moment.js ]</p>
                 }
-                <Button
-                    className="text"
-                    style={{ marginLeft: '8vh', color: 'black', fontFamily: 'BioRhyme'}}
-                    variant="contained" 
-                    color="success"
-                    onClick={() => window.location.href="https://boiling-plains-09195.herokuapp.com/#/home"}
-                >
-                    Check it out!
-                </Button>
-                <img src={wh} alt="me" className="wh" style={{width: '15vh'}}/>
+                < div className="contents">
+                    <Button
+                        style={{ color: 'black', fontFamily: 'BioRhyme', margin: '2vh auto'}}
+                        variant="contained" 
+                        color="success"
+                        onClick={() => window.location.href="https://boiling-plains-09195.herokuapp.com/#/home"}
+                    >
+                        Check it out!
+                    </Button>
+                </div>
             </div>
 
             {/* OEL */}
             <div className="tech">
+                <div className="contents">
+                    <img src={oel} alt="oel" className="oel" />
+                </div>
                 <h3 className="subtitles">Our Economic Lives</h3>
-                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" style={{ margin: '2vh 5vh'}}>
-                    <FormControlLabel value="description" control={<Radio />} label="Description" onChange={() => setTechOEL(false)}/>
-                    <FormControlLabel value="tech" control={<Radio />} label="Tech" onChange={() => setTechOEL(true)}/>
-                </RadioGroup>
+                <div className="contents">
+                    <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio">
+                        <FormControlLabel value="description" control={<Radio />} label="Description" onChange={() => setTechOEL(false)}/>
+                        <FormControlLabel value="tech" control={<Radio />} label="Tech" onChange={() => setTechOEL(true)}/>
+                    </RadioGroup>
+                </div>
                 { !techOEL ? 
-                <p className="text">Client: St Paul Jack.<br/>
-                A multi-tiered app to help users identify skills and discover potential career paths. Group Project.</p>                
+                <p className="text">A tiered app made for St. Paul Jack to help users discover potential career paths. Group Project.</p>                
                 :
-                <p className="text">[ ReactJs, Redux, Sagas, Node, Express, CSV, Postgresql, Material UI ]</p>
+                <p className="text">[ ReactJs, Redux, Sagas, Node, Express, CSV, Postgresql, Material-UI ]</p>
                 }
-                <Button
-                    className="text"
-                    style={{ marginLeft: '10vh', color: 'black', fontFamily: 'BioRhyme'}}
-                    variant="contained" 
-                    color="primary"
-                    onClick={() => window.location.href="https://safe-plains-34698.herokuapp.com/#/home"}
-                >
-                    Have a look!
-                </Button>
-                <img src={oel} alt="oel" className="oel" style={{width: '15vh'}}/>
+                < div className="contents">
+                    <Button
+                        style={{ color: 'black', fontFamily: 'BioRhyme', margin: '2vh auto'}}
+                        variant="contained" 
+                        color="primary"
+                        onClick={() => window.location.href="https://safe-plains-34698.herokuapp.com/#/home"}
+                    >
+                        Have a look!
+                    </Button>
+                </div>
             </div>
 
             {/* To Do List */}
             <div className="tech">
+                <div className="contents">
+                    <img src={todolist} alt="todolist" className="todo" />
+                </div>
                 <h3 className="subtitles">To Do List</h3>
-                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" style={{ margin: '2vh 5vh'}}>
-                    <FormControlLabel value="description" control={<Radio color="secondary" />} label="Description" onChange={() => setTechTD(false)}/>
-                    <FormControlLabel value="tech" control={<Radio color="secondary" />} label="Tech" onChange={() => setTechTD(true)}/>
-                </RadioGroup>
+                <div className="contents">
+                    <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio">
+                        <FormControlLabel value="description" control={<Radio color="secondary" />} label="Description" onChange={() => setTechTD(false)}/>
+                        <FormControlLabel value="tech" control={<Radio color="secondary" />} label="Tech" onChange={() => setTechTD(true)}/>
+                    </RadioGroup>
+                </div>
                 { !techTD ? 
                 <p className="text">My first full stack app! A to-do list to track tasks.</p>
                 :
                 <p className="text">[ jQuery, JavaScript, Ajax, Node, Express, Postgresql, HTML, CSS ]</p>
                 }
-                <Button
-                    className="text"
-                    style={{ marginLeft: '8vh', color: 'black', fontFamily: 'BioRhyme'}}
-                    variant="contained" 
-                    color="secondary"
-                    onClick={() => window.location.href="https://dry-shore-54453.herokuapp.com/"}
-                >
-                    Take a gander!
-                </Button>
-                <img src={todolist} alt="todolist" className="todo" style={{width: '15vh'}}/>
+                <div className="contents">
+                    <Button
+                        style={{ color: 'black', fontFamily: 'BioRhyme', margin: '2vh auto'}}
+                        variant="contained" 
+                        color="secondary"
+                        onClick={() => window.location.href="https://dry-shore-54453.herokuapp.com/"}
+                    >
+                        Take a gander!
+                    </Button>
+                </div>
             </div>
 
             {/* Movie Galllery */}
             <div className="tech">
+                <div className="contents">
+                    <img src={film} alt="film" className="film" />
+                </div>
                 <h3 className="subtitles">Movie Gallery</h3>
-                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" style={{ margin: '2vh 5vh'}}>
-                    <FormControlLabel value="description" control={<Radio color="error" />} label="Description" onChange={() => setTechML(false)}/>
-                    <FormControlLabel value="tech" control={<Radio color="error" />} label="Tech" onChange={() => setTechML(true)}/>
-                </RadioGroup>
+                <div className="contents">
+                    <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio">
+                        <FormControlLabel value="description" control={<Radio color="error" />} label="Description" onChange={() => setTechML(false)}/>
+                        <FormControlLabel value="tech" control={<Radio color="error" />} label="Tech" onChange={() => setTechML(true)}/>
+                    </RadioGroup>
+                </div>
                 { !techML ? 
                 <p className="text">A movie application allowing users to add new movies, and read details!</p>
                 :
                 <p className="text">[ ReactJs, Redux, Saga, Node, Express, Postgresql, Material UI, CSS ]</p>
                 }
-                <Button
-                    className="text"
-                    style={{ marginLeft: '10vh', color: 'black', fontFamily: 'BioRhyme'}}
-                    variant="contained" 
-                    color="error"
-                    onClick={() => window.location.href="https://afternoon-falls-30309.herokuapp.com/#/"}
-                >
-                    Open it up!
-                </Button>
-                <img src={film} alt="film" className="film" style={{width: '15vh'}}/>
+                <div className="contents">
+                    <Button
+                        className="button"
+                        style={{ color: 'black', fontFamily: 'BioRhyme', margin: '2vh auto'}}
+                        variant="contained" 
+                        color="error"
+                        onClick={() => window.location.href="https://afternoon-falls-30309.herokuapp.com/#/"}
+                    >
+                        Open it up!
+                    </Button>
+                </div>
             </div>
             {/* <div class="tech">
                 <h3 class="subtitles">Photo Gallery</h3>
@@ -127,6 +146,8 @@ export default function Portfolio() {
                 <p class="text"><a href="https://shielded-plateau-72344.herokuapp.com/">Open it up!</a>
                     <img src="images/camera.png" alt="me" id="camera" /></p>
             </div>  */}
+             {/* Background img */}
+             <img src={beach} alt="beach" className="beach"/>
         </section>
         </>
     )
