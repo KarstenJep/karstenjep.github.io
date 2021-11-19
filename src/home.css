@@ -113,19 +113,19 @@ body {
   /* Project Images */
   .wh {
     bottom: 8%;
-    left: 10%;
+    left: 8%;
   }
   
   .oel {
     /* width: 1px; */
     bottom: 8%;
-    left: 35%;
+    left: 33%;
   }
   
   .todo {
     /* width: 1vh; */
     bottom: 8%;
-    left: 60%;
+    left: 58%;
   }
   
   /* .camera {
@@ -137,7 +137,7 @@ body {
   .film {
     /* width: 1vh; */
     bottom: 8%;
-    left: 85%;
+    left: 83%;
   }
   
   /****************** Individual settings for each image in animated section *******************/

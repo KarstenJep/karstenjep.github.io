@@ -30,8 +30,19 @@ import oel from "./images/oel.png";
 import todolist from "./images/todolist.png";
 import film from "./images/film.png";
 import './home.css';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+
+
+
 
 export default function Home() {
+
+    const [techWH, setTechWH] = useState(false)
+    const [techOEL, setTechOEL] = useState(false)
+    const [techTD, setTechTD] = useState(false)
+    const [techML, setTechML] = useState(false)
 
     const user = useSelector(store => store.userReducer);
     const [scrollY, setScrollY] = useState(0);
@@ -103,32 +114,60 @@ export default function Home() {
             <img src={beach} alt="beach" className="beach"/>
             <div className="tech">
                 <h3 className="subtitles">What's Hop'nin'?</h3>
+                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" style={{ margin: '2vh 5vh'}}>
+                    <FormControlLabel value="description" control={<Radio color="success" />} label="Description" onChange={() => setTechWH(false)}/>
+                    <FormControlLabel value="tech" control={<Radio color="success" />} label="Tech" onChange={() => setTechWH(true)}/>
+                </RadioGroup>
+                { !techWH ? 
                 <p className="text">A scheduling app made for Big Wood Brewery to help the brewers track hop additions!</p>
-                <p className="text"><i>React - Redux - Sagas - Node - Express - Postgresql - Material UI - CSS - Moment.js</i></p> 
-                <p className="text"><a href="https://boiling-plains-09195.herokuapp.com/#/home">Check it out!</a>
-                    <img src={wh} alt="me" className="wh" style={{width: '10vh'}}/></p>
-            </div>
+                :
+                <p className="text"><i>React - Redux - Sagas - Node - Express - Postgresql - Material UI - CSS - Moment.js</i></p>
+                }
+                <p className="text"><a href="https://boiling-plains-09195.herokuapp.com/#/home">Check it out!</a></p>
+                <img src={wh} alt="me" className="wh" style={{width: '15vh'}}/>
+            </div> 
             <div className="tech">
                 <h3 className="subtitles">Our Economic Lives</h3>
+                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" style={{ margin: '2vh 5vh'}}>
+                    <FormControlLabel value="description" control={<Radio />} label="Description" onChange={() => setTechOEL(false)}/>
+                    <FormControlLabel value="tech" control={<Radio />} label="Tech" onChange={() => setTechOEL(true)}/>
+                </RadioGroup>
+                { !techOEL ? 
                 <p className="text">Client: St Paul Jack.<br/>
-                    A multi-tiered app to help users identify skills and discover potential career paths. Group Project.</p>
+                A multi-tiered app to help users identify skills and discover potential career paths. Group Project.</p>                
+                :
                 <p className="text"><i>React - Redux - Sagas - Node - Express - CSV - Postgresql - Material UI </i></p>
+                }
                 <p className="text"><a href="https://safe-plains-34698.herokuapp.com/#/home">Have a look!</a>
-                    <img src={oel} alt="oel" className="oel" style={{width: '10vh'}}/></p>
+                    <img src={oel} alt="oel" className="oel" style={{width: '15vh'}}/></p>
             </div>
             <div className="tech">
                 <h3 className="subtitles">To Do List</h3>
+                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" style={{ margin: '2vh 5vh'}}>
+                    <FormControlLabel value="description" control={<Radio color="secondary" />} label="Description" onChange={() => setTechTD(false)}/>
+                    <FormControlLabel value="tech" control={<Radio color="secondary" />} label="Tech" onChange={() => setTechTD(true)}/>
+                </RadioGroup>
+                { !techTD ? 
                 <p className="text">My first full stack app! A to-do list to track tasks.</p>
+                :
                 <p className="text"><i>jQuery - JavaScript - Ajax - Node - Express - Postgresql - HTML - CSS </i></p>
+                }
                 <p className="text"><a href="https://dry-shore-54453.herokuapp.com/">Take a gander!</a>
-                    <img src={todolist} alt="todolist" className="todo" style={{width: '10vh'}}/></p>
+                    <img src={todolist} alt="todolist" className="todo" style={{width: '15vh'}}/></p>
             </div>
             <div className="tech">
                 <h3 className="subtitles">Movie Gallery</h3>
+                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" style={{ margin: '2vh 5vh'}}>
+                    <FormControlLabel value="description" control={<Radio color="error" />} label="Description" onChange={() => setTechML(false)}/>
+                    <FormControlLabel value="tech" control={<Radio color="error" />} label="Tech" onChange={() => setTechML(true)}/>
+                </RadioGroup>
+                { !techML ? 
                 <p className="text">A movie application allowing users to add new movies, and read details!</p>
+                :
                 <p className="text"><i>React - JavaScript - Redux - Saga - Node - Express - Postgresql - Material UI/CSS </i></p>
+                }
                 <p className="text"><a href="https://afternoon-falls-30309.herokuapp.com/#/">Open it up!</a>
-                    <img src={film} alt="film" className="film" style={{width: '10vh'}}/></p>
+                    <img src={film} alt="film" className="film" style={{width: '15vh'}}/></p>
             </div>
             {/* <div class="tech">
                 <h3 class="subtitles">Photo Gallery</h3>
