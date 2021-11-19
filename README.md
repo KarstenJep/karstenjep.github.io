@@ -1,13 +1,11 @@
-# Project Name
-Personal Website / Portfolio
+# Personal Website / Portfolio
 
 ## Description
 Duration: Ongoing
 
 What started as a fun, quick foray into playing with basic animations in javascript, has now evolved into a fully animated react app that doubles as my personal website. This will be a project I will revisit periodically in my free time to further practice animation, experiment with interactive user experience, and look for opportunities to improve.
 
-## URL
-`https://karstenjep.github.io/#/`
+## [Demo](https://karstenjep.github.io/)
 
 
 ## EDA Project
