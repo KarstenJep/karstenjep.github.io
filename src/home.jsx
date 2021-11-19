@@ -123,11 +123,11 @@ export default function Home() {
                 { !techWH ? 
                 <p className="text">A scheduling app made for Big Wood Brewery to help the brewers track hop additions!</p>
                 :
-                <p className="text"><i>React - Redux - Sagas - Node - Express - Postgresql - Material UI - CSS - Moment.js</i></p>
+                <p className="text">[ ReactJs, Redux, Sagas, Node, Express, Postgresql, Material UI, CSS, Moment.js ]</p>
                 }
                 <Button
                     className="text"
-                    style={{ marginLeft: '6vh', color: 'black', fontFamily: 'BioRhyme'}}
+                    style={{ marginLeft: '8vh', color: 'black', fontFamily: 'BioRhyme'}}
                     variant="contained" 
                     color="success"
                     onClick={() => window.location.href="https://boiling-plains-09195.herokuapp.com/#/home"}
@@ -146,11 +146,11 @@ export default function Home() {
                 <p className="text">Client: St Paul Jack.<br/>
                 A multi-tiered app to help users identify skills and discover potential career paths. Group Project.</p>                
                 :
-                <p className="text"><i>React - Redux - Sagas - Node - Express - CSV - Postgresql - Material UI </i></p>
+                <p className="text">[ ReactJs, Redux, Sagas, Node, Express, CSV, Postgresql, Material UI ]</p>
                 }
                 <Button
                     className="text"
-                    style={{ marginLeft: '6vh', color: 'black', fontFamily: 'BioRhyme'}}
+                    style={{ marginLeft: '10vh', color: 'black', fontFamily: 'BioRhyme'}}
                     variant="contained" 
                     color="primary"
                     onClick={() => window.location.href="https://safe-plains-34698.herokuapp.com/#/home"}
@@ -168,11 +168,11 @@ export default function Home() {
                 { !techTD ? 
                 <p className="text">My first full stack app! A to-do list to track tasks.</p>
                 :
-                <p className="text"><i>jQuery - JavaScript - Ajax - Node - Express - Postgresql - HTML - CSS </i></p>
+                <p className="text">[ jQuery, JavaScript, Ajax, Node, Express, Postgresql, HTML, CSS ]</p>
                 }
                 <Button
                     className="text"
-                    style={{ marginLeft: '3vh', color: 'black', fontFamily: 'BioRhyme'}}
+                    style={{ marginLeft: '8vh', color: 'black', fontFamily: 'BioRhyme'}}
                     variant="contained" 
                     color="secondary"
                     onClick={() => window.location.href="https://dry-shore-54453.herokuapp.com/"}
@@ -190,11 +190,11 @@ export default function Home() {
                 { !techML ? 
                 <p className="text">A movie application allowing users to add new movies, and read details!</p>
                 :
-                <p className="text"><i>React - JavaScript - Redux - Saga - Node - Express - Postgresql - Material UI/CSS </i></p>
+                <p className="text">[ ReactJs, Redux, Saga, Node, Express, Postgresql, Material UI, CSS ]</p>
                 }
                 <Button
                     className="text"
-                    style={{ marginLeft: '8vh', color: 'black', fontFamily: 'BioRhyme'}}
+                    style={{ marginLeft: '10vh', color: 'black', fontFamily: 'BioRhyme'}}
                     variant="contained" 
                     color="error"
                     onClick={() => window.location.href="https://afternoon-falls-30309.herokuapp.com/#/"}
