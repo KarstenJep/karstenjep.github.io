@@ -36,10 +36,9 @@ body {
   /* Head shot image in "About me" section */
   .hs {
     width: 38vh;
-    /* box-shadow: 0px 0px -10px -10px whitesmoke; */
     border-radius: 15px;
     margin-bottom: 0;
-    left: 39%;
+    left: 120vh;
     border: solid black 2px;
     box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.7);
   }
@@ -147,7 +146,7 @@ body {
     /* height: 87vh;  */
     filter:drop-shadow(3px -4px 6px black);
     margin-bottom: 112vh;
-    border-bottom: rgb(0, 128, 0, .3) solid 10px ;
+    border-bottom: rgb(0, 128, 0, .3) solid 15px ;
     /* margin-bottom: 68%; */
    
   }
@@ -227,16 +226,16 @@ body {
   
   .cloudSeven {
     width: 12%;
-    margin-bottom: 30vh;
-    left: -20%;
+    margin-bottom: 10vh;
+    left: -25%;
     opacity: 60%;
     filter:drop-shadow(2px 2px 3px black);
   }
   
   .cloudEight {
     width: 9%;
-    margin-bottom: 30vh;
-    left: 120%;
+    margin-bottom: 10vh;
+    left: 40%;
     opacity: 60%;
     filter:drop-shadow(2px 2px 3px black);
   }
@@ -277,14 +276,14 @@ body {
   
   .moose {
     width: 9vh;
-    margin-bottom: 68%;
+    margin-bottom: 120vh;
     left: 15%;
     filter:drop-shadow(1px 1px 2px black);
   }
   
   .bicycle {
     width: 6vh;
-    margin-bottom: 76%;
+    margin-bottom: 135vh;
     left: -40%;
   }
   
@@ -297,7 +296,7 @@ body {
   
   .pg {
     width: 3vh;
-    margin-bottom: 110%;
+    margin-bottom: 200vh;
     left: 76%;
     filter:drop-shadow(1px 1px 2px black);
   }
@@ -305,7 +304,7 @@ body {
   .airplane {
     width: 7vh;
     margin-bottom: 30%;
-    left: -80%;
+    left: -140%;
     filter:drop-shadow(1px 1px 2px black);
   }
   
