@@ -1,4 +1,8 @@
 import Header from './header.jsx';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
+import PublishIcon from '@mui/icons-material/Publish';
 import './contact.css';
 
 export default function Contact() {
@@ -6,24 +10,62 @@ export default function Contact() {
     return (
         <>
         <Header />
-        <div className="contactBackground">
-            <section className="contact">
-                <div className="form-submit">
+        <section className="contactBackground">
+            <div className="formBackground">
+            <form  target="_blank" action="https://formsubmit.co/el/jiyisi" method="POST">
+            <input type="hidden" name="_next" value="https://karstenjep.github.io/" />
+            <form action="https://formsubmit.co/your-random-string" method="POST" />
+            <Grid container spacing={1} pt={1} pb={2}>
+                <Grid item xs={12}>
                     <h1 className="sayHi">Say Hi!</h1>
-                    {/* <!-- Form --> */}
-                    <form  target="_blank" action="https://formsubmit.co/el/jiyisi" method="POST">
-                        {/* <!-- <input type="hidden" name="_next" value="https://karstenjep.github.io/thankyou.html"> --> */}
-                        <form action="https://formsubmit.co/your-random-string" method="POST" />
-                        <div className="form-row">
-                            <input name="name" className="form-control" placeholder="Full Name" required />
-                            <input name="email" className="form-control" placeholder="Email" required />
-                        </div>
-                        <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
-                        <button type="submit">Submit Message</button>
-                    </form>
-                </div>
-            </section>
-        </div>
+                </Grid>
+                <Grid item xs={12}>
+                    <TextField 
+                        name="name" 
+                        type="text"
+                        label="Name"
+                        variant="outlined"
+                        color="success"
+                        size="small"
+                        style={{ width: '90%' }}
+                        required />
+                </Grid>
+                <Grid item xs={12}>
+                    <TextField 
+                        name="email"  
+                        type="text"
+                        label="Email"
+                        variant="outlined"
+                        color="success"
+                        size="small"
+                        style={{ width: '90%' }}
+                        required />
+                </Grid>
+                <Grid item xs={12}>
+                    <TextField 
+                        name="message"
+                        label="Message"
+                        color="success"
+                        multiline 
+                        rows={4} 
+                        style={{ width: '90%'}} 
+                        required />
+                </Grid>
+                <Grid item xs={12}>
+                    <Button 
+                        type="submit"
+                        style={{  fontFamily: 'BioRhyme', width: '90%', color: 'black' }}
+                        variant="contained" 
+                        color="success"
+                        endIcon={<PublishIcon />}
+                    >
+                        Submit
+                    </Button>
+                </Grid>
+            </Grid>
+            </form>
+            </div>
+        </section>
         </>
     )
 }
