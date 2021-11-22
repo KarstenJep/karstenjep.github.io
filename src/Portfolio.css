@@ -2,10 +2,8 @@
 .projects {
     height: 110vh;
     background-image: linear-gradient(#35adf3,#f8f8f8);
-    /* overflow-x: hidden; */
     position: relative;
     display: flex;
-    /* justify-content: center; */
   }
 
   /* Background Image at bottom of site. No animation. */

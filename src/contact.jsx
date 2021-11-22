@@ -16,7 +16,7 @@ export default function Contact() {
             <div className="formBackground">
             <form  target="_blank" action="https://formsubmit.co/el/jiyisi" method="POST">
             <input type="hidden" name="_next" value="https://karstenjep.github.io/" />
-            {/* <form action="https://formsubmit.co/your-random-string" method="POST" /> */}
+            <form action="https://formsubmit.co/your-random-string" method="POST" />
             <Grid container spacing={1} pt={1} pb={2}>
                 <Grid item xs={12}>
                     <h1 className="sayHi">Say Hi!</h1>
@@ -56,7 +56,7 @@ export default function Contact() {
                 <Grid item xs={12}>
                     <Button 
                         type="submit"
-                        style={{  fontFamily: 'BioRhyme', width: '90%', color: 'black' }}
+                        style={{  fontFamily: 'BioRhyme', width: '70%', color: 'black' }}
                         variant="contained" 
                         color="success"
                         endIcon={<PublishIcon />}

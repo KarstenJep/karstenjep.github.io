@@ -53,27 +53,27 @@ export default function LandingPage() {
           <div className="login">
           {/* Helper Text */}
           <h3>Enter Your First Name To Continue</h3>
-          <Box p={2} mt={-3}>
+          <Box  m={2}>
             {/* User Input */}
             <TextField
                 className="input"
+                style={{color: 'skyblue', width: '50%'}}
                 type="text"
                 label="Name"
                 variant="filled"
                 color="primary"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                size="large"
+                size="medium"
                 error={nameError}
             />
           </Box>
           {/* Submit User Btn */}
           <Button 
-              style={{backgroundColor: 'skyblue', fontFamily: 'BioRhyme', color: 'black', marginBottom: '1vh'}}
+              style={{backgroundColor: 'skyblue', fontFamily: 'BioRhyme', color: 'black', marginBottom: '2vh', marginTop: '1vh', width: "45%"}}
               type="submit" 
               value="Log In" 
               variant="contained" 
-              // color="primary"
               endIcon={<PublishIcon />}
               onClick={(e) => validateForm(e)}
               >

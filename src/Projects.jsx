@@ -105,7 +105,7 @@ export default function Portfolio() {
                 { !techDF ? 
                     <p>An API data finder allowing users to search through U.S. schools and districts</p>          
                 :
-                    <p>[ ReactTS, ViteJS, API, Chakra-UI ]</p>
+                    <p>[ ReactTS, Vite, Chakra-UI, API, Pretty Resolver ]</p>
                 }
             </div>
             <div className="contents">
@@ -113,7 +113,7 @@ export default function Portfolio() {
                     style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
                     variant="contained" 
                     color="error"
-                    onClick={() => window.location.href="https://dry-shore-54453.herokuapp.com/"}
+                    onClick={() => window.location.href="https://karstenjep.github.io/react-interview-exercise/"}
                 >
                     Take a gander!
                 </Button>
