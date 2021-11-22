@@ -8,7 +8,6 @@ import film from "./images/film.png";
 import camera from "./images/camera.png";
 import mario from "./images/mario.png";
 import todolist from "./images/todolist.png";
-
 // MUI
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -40,11 +39,13 @@ export default function Portfolio() {
                     <FormControlLabel value="tech" control={<Radio color="success" />} label="Tech" onChange={() => setTechWH(true)}/>
                 </RadioGroup>
             </div>
-            { !techWH ? 
-            <p className="text">A scheduling app made for Big Wood Brewery to help the brewers track hop additions!</p>
-            :
-            <p className="text">[ ReactJs, Redux, Sagas, Node, Express, Postgresql, Material-UI, CSS, Moment.js ]</p>
-            }
+            <div className="textBox">
+                { !techWH ? 
+                    <p>A scheduling app made for Big Wood Brewery to help the brewers track hop additions!</p>          
+                :
+                    <p>[ ReactJs, Redux, Sagas, Node, Express, Postgresql, Material-UI, CSS, Moment.js ]</p>
+                }
+            </div>
             < div className="contents">
                 <Button
                     style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
@@ -69,11 +70,13 @@ export default function Portfolio() {
                     <FormControlLabel value="tech" control={<Radio />} label="Tech" onChange={() => setTechOEL(true)}/>
                 </RadioGroup>
             </div>
-            { !techOEL ? 
-            <p className="text">A tiered app made for St. Paul Jack to help users discover potential career paths. Group Project.</p>                
-            :
-            <p className="text">[ ReactJs, Redux, Sagas, Node, Express, CSV, Postgresql, Material-UI ]</p>
-            }
+            <div className="textBox">
+                { !techOEL ? 
+                    <p>A tiered app made for St. Paul Jack to help users discover potential career paths. Group Project.</p>          
+                :
+                    <p>[ ReactJs, Redux, Sagas, Node, Express, CSV, Postgresql, Material-UI ]</p>
+                }
+            </div>
             < div className="contents">
                 <Button
                     style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
@@ -98,11 +101,13 @@ export default function Portfolio() {
                     <FormControlLabel value="tech" control={<Radio color="error" />} label="Tech" onChange={() => setTechDF(true)}/>
                 </RadioGroup>
             </div>
-            { !techDF ? 
-            <p className="text">An API data finder allowing users to search through U.S. schools and districts</p>
-            :
-            <p className="text">[ ReactTS, ViteJS, API, Chakra-UI ]</p>
-            }
+            <div className="textBox">
+                { !techDF ? 
+                    <p>An API data finder allowing users to search through U.S. schools and districts</p>          
+                :
+                    <p>[ ReactTS, ViteJS, API, Chakra-UI ]</p>
+                }
+            </div>
             <div className="contents">
                 <Button
                     style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
@@ -127,11 +132,13 @@ export default function Portfolio() {
                     <FormControlLabel value="tech" control={<Radio color="secondary" />} label="Tech" onChange={() => setTechMG(true)}/>
                 </RadioGroup>
             </div>
-            { !techMG ? 
-            <p className="text">A movie application allowing users to add new movies, and read details!</p>
-            :
-            <p className="text">[ ReactJs, Redux, Saga, Node, Express, Postgresql, Material UI, CSS ]</p>
-            }
+            <div className="textBox">
+                { !techMG ? 
+                    <p>A movie application allowing users to add new movies, and read details!</p>          
+                :
+                    <p>[ ReactJs, Redux, Saga, Node, Express, Postgresql, Material UI, CSS ]</p>
+                }
+            </div>
             <div className="contents">
                 <Button
                     className="button"
@@ -157,11 +164,13 @@ export default function Portfolio() {
                     <FormControlLabel value="tech" control={<Radio color="success" />} label="Tech" onChange={() => setTechPG(true)}/>
                 </RadioGroup>
             </div>
-            { !techPG ? 
-            <p className="text">A photo gallery of my life, and a fun first project with React!</p>
-            :
-            <p className="text">[ ReactJs, Ajax, Node, Express, CSS ]</p>
-            }
+            <div className="textBox">
+                { !techPG ? 
+                    <p>A photo gallery of my life, and a fun first project with React!</p>          
+                :
+                    <p>[ ReactJs, Ajax, Node, Express, CSS ]</p>
+                }
+            </div>
             <div className="contents">
                 <Button
                     className="button"
@@ -187,11 +196,13 @@ export default function Portfolio() {
                     <FormControlLabel value="tech" control={<Radio color="error" />} label="Tech" onChange={() => setTechMA(true)}/>
                 </RadioGroup>
             </div>
-            { !techMA ? 
-            <p className="text">An old school Mario game with 3 levels, built with Kaboom.JS!</p>
-            :
-            <p className="text">[ Kaboom.JS, HTML ]</p>
-            }
+            <div className="textBox">
+                { !techMA ? 
+                    <p>An old school Mario game with 3 levels, built with Kaboom.JS!</p>          
+                :
+                    <p>[ Kaboom.JS, HTML ]</p>
+                }
+            </div>
             <div className="contents">
                 <Button
                     style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
@@ -216,14 +227,16 @@ export default function Portfolio() {
                     <FormControlLabel value="tech" control={<Radio color="primary" />} label="Tech" onChange={() => setTechTD(true)}/>
                 </RadioGroup>
             </div>
-            { !techTD ? 
-            <p className="text">My first full stack app! A to-do list to track tasks.</p>
-            :
-            <p className="text">[ jQuery, JavaScript, Ajax, Node, Express, Postgresql, HTML, CSS ]</p>
-            }
+            <div className="textBox">
+                { !techTD ? 
+                    <p>My first full stack app! A to-do list to track tasks.</p>          
+                :
+                    <p>[ jQuery, JavaScript, Ajax, Node, Express, Postgresql, HTML, CSS ]</p>
+                }
+            </div>
             <div className="contents">
                 <Button
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: '2vh auto'}}
+                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
                     variant="contained" 
                     color="primary"
                     onClick={() => window.location.href="https://dry-shore-54453.herokuapp.com/"}

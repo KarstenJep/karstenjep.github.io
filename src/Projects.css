@@ -47,13 +47,12 @@
     margin: 0vh auto;
   }
 
-  /* Discription and tech list */
-  .text {
+  /* Description / Tech list */
+  .textBox {
+    height: 17vh;
     text-align: center;
     font-size: 2.5vh;
-    margin: 2vh 0vh;
-    padding-top: 1vh;
-    min-width: 45%;
+    margin: -2vh 2vh 0vh;
   }
   
   /* Project Images */
@@ -68,18 +67,18 @@
   }
   
   .search {
-    width: 15vh;
+    width: 15.5vh;
     margin: 4vh auto 0vh;
-  }
-  
-  .camera {
-    width: 14vh;
-    margin: 6vh auto 0vh;
   }
   
   .film {
-    width: 14vh;
+    width: 13.5vh;
     margin: 4vh auto 0vh;
+  }
+
+  .camera {
+    width: 14vh;
+    margin: 6vh auto 0vh;
   }
 
   .mario {
