@@ -18,7 +18,7 @@ export default function PortfolioSlider() {
         <section className="projects">
 
             {/* Left Arrow */}
-            <img src={leftArrow} alt="left arrow" className="arrow"style={{ left: '1vh'}}/>
+            <img src={leftArrow} alt="left arrow" className="arrow" style={{ left: '1vh'}}/>
 
             {/* Scrolling list of Projects */}
             <ImageList cols={1.1}

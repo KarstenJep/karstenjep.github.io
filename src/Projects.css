@@ -1,5 +1,5 @@
 /* Background Setting for "Projects" section. No animation */
-.projects {
+/* .projects {
     height: 110vh;
     background-image: linear-gradient(#35adf3,#f8f8f8);
     overflow-x: hidden;
@@ -7,14 +7,14 @@
     display: flex;
     justify-content: center;
   }
-  
+   */
   /* Background Image at bottom of site. No animation. */
-  .beach{
+  /* .beach{
     position: absolute;
     width: 100%;
     height: 110vh;
     filter:drop-shadow(3px 3px 5px black);
-  }
+  } */
   
   /* Card for displaying each project */
   .tech {
@@ -44,7 +44,7 @@
   
   /* Radio btns */
   .radio {
-    margin: 1vh auto;
+    margin: 0vh auto;
   }
 
   /* Discription and tech list */
@@ -72,10 +72,10 @@
     margin: 4vh auto 0vh;
   }
   
-  /* .camera {
+  .camera {
     width: 14vh;
-    margin: 4vh auto 0vh;
-  } */
+    margin: 6vh auto 0vh;
+  }
   
   .film {
     width: 14vh;
