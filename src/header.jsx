@@ -36,24 +36,24 @@ export default function Header() {
                     {/* Linkedin btn */}
                     <Button 
                         type="submit" 
-                        variant="outlined" 
+                        variant="text" 
                         color="primary"
                         size="small"
-                        style={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '10px'}}
+                        style={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '11px'}}
                         endIcon={<LinkedInIcon />}
                         onClick={() => window.location.href="https://www.linkedin.com/in/karsten-jepsen-067a67a2/"}
                     >
                       LinkedIn
                     </Button>
                 </div>
-                <div className="soc"> 
+                <div className="socMain"> 
                     {/* Home / Contact btn */}
                     <Button 
                         type="submit" 
-                        variant="outlined" 
+                        variant="text" 
                         color="primary"
                         size="small"
-                        style={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '10px'}}
+                        style={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '11px' }}
                         endIcon={id === '2' ? <HomeIcon /> : <EmailIcon />}
                         onClick={id === '2' ? () => home() : () => email()}                        
                     >
@@ -64,10 +64,10 @@ export default function Header() {
                     {/* Github Btn */}
                     <Button 
                         type="submit" 
-                        variant="outlined" 
+                        variant="text" 
                         color="primary"
                         size="small"
-                        style={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '10px'}}
+                        style={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '11px'}}
                         endIcon={<GitHubIcon />}
                         onClick={() => window.location.href="https://github.com/KarstenJep"}
                     >
