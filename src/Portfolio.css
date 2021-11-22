@@ -15,12 +15,13 @@
     z-index: 0;
   }
 
+  /* Horizontal scroll properties */
   .wrapper {
     display: grid;
     grid-gap: 10vh;
     grid-template-columns: 
         3vh
-        repeat(7, calc(45vh ))
+        repeat(7, calc(45vh))
         15vh;
     grid-template-rows: minmax(150px, 1fr);
     margin-bottom: 0;
