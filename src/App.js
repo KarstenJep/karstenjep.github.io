@@ -6,7 +6,6 @@ import Home from './home';
 import Contact from './contact';
 import './App';
 
-
 function App() {
 
   return (

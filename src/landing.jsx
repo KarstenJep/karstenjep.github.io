@@ -73,7 +73,7 @@ export default function LandingPage() {
               type="submit" 
               value="Log In" 
               variant="contained" 
-              color="primary"
+              // color="primary"
               endIcon={<PublishIcon />}
               onClick={(e) => validateForm(e)}
               >

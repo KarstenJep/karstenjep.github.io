@@ -56,15 +56,13 @@ body {
   /* Text in "About Me" and "Projects" sections */
   .text {
     font-size: 2.5vh;
-    font-family:Arial, Helvetica, sans-serif;
+    /* font-family:Arial, Helvetica, sans-serif; */
     margin-left: 3vw;
     margin-right: 3vw;
     margin-top: 0vh;
     min-width: 45%;
     text-align: center;
   }
-  
-  
   
   /****************** Individual settings for each image in animated section *******************/
   .mountains {
