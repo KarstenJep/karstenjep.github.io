@@ -6,6 +6,8 @@ import PublishIcon from '@mui/icons-material/Publish';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+
 import './landing.css';
 
 
@@ -51,34 +53,40 @@ export default function LandingPage() {
                 <div class="cloud x"></div>
           </div>
           <div className="login">
-          {/* Helper Text */}
-          <h3>Enter Your First Name To Continue</h3>
-          <Box  m={2}>
-            {/* User Input */}
-            <TextField
-                className="input"
-                style={{backgroundColor: 'lightblue', width: '50%'}}
-                type="text"
-                label="Name"
-                variant="filled"
-                color="primary"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                size="medium"
-                error={nameError}
-            />
-          </Box>
-          {/* Submit User Btn */}
-          <Button 
-              style={{backgroundColor: 'skyblue', fontFamily: 'BioRhyme', color: 'black', marginBottom: '2vh', marginTop: '1vh', width: "45%"}}
-              type="submit" 
-              value="Log In" 
-              variant="contained" 
-              endIcon={<PublishIcon />}
-              onClick={(e) => validateForm(e)}
-              >
-              Submit
-            </Button>
+            <Grid container spacing={1} >
+                <Grid item xs={12}>
+                    {/* Helper Text */}
+                    <h3>Enter Your First Name To Continue</h3>
+                </Grid>
+                <Grid item xs={12}>
+                    <TextField
+                        // Username Input 
+                        className="input"
+                        style={{backgroundColor: 'lightblue', width: '50%'}}
+                        type="text"
+                        label="Name"
+                        variant="filled"
+                        color="primary"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                        size="medium"
+                        error={nameError}
+                    />
+                </Grid>
+                <Grid item xs={12} m={1}>
+                    <Button
+                        // Submit User Btn
+                        style={{backgroundColor: 'skyblue', fontFamily: 'BioRhyme', color: 'black', marginBottom: '2vh', marginTop: '1vh', width: "52%"}}
+                        type="submit" 
+                        value="Log In" 
+                        variant="contained" 
+                        endIcon={<PublishIcon />}
+                        onClick={(e) => validateForm(e)}
+                        >
+                        Submit
+                    </Button>
+                </Grid>
+            </Grid>
         </div>
     </div>
     </>

@@ -1,21 +1,3 @@
-/* Background Setting for "Projects" section. No animation */
-/* .projects {
-    height: 110vh;
-    background-image: linear-gradient(#35adf3,#f8f8f8);
-    overflow-x: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-   */
-  /* Background Image at bottom of site. No animation. */
-  /* .beach{
-    position: absolute;
-    width: 100%;
-    height: 110vh;
-    filter:drop-shadow(3px 3px 5px black);
-  } */
-  
   /* Card for displaying each project */
   .tech {
     width: 90%;
