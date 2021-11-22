@@ -57,7 +57,7 @@ export default function LandingPage() {
             {/* User Input */}
             <TextField
                 className="input"
-                style={{color: 'skyblue', width: '50%'}}
+                style={{backgroundColor: 'lightblue', width: '50%'}}
                 type="text"
                 label="Name"
                 variant="filled"

@@ -91,7 +91,7 @@ export default function Home() {
                     Let's build a better tomorrow!
                 </p>
             </div>
-            <img src={hs} alt="me" className="hs" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(-${scrollY * 0.05}vh)`, zIndex: '1'}}/>
+            <img src={hs} alt="me" className="hs" style={{ zIndex: '1'}}/>
         </section>
 
         {/* <!-- Projects & Links --> */}
