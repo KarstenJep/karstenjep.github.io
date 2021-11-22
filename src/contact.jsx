@@ -2,6 +2,8 @@ import Header from './header.jsx';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
 import PublishIcon from '@mui/icons-material/Publish';
 import './contact.css';
 
@@ -14,7 +16,7 @@ export default function Contact() {
             <div className="formBackground">
             <form  target="_blank" action="https://formsubmit.co/el/jiyisi" method="POST">
             <input type="hidden" name="_next" value="https://karstenjep.github.io/" />
-            <form action="https://formsubmit.co/your-random-string" method="POST" />
+            {/* <form action="https://formsubmit.co/your-random-string" method="POST" /> */}
             <Grid container spacing={1} pt={1} pb={2}>
                 <Grid item xs={12}>
                     <h1 className="sayHi">Say Hi!</h1>
@@ -62,9 +64,26 @@ export default function Contact() {
                         Submit
                     </Button>
                 </Grid>
+                
             </Grid>
             </form>
+            
             </div>
+
+           <div className="chips">
+           <Stack spacing={1} alignItems="center" >
+            <Stack direction="row" spacing={1}>
+                <Chip label="primary" color="primary" />
+                <Chip label="success" color="success" />
+            </Stack>
+            <Stack direction="row" spacing={1}>
+                <Chip label="primary" color="primary" variant="outlined" />
+                <Chip label="success" color="success" variant="outlined" />
+            </Stack>
+            </Stack>
+
+           </div>
+         
         </section>
         </>
     )

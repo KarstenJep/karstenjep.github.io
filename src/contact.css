@@ -39,4 +39,10 @@
     text-shadow: 1px 1px 1px black;
   }  
   
-  
+  .chips {
+    position: absolute;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: whitesmoke;
+    display: table-column;
+  }
