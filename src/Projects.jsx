@@ -3,9 +3,12 @@ import "./Projects.css"
 // Images
 import wh from "./images/wh.png";
 import oel from "./images/oel.png";
-import todolist from "./images/todolist.png";
+import search from "./images/search.png";
 import film from "./images/film.png";
 import camera from "./images/camera.png";
+import mario from "./images/mario.png";
+import todolist from "./images/todolist.png";
+
 // MUI
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -21,6 +24,7 @@ export default function Portfolio() {
     const [techMG, setTechMG] = useState(false);
     const [techPG, setTechPG] = useState(false);
     const [techTD, setTechTD] = useState(false);
+    const [techMA, setTechMA] = useState(false);
 
     return (
         <>
@@ -85,7 +89,7 @@ export default function Portfolio() {
         {/* Data Finder */}
         <div className="tech">
             <div className="contents">
-                <img src={todolist} alt="todolist" className="todo" />
+                <img src={search} alt="search" className="search" />
             </div>
             <h3 className="subtitles">Data Finder</h3>
             <div className="contents">
@@ -154,7 +158,7 @@ export default function Portfolio() {
                 </RadioGroup>
             </div>
             { !techPG ? 
-            <p className="text">A photo gallery of my life and fun first project practicing React!</p>
+            <p className="text">A photo gallery of my life, and a fun first project with React!</p>
             :
             <p className="text">[ ReactJs, Ajax, Node, Express, CSS ]</p>
             }
@@ -166,7 +170,36 @@ export default function Portfolio() {
                     color="success"
                     onClick={() => window.location.href="https://shielded-plateau-72344.herokuapp.com/"}
                 >
-                    Open it up!
+                    Another one!
+                </Button>
+            </div>
+        </div>
+
+         {/* Mario */}
+         <div className="tech">
+            <div className="contents">
+                <img src={mario} alt="mario" className="mario" />
+            </div>
+            <h3 className="subtitles">Mario</h3>
+            <div className="contents">
+                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio">
+                    <FormControlLabel value="description" control={<Radio color="error" />} label="Description" onChange={() => setTechMA(false)}/>
+                    <FormControlLabel value="tech" control={<Radio color="error" />} label="Tech" onChange={() => setTechMA(true)}/>
+                </RadioGroup>
+            </div>
+            { !techMA ? 
+            <p className="text">An old school Mario game with 3 levels, built with Kaboom.JS!</p>
+            :
+            <p className="text">[ Kaboom.JS, HTML ]</p>
+            }
+            <div className="contents">
+                <Button
+                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
+                    variant="contained" 
+                    color="error"
+                    onClick={() => window.location.href="https://dry-shore-54453.herokuapp.com/"}
+                >
+                    Game on!
                 </Button>
             </div>
         </div>
@@ -195,7 +228,7 @@ export default function Portfolio() {
                     color="primary"
                     onClick={() => window.location.href="https://dry-shore-54453.herokuapp.com/"}
                 >
-                    Take a gander!
+                    Click here!
                 </Button>
             </div>
         </div>
