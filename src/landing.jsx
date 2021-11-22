@@ -1,15 +1,14 @@
 import React, {useState} from 'react';
-import Header from './header.jsx';
 import { useHistory } from 'react-router';
 import { useDispatch } from 'react-redux';
+// Files
+import Header from './header.jsx';
+import './landing.css';
+// M-UI
 import PublishIcon from '@mui/icons-material/Publish';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-
-import './landing.css';
-
 
 export default function LandingPage() {
   
