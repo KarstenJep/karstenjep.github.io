@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { useDispatch } from 'react-redux';
+import moment from 'moment';
 // Files
 import Header from './header.jsx';
 import './contact.css';
@@ -20,6 +21,8 @@ export default function Contact() {
     const [nameError, setNameError] = useState(false);
     const [emailError, setEmailError] = useState(false);
     const [messageError, setMessageError] = useState(false);
+    // Import and format current date via moment.js
+    const date = moment().format('MMMM Do YYYY, h:mm:ss a');
 
     const validateForm = (e) => {
         e.preventDefault();
@@ -41,6 +44,7 @@ export default function Contact() {
             // Pass in the username, that we're tracking in state
             payload: {
                 name: name,
+                date: date,
                 email: email,
                 message: message,
             }
