@@ -248,7 +248,7 @@ body {
   .parrot {
     width: 5vh;
     margin-bottom: 0%;
-    left: -20%;
+    left: -60%;
     z-index: 1;
     filter:drop-shadow(1px 1px 2px black);
   }

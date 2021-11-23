@@ -23,30 +23,30 @@ export default function Contact() {
                     <form action="https://formsubmit.co/your-random-string" method="POST" />
                     <Grid container spacing={1} pt={1} pb={2}>
                         <Grid item xs={12}>
-                            <h1 className="sayHi">Say Hi!</h1>
+                            <h1 className="sayHi">Leave A Message</h1>
                         </Grid>
-                        <Grid item xs={12}>
+                        <Grid item xs={4} ml={2.1}>
                             <TextField
-                                // Name Input
+                                // Name Input ml={-1.2}
                                 name="name" 
                                 type="text"
                                 label="Name"
                                 variant="outlined"
                                 color="success"
                                 size="small"
-                                style={{ width: '90%' }}
+                                style={{ width: '95%' }}
                                 required />
                         </Grid>
-                        <Grid item xs={12}>
+                        <Grid item xs={7} ml={-.5}>
                             <TextField 
-                                // Email Input
+                                // Email Input 
                                 name="email"  
                                 type="text"
                                 label="Email"
                                 variant="outlined"
                                 color="success"
                                 size="small"
-                                style={{ width: '90%' }}
+                                style={{ width: '100%' }}
                                 required />
                         </Grid>
                         <Grid item xs={12}>
@@ -56,15 +56,15 @@ export default function Contact() {
                                 label="Message"
                                 color="success"
                                 multiline 
-                                rows={4} 
+                                rows={3} 
                                 style={{ width: '90%'}} 
                                 required />
                         </Grid>
-                        <Grid item xs={12}>
+                        <Grid item xs={12} mt={.5}>
                             <Button
                                 // Submit Btn
                                 type="submit"
-                                style={{  fontFamily: 'BioRhyme', width: '70%', color: 'black' }}
+                                style={{  fontFamily: 'BioRhyme', width: '60%', color: 'black' }}
                                 variant="contained" 
                                 color="success"
                                 endIcon={<PublishIcon />}

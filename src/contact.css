@@ -19,7 +19,7 @@
     font-size: medium;
     width: 420px;
     max-width: 95%;
-    margin: 24vh auto 34vh;
+    margin: 22vh auto 34vh;
     background-color: whitesmoke;
     border: solid black 2px;
     border-radius: 30px;
@@ -39,7 +39,7 @@
   }  
   
 .chips {
-    margin-top: 80vh;
+    margin-top: 75vh;
     position: absolute;
     box-sizing: border-box;
     text-align: center;
