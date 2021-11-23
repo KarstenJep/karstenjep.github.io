@@ -40,7 +40,7 @@ export default function Contact() {
     const handleSubmit = (e) => {
         console.log('hs. name:', name, email, message);
         dispatch({
-            type: 'NEWMSG',
+            type: 'NEW_MSG',
             // Pass in the username, that we're tracking in state
             payload: {
                 name: name,
