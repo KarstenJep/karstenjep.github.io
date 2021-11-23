@@ -50,10 +50,10 @@ export default function Header() {
                     {/* Home / Contact btn */}
                     <Button 
                         type="submit" 
-                        variant="text" 
-                        color="primary"
+                        variant="contained" 
+                        color="success"
                         size="small"
-                        style={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '11px' }}
+                        style={{ color: 'black', backgroundColor: 'lightblue', fontFamily: 'BioRhyme', fontSize: '11px' }}
                         endIcon={id === '2' ? <HomeIcon /> : <EmailIcon />}
                         onClick={id === '2' ? () => home() : () => email()}                        
                     >

@@ -34,28 +34,23 @@ header {
 
   .socials {
     display: flex;
-    margin: -3% 8% -2vh;
+    margin: -2vh 8% -2vh;
   }
   
   .soc {
     margin: 0% auto;
-    /* border: rgb(66, 179, 199, .5) 1px solid;
-    border-radius: 5px; */
   }
   
   .soc:hover {
-    filter: drop-shadow(0px 0px 5px rgb(0, 0, 0, 0.7));
+    filter: drop-shadow(0px 0px 5px rgb(0, 0, 0, 0.5));
   }
 
   .socMain {
     margin: 0% auto;
-    border-bottom: black 2px solid;
-    /* border-radius: 5px; */
   }
 
   .socMain:hover {
-    filter: drop-shadow(0px 0px 5px rgb(0, 0, 0, 0.7));
-    /* box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.7); */
+    box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.5);
   }
   
   .github {

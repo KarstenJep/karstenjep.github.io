@@ -157,7 +157,7 @@ body {
   .cloudSeven {
     width: 12%;
     margin-bottom: 10vh;
-    left: -25%;
+    left: -35%;
     opacity: 60%;
     filter:drop-shadow(2px 2px 3px black);
   }
@@ -173,7 +173,7 @@ body {
   .cloudNine {
     width: 8%;
     margin-bottom: 30vh;
-    left: -20%;
+    left: -30%;
     opacity: 60%;
     filter:drop-shadow(2px 2px 3px black);
   }
