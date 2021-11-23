@@ -11,11 +11,11 @@ import rightArrow from "./images/rightArrow.png";
 
 
    
-export default function PortfolioSlider() {
+export default function Portfolio() {
 
     return (
         <>
-        <section className="projects">
+        <section className="portfolioBackground">
 
             {/* Left Arrow */}
             <img src={leftArrow} alt="left arrow" className="arrow" style={{ left: '1vh'}}/>

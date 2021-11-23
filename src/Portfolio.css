@@ -1,5 +1,5 @@
-/* Background Setting for "Projects" section. No animation */
-.projects {
+  /* Background Setting for "Projects" section. No animation */
+  .portfolioBackground {
     height: 110vh;
     background-image: linear-gradient(#35adf3,#f8f8f8);
     position: relative;

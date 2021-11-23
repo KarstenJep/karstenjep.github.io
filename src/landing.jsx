@@ -12,11 +12,10 @@ import Grid from '@mui/material/Grid';
 
 export default function LandingPage() {
   
+  const dispatch = useDispatch();
+  const history = useHistory();
   const [username, setUsername] = useState('');
   const [nameError, setNameError] = useState(false);
-  const history = useHistory();
-  // "dispatch" is how we talk to redux from react
-  const dispatch = useDispatch();
 
   const validateForm = (e) => {
       // Don't reload on form submit
