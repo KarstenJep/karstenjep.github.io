@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 // M-UI
 import ImageList from '@mui/material/ImageList';
 // Files
