@@ -3,6 +3,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { HashRouter as Router, Route, Switch} from "react-router-dom";
 import Landing from './landing';
 import Home from './home';
+import Inbox from './Inbox';
 import Contact from './contact';
 import './App';
 
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route exact path="/contact/:id">
             <Contact/>
+          </Route>
+          <Route exact path="/inbox">
+            <Inbox/>
           </Route>
         </Switch>
       </Router>
