@@ -22,7 +22,7 @@ export default function Contact() {
     const [emailError, setEmailError] = useState(false);
     const [messageError, setMessageError] = useState(false);
     // Import and format current date via moment.js
-    const date = moment().format('MM DD YYYY, h:mm');
+    const date = moment().format('MM DD YYYY');
 
     const validateForm = (e) => {
         e.preventDefault();

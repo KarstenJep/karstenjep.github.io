@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const pool = require('./pool')
 
+// GET list of all visitors from DB
 router.get('/', (req, res) => {
   const query = `SELECT * FROM visitors ORDER BY "id" ASC`;
   pool.query(query)
@@ -14,20 +15,18 @@ router.get('/', (req, res) => {
     })
 });
 
+// POST new visitor to DB
 router.post('/', (req, res) => {
-  // console.log('In name post', req.body);
   const nameQuery = `
-  INSERT INTO "visitors" ("name")
-  VALUES ($1);`
-
-  // FIRST QUERY MAKES MOVIE
+    INSERT INTO "visitors" ("name")
+    VALUES ($1);`
   pool.query(nameQuery, [req.body.name])
-  .then(result => {
-  // Catch for first query
-  }).catch(err => {
-    console.log(err);
-    res.sendStatus(500)
-  })
+    .then(result => {
+    })
+    .catch(err => {
+      console.log(err);
+      res.sendStatus(500)
+    })
 })
 
 module.exports = router;
