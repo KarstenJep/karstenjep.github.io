@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import moment from 'moment';
 // Files
 import Header from './header.jsx';
+import TechStack from './TechStack'
 import './contact.css';
 // M-UI
 import PublishIcon from '@mui/icons-material/Publish';
@@ -123,31 +124,7 @@ export default function Contact() {
                 </Grid>
             </div>
 
-            {/* Tech Stack */}
-            <div className="chips">
-                <Stack spacing={1} alignItems="center" >
-                    <Stack direction="row" spacing={1}>
-                        <Chip label="JavaScript" color="primary" />
-                        <Chip label="Node" color="success" />
-                        <Chip label="SQL" color="primary" />
-                        <Chip label="PostrgreSQL" color="success" />
-                        <Chip label="CSS" color="primary" />
-                        <Chip label="Python" color="success" />
-                        <Chip label="HTML" color="primary" />
-                        <Chip label="Git" color="success" />
-                    </Stack>
-                    <Stack direction="row" spacing={1}>
-                        <Chip label="React" color="primary" variant="outlined" />
-                        <Chip label="jQuery" color="success" variant="outlined" />
-                        <Chip label="Saga" color="primary" variant="outlined" />
-                        <Chip label="Redux" color="success" variant="outlined" />
-                        <Chip label="Express" color="primary" variant="outlined" />
-                        <Chip label="AJAX" color="success" variant="outlined" />
-                        <Chip label="Material-UI" color="primary" variant="outlined" />
-                        <Chip label="Passport" color="success" variant="outlined" />
-                    </Stack>
-                </Stack>
-            </div>
+            <TechStack />
          
         </section>
         </>
