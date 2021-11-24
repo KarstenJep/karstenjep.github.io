@@ -23,17 +23,6 @@ function* postMessage(action) {
   console.log('in PM Saga', action);
   try {
       yield axios.post('/api/mail', action.payload);
-      // yield put({ type: 'FETCH_ELEMENTS' });
-  } catch (error) {
-      console.log('error posting a message', error);
-  }    
-}
-
-function* postName(action) {
-  console.log('in P name', action);
-  try {
-      yield axios.post('/api/visitor', action.payload);
-      // yield put({ type: 'FETCH_ELEMENTS' });
   } catch (error) {
       console.log('error posting a message', error);
   }    
@@ -43,11 +32,20 @@ function* fetchMail() {
   console.log('in FM 1')
   try {
       const mail = yield axios.get('/api/mail');
-      yield put({ type: 'SET_MAIL', payload: mail.data });
+      yield put({ type: 'MAIL', payload: mail.data });
       console.log('in FM', mail);
   } catch (error) {
       console.log('error fetching mail', error);
   }
+}
+
+function* postName(action) {
+  console.log('in P name', action);
+  try {
+      yield axios.post('/api/visitor', action.payload);
+  } catch (error) {
+      console.log('error posting a message', error);
+  }    
 }
 
 function* fetchVisitors() {
@@ -80,16 +78,26 @@ const visitorsReducer = (state = [], action) => {
   }
 };
 
+const mailReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'MAIL':
+        return action.payload;
+    default:
+        return state;
+  }
+};
+
 
 // Create sagaMiddleware
 const sagaMiddleware = createSagaMiddleware();
 
 // store!
 const storeInstance = createStore(
-  combineReducers({
-          userReducer,
-          visitorsReducer,
-  }),
+    combineReducers({
+        userReducer,
+        visitorsReducer,
+        mailReducer,
+    }),
   applyMiddleware(sagaMiddleware, logger),
 );
 
