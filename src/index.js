@@ -13,13 +13,24 @@ import App from './App';
 // The rootSaga generator function
 function* rootSaga() {
   yield takeEvery('NEW_MSG', postMessage);
+  yield takeEvery('NEW_NAME', postName);
   yield takeEvery('GET_MAIL', fetchMail);
 }
 
 function* postMessage(action) {
   console.log('in PM Saga', action);
   try {
-      yield axios.post('/api/message', action.payload);
+      yield axios.post('/api/mail', action.payload);
+      // yield put({ type: 'FETCH_ELEMENTS' });
+  } catch (error) {
+      console.log('error posting a message', error);
+  }    
+}
+
+function* postName(action) {
+  console.log('in P name', action);
+  try {
+      yield axios.post('/api/visitor', action.payload);
       // yield put({ type: 'FETCH_ELEMENTS' });
   } catch (error) {
       console.log('error posting a message', error);

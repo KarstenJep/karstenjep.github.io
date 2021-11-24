@@ -25,14 +25,18 @@ export default function LandingPage() {
         setNameError(true)
     } else {
         handleSubmit(e)
+        dispatch({
+            type: 'NEW_NAME',
+            payload: {
+                name: username
+            }
+        });
     }
   }
 
   const handleSubmit = (e) => {
-      // Tell redux that we want to add the new user
       dispatch({
           type: 'USER',
-          // Pass in the username, that we're tracking in state
           payload: username
       });
       // Send user to home page
@@ -47,8 +51,8 @@ export default function LandingPage() {
       <div className="landingBackground">
           {/* Floating Clouds */}
           <div class="cloud-content">
-                <div class="cloud"></div>
-                <div class="cloud x"></div>
+                <div className="cloud"></div>
+                <div className="cloud x"></div>
           </div>
           <div className="login">
             <Grid container spacing={1} >
