@@ -14,7 +14,9 @@ import App from './App';
 function* rootSaga() {
   yield takeEvery('NEW_MSG', postMessage);
   yield takeEvery('NEW_NAME', postName);
-  yield takeEvery('GET_MAIL', fetchMail);
+  yield takeEvery('FETCH_MAIL', fetchMail);
+  yield takeEvery('FETCH_VISITORS', fetchVisitors);
+
 }
 
 function* postMessage(action) {
@@ -48,10 +50,30 @@ function* fetchMail() {
   }
 }
 
+function* fetchVisitors() {
+  console.log('in FV 1')
+  try {
+      const visitors = yield axios.get('/api/visitor');
+      yield put({ type: 'VISITORS', payload: visitors.data });
+      console.log('in FV', visitors.data);
+  } catch (error) {
+      console.log('error fetching visitors', error);
+  }
+}
+
 // reducer!
 const userReducer = (state = [], action) => {
   switch (action.type) {
     case 'USER':
+        return action.payload;
+    default:
+        return state;
+  }
+};
+
+const visitorsReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'VISITORS':
         return action.payload;
     default:
         return state;
@@ -66,6 +88,7 @@ const sagaMiddleware = createSagaMiddleware();
 const storeInstance = createStore(
   combineReducers({
           userReducer,
+          visitorsReducer,
   }),
   applyMiddleware(sagaMiddleware, logger),
 );
