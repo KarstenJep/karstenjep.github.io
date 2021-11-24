@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
-// useSelector is a hook provided by the react-redux library
 import { useSelector } from 'react-redux';
+// Files
 import Header from './header.jsx';
+import Portfolio from "./Portfolio.jsx"
+import './home.css';
+// Images
 import mountains from "./images/mountains.png";
 import sun from "./images/sun.png"
 import clouds from "./images/cloud.png";
@@ -24,8 +27,6 @@ import html from "./images/html.png";
 import css from "./images/css.png";
 import git from "./images/git.png";
 import hs from "./images/hs.png";
-import Portfolio from "./Portfolio.jsx"
-import './home.css';
 
 export default function Home() {
 
