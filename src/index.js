@@ -13,15 +13,28 @@ import App from './App';
 // The rootSaga generator function
 function* rootSaga() {
   yield takeEvery('NEW_MSG', postMessage);
+  yield takeEvery('GET_MAIL', fetchMail);
 }
 
 function* postMessage(action) {
+  console.log('in PM Saga', action);
   try {
       yield axios.post('/api/message', action.payload);
       // yield put({ type: 'FETCH_ELEMENTS' });
   } catch (error) {
-      console.log('error posting an element', error);
+      console.log('error posting a message', error);
   }    
+}
+
+function* fetchMail() {
+  console.log('in FM 1')
+  try {
+      const mail = yield axios.get('/api/mail');
+      yield put({ type: 'SET_MAIL', payload: mail.data });
+      console.log('in FM', mail);
+  } catch (error) {
+      console.log('error fetching mail', error);
+  }
 }
 
 // reducer!
@@ -34,15 +47,6 @@ const userReducer = (state = [], action) => {
   }
 };
 
-
-// function* fetchElements() {
-//   try {
-//       const elementsResponse = yield axios.get('/api/element');
-//       yield put({ type: 'SET_ELEMENTS', payload: elementsResponse.data });
-//   } catch (error) {
-//       console.log('error fetching elements', error);
-//   }
-// }
 
 // Create sagaMiddleware
 const sagaMiddleware = createSagaMiddleware();
