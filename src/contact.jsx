@@ -9,9 +9,7 @@ import './contact.css';
 import PublishIcon from '@mui/icons-material/Publish';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
-import Chip from '@mui/material/Chip';
 
 export default function Contact() {
 
@@ -125,7 +123,6 @@ export default function Contact() {
             </div>
 
             <TechStack />
-         
         </section>
         </>
     )

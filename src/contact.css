@@ -39,9 +39,5 @@
   }  
   
 .chips {
-    margin-top: 75vh;
-    position: absolute;
-    box-sizing: border-box;
-    text-align: center;
-    display: table-column;
+    margin-top: 65vh;
 }
