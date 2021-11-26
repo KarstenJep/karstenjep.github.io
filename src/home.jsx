@@ -8,7 +8,8 @@ import './home.css';
 import mountains from "./images/mountains.png";
 import sun from "./images/sun.png"
 import clouds from "./images/cloud.png";
-import moon from "./images/moon.png";
+// import moon from "./images/moon.png";
+import notMoon from "./images/notMoon.png";
 import stars from "./images/stars.png";
 import birds from "./images/birds.png";
 import moose from "./images/moose.png";
@@ -67,7 +68,8 @@ export default function Home() {
             <img src={clouds} alt="cloud" className="cloudSeven" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.09}vh)`, zIndex: '0'}}/>
             <img src={clouds} alt="cloud" className="cloudEight" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.08}vh)`}}/>
             <img src={clouds} alt="cloud" className="cloudNine" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.07}vh)`}}/>
-            <img src={moon} alt="moon" className="moon" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.36}vh)`}}/>
+            {/* <img src={moon} alt="moon" className="moon" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.36}vh)`}}/> */}
+            <img src={notMoon} alt="moon" className="notMoon" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.36}vh)`}}/>
             <img src={stars} alt="stars" className="stars" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.36}vh)`}}/>
             <img src={stars} alt="stars" className="starsTwo" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(${scrollY * 0.36}vh)`}}/>
             {/* <!-- Animation - Animals/vehicles --> */}

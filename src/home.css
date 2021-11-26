@@ -177,13 +177,20 @@ body {
     filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
-  .moon {
+  /* .moon {
+    width: 5%;
+    margin-bottom: 240vh;
+    left: 0%;
+    opacity: 80%;
+  } */
+  
+  .notMoon {
     width: 5%;
     margin-bottom: 240vh;
     left: 0%;
     opacity: 80%;
   }
-  
+
   .stars {
     width: 14%;
     margin-bottom: 230vh;
