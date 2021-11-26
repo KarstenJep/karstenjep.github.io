@@ -12,16 +12,16 @@ import cssAv from "./images/css.png";
 import gitAv from "./images/git.png";
 import sqlAv from "./images/sql.png";
 import jqueryAv from "./images/jquery.png";
-import muiAv from "./images/mui.png";
+import muiAv from "./images/mui.svg";
 import postmanAv from "./images/postman.png";
 import passportAv from "./images/passport.png";
 import rs from "./images/redux-saga.svg";
 import r from "./images/redux.svg";
-
-
+import ts from "./images/typescript.png"
 
 export default function TechStack() {
 
+    // Languages
     const [javascript, setJavascript] = useState(false);
     const [node, setNode] = useState(false);
     const [sql, setSql] = useState(false);
@@ -30,7 +30,9 @@ export default function TechStack() {
     const [html, setHtml] = useState(false);
     const [git, setGit] = useState(false);
     const [python, setPython] = useState(false);
+    const [typescript, setTypescript] = useState(false);
 
+    // Frameworks / Libraries / Tools
     const [react, setReact] = useState(false);
     const [jquery, setJquery] = useState(false);
     const [saga, setSaga] = useState(false);
@@ -91,6 +93,12 @@ export default function TechStack() {
                     variant={python ? "outlined" : "filled"}
                     onClick={() => setPython(!python)}/>
                 <Chip 
+                    label="Typescript" 
+                    color="primary"
+                    avatar={<Avatar alt="T" src={ts} />}
+                    variant={typescript ? "outlined" : "filled"}
+                    onClick={() => setTypescript(!typescript)}/>
+                <Chip 
                     label="Git" 
                     color="error"
                     avatar={<Avatar alt="G" src={gitAv} />}
@@ -125,12 +133,12 @@ export default function TechStack() {
                     onClick={() => setSaga(!saga)}/>
                 <Chip 
                     label="Express" 
-                    color="primary" 
+                    color="primary"
                     variant={express ? "filled" : "outlined"}
                     onClick={() => setExpress(!express)}/>
                 <Chip 
                     label="AJAX" 
-                    color="success" 
+                    color="success"
                     variant={ajax ? "filled" : "outlined"}
                     onClick={() => setAjax(!ajax)}/>
                 <Chip 
