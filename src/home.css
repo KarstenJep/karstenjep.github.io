@@ -365,7 +365,7 @@ body {
     left: 47%;
   }
   .section::before {
-    animation: bounce 1s ease infinite;
+    animation: bounce 1.5s ease infinite;
     bottom: 162vh;
     color: #fff;
     content: '╲╱';
