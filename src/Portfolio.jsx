@@ -17,6 +17,9 @@ export default function Portfolio() {
         <>
         <section className="portfolioBackground">
 
+            {/* Title */}
+            <div className="titleDiv"><h3 className="title">Portfolio</h3></div>
+
             {/* Left Arrow */}
             <img src={leftArrow} alt="left arrow" className="arrow" style={{ left: '1vh'}}/>
 
