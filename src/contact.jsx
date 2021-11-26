@@ -125,6 +125,8 @@ export default function Contact() {
             </div> */}
 
             {/* <TechStack /> */}
+            <div className="hill"></div>
+            <div className="sun"></div>
 
             <svg version="1.1" className="wave"
                 xlmns="http://www.w3.org/200/svg">
