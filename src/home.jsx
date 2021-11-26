@@ -84,20 +84,20 @@ export default function Home() {
             <img src={html} alt="html" className="html" style={{ transform: `translateY(${scrollY * 0.02}vh) translateX(-${scrollY * 0.02}vh)`}}/>
             <img src={css} alt="css" className="css" style={{ transform: `translateY(${scrollY * 0.04}vh) translateX(-${scrollY * 0.03}vh)`}}/>
             <img src={js} alt="js" className="javascript" style={{ transform: `translateY(${scrollY * 0.06}vh) translateX(-${scrollY * 0.04}vh)`}}/>
-            <img src={node} alt="node" className="node" style={{ transform: `translateY(${scrollY * 0.08}vh) translateX(-${scrollY * 0.05}vh)`}}/>
-            <img src={postgresql} alt="postgresql" className="postgresql" style={{ transform: `translateY(${scrollY * 0.08}vh) translateX(${scrollY * 0.05}vh)`}}/>
-            <img src={sql} alt="sql" className="sql" style={{ transform: `translateY(${scrollY * 0.06}vh) translateX(${scrollY * 0.04}vh)`}}/>
+            <img src={typescript} alt="typescript" className="typescript" style={{ transform: `translateY(${scrollY * 0.08}vh) translateX(-${scrollY * 0.05}vh)`}}/>
+            <img src={node} alt="node" className="node" style={{ transform: `translateY(${scrollY * 0.08}vh) translateX(${scrollY * 0.05}vh)`}}/>
+            <img src={postgresql} alt="postgresql" className="postgresql" style={{ transform: `translateY(${scrollY * 0.06}vh) translateX(${scrollY * 0.04}vh)`}}/>
             <img src={python} alt="python" className="python" style={{ transform: `translateY(${scrollY * 0.04}vh) translateX(${scrollY * 0.03}vh)`}}/>
-            <img src={typescript} alt="typescript" className="typescript" style={{ transform: `translateY(${scrollY * 0.02}vh) translateX(${scrollY * 0.02}vh)`}}/>
+            <img src={git} alt="git" className="git" style={{ transform: `translateY(${scrollY * 0.02}vh) translateX(${scrollY * 0.02}vh)`}}/>
 
             <img src={mui} alt="mui" className="mui" style={{ transform: `translateY(${scrollY * 0.03}vh) translateX(-${scrollY * 0.01}vh)`}}/>
             <img src={jQ} alt="jQ" className="jQ" style={{ transform: `translateY(${scrollY * 0.05}vh) translateX(-${scrollY * 0.02}vh)`}}/>
             <img src={react} alt="react" className="react" style={{ transform: `translateY(${scrollY * 0.07}vh) translateX(-${scrollY * 0.03}vh)`}}/>
             <img src={redux} alt="redux" className="redux" style={{ transform: `translateY(${scrollY * 0.07}vh) translateX(${scrollY * 0.03}vh)`}}/>
             <img src={saga} alt="saga" className="saga" style={{ transform: `translateY(${scrollY * 0.05}vh) translateX(${scrollY * 0.02}vh)`}}/>
-            <img src={git} alt="git" className="git" style={{ transform: `translateY(${scrollY * 0.03}vh) translateX(${scrollY * 0.01}vh)`}}/>
+            <img src={sql} alt="sql" className="sql" style={{ transform: `translateY(${scrollY * 0.03}vh) translateX(${scrollY * 0.01}vh)`}}/>
             {/* <!-- Scroll Down Arrow --> */}
-            <div className="section"></div>
+            <div className="section" ></div>
 
             {/* <!-- About Me --> */}
             <div className="info" >

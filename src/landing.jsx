@@ -58,15 +58,15 @@ export default function LandingPage() {
             <Grid container spacing={1} >
                 <Grid item xs={12}>
                     {/* Helper Text */}
-                    <h3>Enter Your First Name To Continue</h3>
+                    <h3 style={{fontSize: '3vh'}}>Enter Your Name To Continue</h3>
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={12} mt={-1}>
                     <TextField
                         // Username Input 
                         className="input"
                         style={{backgroundColor: 'lightblue', width: '50%'}}
                         type="text"
-                        label="Name"
+                        label="First Name"
                         variant="filled"
                         color="primary"
                         value={username}
