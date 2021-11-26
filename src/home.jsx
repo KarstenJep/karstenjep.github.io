@@ -73,7 +73,7 @@ export default function Home() {
             {/* <!-- Animation - Animals/vehicles --> */}
             <img src={birds} alt="birds" className="birds" style={{ transform: `translateY(-${scrollY * 0.07}vh) translateX(${scrollY * 0.45}vh)`}}/>
             <img src={moose} alt="moose" className="moose" style={{ transform: `translateX(-${scrollY * 0.05}vh)`}}/>
-            <img src={bicycle} alt="bicycle" className="bicycle" style={{ transform: `translateY(${scrollY * 0.018}vh) translateX(${scrollY * 0.15}vh)`}}/>
+            <img src={bicycle} alt="bicycle" className="bicycle" style={{ transform: `translateY(${scrollY * 0.015}vh) translateX(${scrollY * 0.15}vh)`}}/>
             <img src={rocket} alt="rocket" className="rocket" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(${scrollY * 0.06}vh)`, zIndex: '0'}}/>
             <img src={pg} alt="paraglider" className="pg" style={{ transform: `translateY(${scrollY * 0.08}vh) translateX(-${scrollY * 0.4}vh)`, zIndex: '0'}}/>
             <img src={airplane} alt="airplane" className="airplane" style={{ transform: `translateY(-${scrollY * 0.00}vh) translateX(${scrollY * 0.35}vh)`}}/>
