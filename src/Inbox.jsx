@@ -15,6 +15,7 @@ export default function Inbox() {
         dispatch({ type: 'FETCH_VISITORS' });
         dispatch({ type: 'FETCH_MAIL' });
       }, [])
+    /* background-image: url('./images/river.png'); */
 
     return (
         <>

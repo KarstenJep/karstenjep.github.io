@@ -6,7 +6,7 @@ import Header from './header.jsx';
 import TechStack from './TechStack'
 import './contact.css';
 import island from "./images/island.png";
-import mtn2 from "./images/mtn2.png";
+import mtn from "./images/mtn.png";
 
 
 // M-UI
@@ -58,17 +58,14 @@ export default function Contact() {
         setEmailError(false);
         setMessageError(false);
     };
-
     
     return (
         <>
         <Header />
 
         <section className="contactBackground">
-
-            
             {/* Message Form */}
-            {/* <div className="formBackground"> 
+            <div className="formBackground"> 
                 <Grid container spacing={1} pt={1} pb={2}>
                     <Grid item xs={12}>
                         <h1 className="sayHi">Leave A Message</h1>
@@ -78,7 +75,6 @@ export default function Contact() {
                             // Name Input
                             label="Name"
                             variant="outlined"
-                            color="success"
                             size="small"
                             style={{ width: '95%' }}
                             value={name}
@@ -91,7 +87,6 @@ export default function Contact() {
                             // Email Input 
                             label="Email"
                             variant="outlined"
-                            color="success"
                             size="small"
                             style={{ width: '100%' }}
                             value={email}
@@ -103,7 +98,7 @@ export default function Contact() {
                         <TextField
                             // Message body
                             label="Message"
-                            color="success"
+                            style={{color: 'lightblue'}}
                             multiline 
                             rows={3} 
                             style={{ width: '90%'}} 
@@ -116,7 +111,7 @@ export default function Contact() {
                         <Button
                             // Submit Btn
                             type="submit"
-                            style={{  fontFamily: 'BioRhyme', width: '60%', color: 'black' }}
+                            style={{  fontFamily: 'BioRhyme', width: '60%', backgroundColor: 'skyblue', color: 'black' }}
                             variant="contained" 
                             color="success"
                             endIcon={<PublishIcon />}
@@ -126,16 +121,14 @@ export default function Contact() {
                         </Button>
                     </Grid>
                 </Grid>
-            </div> */}
+            </div>
 
-            {/* <TechStack /> */}
             <div className="hill"></div>
             <div className="sun"></div>
             <img src={island} alt="island" className="island" />
-            <img src={mtn2} alt="mtn2" className="mtn2" />
+            <img src={mtn} alt="mountain" className="mtn" />
 
-
-
+            {/* Animation for wave */}
             <svg version="1.1" className="wave"
                 xlmns="http://www.w3.org/200/svg">
                 <path
@@ -190,6 +183,9 @@ export default function Contact() {
                     </animate>
                 </path>
             </svg>
+
+            {/* Tech Chips */}
+            <TechStack />
         </section>
         </>
     )

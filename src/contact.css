@@ -1,67 +1,12 @@
 /* Background setting for Contact view */
 .contactBackground {
-    /* background-image: url('./images/river.png'); */
-    background-image:linear-gradient( #f0399e, #ed3f2c, #ed7b11, #ed7b11);
-    /* background-size: cover; */
+    background-image:linear-gradient( #f0399e, #eb6252, #ed7b11, #e9ba42);
     overflow-x: hidden;
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
-}
-
-.wave {
-    fill: rgba(6, 211, 247, 0.99);
-    width: 100vw;
-    height: 35vh;
-    position: fixed;
-    bottom: 0;
-    z-index: 2;
-    /* opacity: .8; */
-  }
-
-.sun {
-    position: absolute;
-    border-radius:50%;
-    height:200px;
-    width:200px;
-    margin: 0;
-    margin-top: 65vh;
-    left: 42%;
-    background:orange;
-    box-shadow: 0 0 10px orange,
-                  0 0 60px orange,
-                  0 0 200px yellow,
-                  inset 0 0 80px yellow;
-    z-index:12;
-    align:center;
-    z-index:0;
-}
-
-.hill {
-    position: absolute;
-    height: 200px;
-    width: 500px;
-    background-color: rgb(243, 177, 91);
-    border-radius: 0% 80% 0 0;
-    margin-top: 70vh;
-    left: 0%;
-}
-
-.island {
-    position: absolute;
-    width: 16%;
-    margin-top: 62vh;
-    left: 0%;
-}
-
-.mtn2 {
-    position: absolute;
-    width: 50%;
-    /* margin-top: 20vh; */
-    left: 55%;
-    bottom: 0;
 }
 
 /* Form settings */
@@ -72,7 +17,7 @@
     font-size: medium;
     width: 420px;
     max-width: 95%;
-    margin: 22vh auto 34vh;
+    margin: 24vh auto 32vh;
     background-color: whitesmoke;
     border: solid black 2px;
     border-radius: 30px;
@@ -89,8 +34,62 @@
     font-weight: 900;
     margin: 0;
     text-shadow: 1px 1px 1px black;
-  }  
+  }
+
+/* moving wave (animation in contact.jsx) */
+.wave {
+    fill: rgba(76, 222, 248, 0.99);
+    width: 100vw;
+    height: 35vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+  }
+
+.sun {
+    position: absolute;
+    border-radius:50%;
+    height:175px;
+    width:175px;
+    margin: 0;
+    margin-top: 68vh;
+    left: 43%;
+    background:orange;
+    box-shadow: 0 0 10px orange,
+                  0 0 60px orange,
+                  0 0 200px yellow,
+                  inset 0 0 80px yellow;
+    z-index:12;
+    align:center;
+    z-index:0;
+}
+
+.hill {
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    background-color: rgb(243, 177, 91);
+    border-radius: 0% 80% 0 0;
+    margin-top: 71vh;
+    left: 0%;
+}
+
+.island {
+    position: absolute;
+    width: 16%;
+    margin-top: 63vh;
+    left: 0%;
+}
+
+.mtn {
+    position: absolute;
+    width: 50%;
+    left: 55%;
+    bottom: 7vh;
+}
   
 .chips {
-    margin-top: 65vh;
+    margin-top: 85vh;
+    z-index: 3;
 }
+
