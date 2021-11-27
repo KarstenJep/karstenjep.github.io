@@ -12,6 +12,12 @@ import PublishIcon from '@mui/icons-material/Publish';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
+// M-UI Snackbar alert
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 export default function Contact() {
 
@@ -24,6 +30,8 @@ export default function Contact() {
     const [messageError, setMessageError] = useState(false);
     // Import and format current date via moment.js
     const date = moment().format('MM DD YYYY');
+    const [sentAlert, setSentAlert] = React.useState(false);
+
 
     const validateForm = (e) => {
         e.preventDefault();
@@ -55,6 +63,16 @@ export default function Contact() {
         setNameError(false);
         setEmailError(false);
         setMessageError(false);
+        // Activate snackbar alert
+        setSentAlert(true);
+    };
+
+    // Close snackbar alert
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+        return;
+        }
+        setSentAlert(false);
     };
     
     return (
@@ -185,6 +203,13 @@ export default function Contact() {
             {/* Tech Chips */}
             <TechStack />
         </section>
+
+        {/* Snackbar Alert */}
+        <Snackbar open={sentAlert} autoHideDuration={4000} onClose={handleClose}>
+            <Alert onClose={handleClose} severity="success" sx={{ maxWidth: '100%' }}>
+                Message Submitted! Woot!
+            </Alert>
+        </Snackbar>
         </>
     )
 }
