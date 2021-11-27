@@ -56,12 +56,13 @@
     left: 0%;
 }
 
-/* .mtn2 {
+.mtn2 {
     position: absolute;
-    width: 16%;
-    margin-top: 62vh;
-    left: 0%;
-} */
+    width: 50%;
+    /* margin-top: 20vh; */
+    left: 55%;
+    bottom: 0;
+}
 
 /* Form settings */
 .formBackground {
