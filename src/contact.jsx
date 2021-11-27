@@ -7,8 +7,6 @@ import TechStack from './TechStack'
 import './contact.css';
 import island from "./images/island.png";
 import mtn from "./images/mtn.png";
-
-
 // M-UI
 import PublishIcon from '@mui/icons-material/Publish';
 import TextField from '@mui/material/TextField';
@@ -124,7 +122,7 @@ export default function Contact() {
             </div>
 
             <div className="hill"></div>
-            <div className="sun"></div>
+            <div className="sun3"></div>
             <img src={island} alt="island" className="island" />
             <img src={mtn} alt="mountain" className="mtn" />
 

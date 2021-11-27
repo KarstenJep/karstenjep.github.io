@@ -1,6 +1,6 @@
 /* Background setting for Contact view */
 .contactBackground {
-    background-image:linear-gradient( #f0399e, #eb6252, #ed7b11, #e9ba42);
+    background-image:linear-gradient( #f05aac, #e96d60, #ed7b11, #e9ba42);
     overflow-x: hidden;
     position: relative;
     width: 100%;
@@ -38,7 +38,7 @@
 
 /* moving wave (animation in contact.jsx) */
 .wave {
-    fill: rgba(76, 222, 248, 0.99);
+    fill: rgba(126, 229, 247, 0.99);
     width: 100vw;
     height: 35vh;
     position: fixed;
@@ -46,7 +46,7 @@
     z-index: 2;
   }
 
-.sun {
+.sun3 {
     position: absolute;
     border-radius:50%;
     height:175px;
