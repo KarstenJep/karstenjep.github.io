@@ -5,6 +5,10 @@ import moment from 'moment';
 import Header from './header.jsx';
 import TechStack from './TechStack'
 import './contact.css';
+import island from "./images/island.png";
+import mtn2 from "./images/mtn2.png";
+
+
 // M-UI
 import PublishIcon from '@mui/icons-material/Publish';
 import TextField from '@mui/material/TextField';
@@ -127,6 +131,10 @@ export default function Contact() {
             {/* <TechStack /> */}
             <div className="hill"></div>
             <div className="sun"></div>
+            <img src={island} alt="island" className="island" />
+            <img src={mtn2} alt="mtn2" className="mtn2" />
+
+
 
             <svg version="1.1" className="wave"
                 xlmns="http://www.w3.org/200/svg">
