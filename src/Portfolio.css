@@ -17,7 +17,7 @@
 
   .titleDiv {
     position: absolute;
-    left: 43%;
+    left: 40%;
     margin-top: 31vh;
     border: solid black 2px;
     border-radius: 20px;
@@ -31,7 +31,7 @@
     font-weight:900;
     font-size: 4vh;
     text-shadow: 0px 1px 1px black;
-    margin: 1.5vh 4vh;
+    margin: 1.5vh 8vh;
   }
 
   /* Horizontal scroll properties */

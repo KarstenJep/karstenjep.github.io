@@ -111,53 +111,53 @@ export default function TechStack() {
                     label="React" 
                     color="secondary" 
                     avatar={<Avatar alt="P" src={reactAv} />}
-                    variant={react ? "filled" : "outlined"}
+                    variant={react ? "outlined" : "filled"}
                     onClick={() => setReact(!react)}/>
                 <Chip 
                     label="jQuery" 
                     color="primary"
                     avatar={<Avatar alt="J" src={jqueryAv} />}
-                    variant={jquery ? "filled" : "outlined"}
+                    variant={jquery ? "outlined" : "filled"}
                     onClick={() => setJquery(!jquery)}/>
                 <Chip 
                     label="Redux" 
                     color="secondary" 
                     avatar={<Avatar alt="R" src={r} />}
-                    variant={redux ? "filled" : "outlined"}
+                    variant={redux ? "outlined" : "filled"}
                     onClick={() => setRedux(!redux)}/>
                  <Chip 
                     label="Saga" 
                     color="primary"
                     avatar={<Avatar alt="S" src={rs} />}
-                    variant={saga ? "filled" : "outlined"}
+                    variant={saga ? "outlined" : "filled"}
                     onClick={() => setSaga(!saga)}/>
                 <Chip 
                     label="Express" 
                     color="primary"
-                    variant={express ? "filled" : "outlined"}
+                    variant={express ? "outlined" : "filled"}
                     onClick={() => setExpress(!express)}/>
                 <Chip 
                     label="AJAX" 
                     color="success"
-                    variant={ajax ? "filled" : "outlined"}
+                    variant={ajax ? "outlined" : "filled"}
                     onClick={() => setAjax(!ajax)}/>
                 <Chip 
                     label="Material-UI" 
                     color="primary"
                     avatar={<Avatar alt="M" src={muiAv} />}
-                    variant={mui ? "filled" : "outlined"}
+                    variant={mui ? "outlined" : "filled"}
                     onClick={() => setMui(!mui)}/>
                 <Chip 
                     label="Passport" 
                     color="success"
                     avatar={<Avatar alt="P" src={passportAv} />}
-                    variant={passport ? "filled" : "outlined"}
+                    variant={passport ? "outlined" : "filled"}
                     onClick={() => setPassport(!passport)}/>
                 <Chip 
                     label="Postman" 
                     color="error"
                     avatar={<Avatar alt="P" src={postmanAv} />}
-                    variant={postman ? "filled" : "outlined"}
+                    variant={postman ? "outlined" : "filled"}
                     onClick={() => setPostman(!postman)}/>
             </Stack>
         </Stack>
