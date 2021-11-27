@@ -184,7 +184,7 @@ body {
     opacity: 80%;
   } */
   
-  .notMoon {
+  .crescent {
     width: 5%;
     margin-bottom: 240vh;
     left: 0%;
@@ -376,11 +376,11 @@ body {
     bottom: 162vh;
     color: #fff;
     content: '╲╱';
-    font-size: 5vh;
+    font-size: 4vh;
     font-weight:950;
     letter-spacing: -1px;
     line-height: 4rem;
-    filter:drop-shadow(5px 5px 6px black);
+    filter:drop-shadow(0px 5px 6px black);
     position: absolute;
     text-align: center;
   }

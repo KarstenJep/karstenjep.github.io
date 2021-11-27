@@ -5,6 +5,8 @@ import moment from 'moment';
 import Header from './header.jsx';
 import TechStack from './TechStack'
 import './contact.css';
+import island from "./images/island.png";
+import mtn from "./images/mtn.png";
 // M-UI
 import PublishIcon from '@mui/icons-material/Publish';
 import TextField from '@mui/material/TextField';
@@ -54,7 +56,6 @@ export default function Contact() {
         setEmailError(false);
         setMessageError(false);
     };
-
     
     return (
         <>
@@ -72,7 +73,6 @@ export default function Contact() {
                             // Name Input
                             label="Name"
                             variant="outlined"
-                            color="success"
                             size="small"
                             style={{ width: '95%' }}
                             value={name}
@@ -85,7 +85,6 @@ export default function Contact() {
                             // Email Input 
                             label="Email"
                             variant="outlined"
-                            color="success"
                             size="small"
                             style={{ width: '100%' }}
                             value={email}
@@ -97,7 +96,7 @@ export default function Contact() {
                         <TextField
                             // Message body
                             label="Message"
-                            color="success"
+                            style={{color: 'lightblue'}}
                             multiline 
                             rows={3} 
                             style={{ width: '90%'}} 
@@ -110,7 +109,7 @@ export default function Contact() {
                         <Button
                             // Submit Btn
                             type="submit"
-                            style={{  fontFamily: 'BioRhyme', width: '60%', color: 'black' }}
+                            style={{  fontFamily: 'BioRhyme', width: '60%', backgroundColor: 'skyblue', color: 'black' }}
                             variant="contained" 
                             color="success"
                             endIcon={<PublishIcon />}
@@ -122,6 +121,68 @@ export default function Contact() {
                 </Grid>
             </div>
 
+            <div className="hill"></div>
+            <div className="sun3"></div>
+            <img src={island} alt="island" className="island" />
+            <img src={mtn} alt="mountain" className="mtn" />
+
+            {/* Animation for wave */}
+            <svg version="1.1" className="wave"
+                xlmns="http://www.w3.org/200/svg">
+                <path
+                        d="
+                        M0 67
+                        C 273,183
+                        822, -40
+                        1920,106
+                        V 600
+                        H 0
+                        V 67
+                        Z
+                        ">
+                    <animate
+                            repeatCount="indefinite"
+                            attributeName="d"
+                            dur="30s"
+                            attributeType="XML"
+                            values="
+                                M0 77
+                                C 473, 283
+                                822, -40
+                                1920, 116
+                                V 600
+                                H 0
+                                V 300
+                                Z;
+                                M0 77
+                                C 473, -40
+                                1222, 283
+                                1920, 136
+                                V 600
+                                H 0
+                                V 300
+                                Z;
+                                M0 77
+                                C 973, 260
+                                1722, -53
+                                1920, 120
+                                V 600
+                                H 0
+                                V 300
+                                Z;
+                                M0 77
+                                C 473, 283
+                                822, -40
+                                1920, 116
+                                V 600
+                                H 0
+                                V 300
+                                Z">
+                    </animate>
+                </path>
+            </svg>
+
+            {/* Tech Chips */}
             <TechStack />
         </section>
         </>
