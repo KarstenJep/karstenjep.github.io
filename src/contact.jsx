@@ -114,7 +114,6 @@ export default function Contact() {
                         <TextField
                             // Message body
                             label="Message"
-                            style={{color: 'lightblue'}}
                             multiline 
                             rows={3} 
                             style={{ width: '90%'}} 
