@@ -1,6 +1,8 @@
 /* Background setting for Contact view */
 .contactBackground {
-    background-image:linear-gradient( #f05aac, #e96d60, #ed7b11, #e9ba42);
+    /* background-image:linear-gradient( #f05aac, #e96d60, #ed7b11, #e9ba42); */
+    background-image:linear-gradient( #f24ba7, #eb8047, #f24b4b, #ed7b11, #e9ba42);
+
     overflow-x: hidden;
     position: relative;
     width: 100%;
@@ -25,27 +27,7 @@
     opacity: .9;
     position: absolute;
     display: table-column;
-    animation: fadeIn 3s;
-    -webkit-animation: fadeIn 3s;
-    -moz-animation: fadeIn 3s;
-    -o-animation: fadeIn 3s;
 }
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
 
 /* Form title */
 .sayHi {
@@ -56,17 +38,21 @@
     text-shadow: 1px 1px 1px black;
   }
 
-.sun3 {
+  /* Images */
+.sun3, .hill, .hill2, .island, .island2, .mtn, .mtn2, .turtle, .shark, .hut {
     position: absolute;
+}
+
+.sun3 {
     border-radius:50%;
     height:175px;
     width:175px;
     margin: 0;
     margin-top: 68vh;
     background:orange;
-    box-shadow: 0 0 10px orange,
+    box-shadow: 0 0 10px rgb(255, 145, 0),
                   0 0 60px orange,
-                  0 0 200px yellow,
+                  0 0 150px yellow,
                   inset 0 0 80px yellow;
     z-index:12;
     align:center;
@@ -74,7 +60,6 @@
 }
 
 .hill {
-    position: absolute;
     height: 30vh;
     width: 48vw;
     background-color: rgb(255, 238, 169);
@@ -85,7 +70,6 @@
 }
 
 .hill2 {
-    position: absolute;
     height: 30vh;
     width: 50vw;
     background-color: rgb(255, 238, 169);
@@ -96,7 +80,6 @@
 }
 
 .island {
-    position: absolute;
     height: 20vh;
     width: 41vw;
     margin-top: 59vh;
@@ -106,7 +89,6 @@
 }
 
 .island2 {
-    position: absolute;
     height: 16vh;
     width: 30vw;
     margin-top: 60vh;
@@ -115,7 +97,6 @@
 }
 
 .mtn {
-    position: absolute;
     height: 80vh;
     width: 50vw;
     left: -30.5%;
@@ -124,7 +105,6 @@
 }
 
 .mtn2 {
-    position: absolute;
     height: 80vh;
     width: 60vw;
     left: 76%;
@@ -133,7 +113,6 @@
 }
 
 .turtle {
-    position: absolute;
     width: 2%;
     left: 29%;
     bottom: 18vh;
@@ -141,16 +120,22 @@
 }
 
 .shark {
-    position: absolute;
     width: 15%;
     left: 83%;
     bottom: -2vh;
     z-index: 2;
 }
 
+.hut {
+    width: 5%;
+    left: 72%;
+    bottom: 26vh;
+    z-index: 2;
+}
+
 /* moving wave (animation in contact.jsx) */
 .wave {
-    fill: rgba(126, 229, 247, 0.99);
+    fill: rgba(111, 227, 247, 0.99);
     width: 100vw;
     height: 35vh;
     position: fixed;
@@ -164,3 +149,40 @@
     z-index: 3;
 }
 
+/* Animation */
+.formBackground, .chips {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+}
+
+  @keyframes fadeIn {
+    0% {opacity:0; transform: scale(.5);}
+    100% {opacity:1; transform: scale(1);}
+  }
+  @-moz-keyframes fadeIn {
+    0% {opacity:0; transform: scale(.5);}
+    100% {opacity:1; transform: scale(1);}
+  }
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0; transform: scale(.5);}
+    100% {opacity:1; transform: scale(1);}
+  }
+  @-o-keyframes fadeIn {
+    0% {opacity:0; transform: scale(.5);}
+    100% {opacity:1; transform: scale(1);}
+  }
+
+/* Mobile view */
+@media only screen and (max-width: 600px) {
+  .hill, .hill2, .mtn, .mtn2, .island, .island2, .turtle {
+    display: none;
+  }
+  .formBackground {
+    margin-top: 22vh;
+  }
+  .chips {
+   overflow-x: scroll;
+  }
+}
