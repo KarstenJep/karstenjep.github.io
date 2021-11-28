@@ -5,8 +5,13 @@ import moment from 'moment';
 import Header from './header.jsx';
 import TechStack from './TechStack'
 import './contact.css';
+// Imgs
 import island from "./images/island.png";
+import island2 from "./images/island2.png";
 import mtn from "./images/mtn.png";
+import mtn2 from "./images/mtn2.png";
+import turtle from "./images/turtle.png";
+import shark from "./images/shark.png";
 // M-UI
 import PublishIcon from '@mui/icons-material/Publish';
 import TextField from '@mui/material/TextField';
@@ -138,10 +143,15 @@ export default function Contact() {
                 </Grid>
             </div>
 
-            <div className="hill"></div>
             <div className="sun3"></div>
+            <div className="hill"></div>
+            <div className="hill2"></div>
             <img src={island} alt="island" className="island" />
+            <img src={island2} alt="island" className="island2" />
             <img src={mtn} alt="mountain" className="mtn" />
+            <img src={mtn2} alt="mountain" className="mtn2" />
+            <img src={turtle} alt="mountain" className="turtle" />
+            <img src={shark} alt="mountain" className="shark" />
 
             {/* Animation for wave */}
             <svg version="1.1" className="wave"
