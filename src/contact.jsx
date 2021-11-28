@@ -12,6 +12,7 @@ import mtn from "./images/mtn.png";
 import mtn2 from "./images/mtn2.png";
 import turtle from "./images/turtle.png";
 import shark from "./images/shark.png";
+import hut from "./images/hut.png";
 // M-UI
 import PublishIcon from '@mui/icons-material/Publish';
 import TextField from '@mui/material/TextField';
@@ -152,6 +153,7 @@ export default function Contact() {
             <img src={mtn2} alt="mountain" className="mtn2" />
             <img src={turtle} alt="mountain" className="turtle" />
             <img src={shark} alt="mountain" className="shark" />
+            <img src={hut} alt="hut" className="hut" />
 
             {/* Animation for wave */}
             <svg version="1.1" className="wave"
