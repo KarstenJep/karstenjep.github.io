@@ -2,10 +2,9 @@
 .landingBackground {
     background-image: url('./images/lake.jpg');
     background-size: cover;
-    height: 100vh;
     overflow-x: hidden;
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -27,32 +26,8 @@
     opacity: .9;
     position: absolute;
     display: table-column;
-    animation: fadeIn 3s;
-    -webkit-animation: fadeIn 3s;
-    -moz-animation: fadeIn 3s;
-    -o-animation: fadeIn 3s;
 }
 
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
- 
 
 /* Floating clouds  */
 .cloud-content {
@@ -114,3 +89,37 @@
     }
 }
 
+/* Fade/Scale Animation */
+.login {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0; transform: scale(.5);}
+    100% {opacity:1; transform: scale(1);}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0; transform: scale(.5);}
+    100% {opacity:1; transform: scale(1);}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0; transform: scale(.5);}
+    100% {opacity:1; transform: scale(1);}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0; transform: scale(.5);}
+    100% {opacity:1; transform: scale(1);}
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+.login {
+    bottom: 0;
+    } 
+}
