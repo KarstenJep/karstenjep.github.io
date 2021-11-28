@@ -97,8 +97,8 @@ export default function Portfolio() {
             <h3 className="subtitles">Data Finder</h3>
             <div className="contents">
                 <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio">
-                    <FormControlLabel value="description" control={<Radio color="error" />} label="Description" onChange={() => setTechDF(false)}/>
-                    <FormControlLabel value="tech" control={<Radio color="error" />} label="Tech" onChange={() => setTechDF(true)}/>
+                    <FormControlLabel value="description" control={<Radio color="secondary" />} label="Description" onChange={() => setTechDF(false)}/>
+                    <FormControlLabel value="tech" control={<Radio color="secondary" />} label="Tech" onChange={() => setTechDF(true)}/>
                 </RadioGroup>
             </div>
             <div className="textBox">
@@ -112,10 +112,41 @@ export default function Portfolio() {
                 <Button
                     style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
                     variant="contained" 
-                    color="error"
+                    color="secondary"
                     onClick={() => window.location.href="https://karstenjep.github.io/react-interview-exercise/"}
                 >
                     Take a gander!
+                </Button>
+            </div>
+        </div>
+
+         {/* Mario */}
+         <div className="tech">
+            <div className="contents">
+                <img src={mario} alt="mario" className="mario" />
+            </div>
+            <h3 className="subtitles">Mario</h3>
+            <div className="contents">
+                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio">
+                    <FormControlLabel value="description" control={<Radio color="error" />} label="Description" onChange={() => setTechMA(false)}/>
+                    <FormControlLabel value="tech" control={<Radio color="error" />} label="Tech" onChange={() => setTechMA(true)}/>
+                </RadioGroup>
+            </div>
+            <div className="textBox">
+                { !techMA ? 
+                    <p>An old school Mario game with 3 levels, built with Kaboom.JS. Press space to jump!</p>          
+                :
+                    <p>[ Kaboom.JS, HTML ]</p>
+                }
+            </div>
+            <div className="contents">
+                <Button
+                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
+                    variant="contained" 
+                    color="error"
+                    onClick={() => window.location.href="https://karstenjep.github.io/Mario-Kaboom.js/"}
+                >
+                    Game on!
                 </Button>
             </div>
         </div>
@@ -128,8 +159,8 @@ export default function Portfolio() {
             <h3 className="subtitles">Movie Gallery</h3>
             <div className="contents">
                 <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio">
-                    <FormControlLabel value="description" control={<Radio color="secondary" />} label="Description" onChange={() => setTechMG(false)}/>
-                    <FormControlLabel value="tech" control={<Radio color="secondary" />} label="Tech" onChange={() => setTechMG(true)}/>
+                    <FormControlLabel value="description" control={<Radio color="primary" />} label="Description" onChange={() => setTechMG(false)}/>
+                    <FormControlLabel value="tech" control={<Radio color="primary" />} label="Tech" onChange={() => setTechMG(true)}/>
                 </RadioGroup>
             </div>
             <div className="textBox">
@@ -144,7 +175,7 @@ export default function Portfolio() {
                     className="button"
                     style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
                     variant="contained" 
-                    color="secondary"
+                    color="primary"
                     onClick={() => window.location.href="https://afternoon-falls-30309.herokuapp.com/#/"}
                 >
                     Open it up!
@@ -166,7 +197,7 @@ export default function Portfolio() {
             </div>
             <div className="textBox">
                 { !techPG ? 
-                    <p>A photo gallery of my life, and a fun first project with React!</p>          
+                    <p>A small photo gallery of my life, and my first website in React!</p>          
                 :
                     <p>[ ReactJs, Ajax, Node, Express, CSS ]</p>
                 }
@@ -184,37 +215,6 @@ export default function Portfolio() {
             </div>
         </div>
 
-         {/* Mario */}
-         <div className="tech">
-            <div className="contents">
-                <img src={mario} alt="mario" className="mario" />
-            </div>
-            <h3 className="subtitles">Mario</h3>
-            <div className="contents">
-                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio">
-                    <FormControlLabel value="description" control={<Radio color="error" />} label="Description" onChange={() => setTechMA(false)}/>
-                    <FormControlLabel value="tech" control={<Radio color="error" />} label="Tech" onChange={() => setTechMA(true)}/>
-                </RadioGroup>
-            </div>
-            <div className="textBox">
-                { !techMA ? 
-                    <p>An old school Mario game with 3 levels, built with Kaboom.JS!</p>          
-                :
-                    <p>[ Kaboom.JS, HTML ]</p>
-                }
-            </div>
-            <div className="contents">
-                <Button
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
-                    variant="contained" 
-                    color="error"
-                    onClick={() => window.location.href="https://dry-shore-54453.herokuapp.com/"}
-                >
-                    Game on!
-                </Button>
-            </div>
-        </div>
-
         {/* To Do List */}
         <div className="tech">
             <div className="contents">
@@ -223,8 +223,8 @@ export default function Portfolio() {
             <h3 className="subtitles">To Do List</h3>
             <div className="contents">
                 <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio">
-                    <FormControlLabel value="description" control={<Radio color="primary" />} label="Description" onChange={() => setTechTD(false)}/>
-                    <FormControlLabel value="tech" control={<Radio color="primary" />} label="Tech" onChange={() => setTechTD(true)}/>
+                    <FormControlLabel value="description" control={<Radio color="secondary" />} label="Description" onChange={() => setTechTD(false)}/>
+                    <FormControlLabel value="tech" control={<Radio color="secondary" />} label="Tech" onChange={() => setTechTD(true)}/>
                 </RadioGroup>
             </div>
             <div className="textBox">
@@ -238,7 +238,7 @@ export default function Portfolio() {
                 <Button
                     style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
                     variant="contained" 
-                    color="primary"
+                    color="secondary"
                     onClick={() => window.location.href="https://dry-shore-54453.herokuapp.com/"}
                 >
                     Click here!
