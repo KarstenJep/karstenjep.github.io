@@ -64,7 +64,7 @@ export default function TechStack() {
                 <Chip 
                     label="JavaScript" 
                     color="success" 
-                    style={{ fontSize: javascript ? "2vh" : "", fontWeight: javascript ? 'bold' : ''}}
+                    // style={{ fontSize: javascript ? "2vh" : "", fontWeight: javascript ? 'bold' : ''}}
                     variant={javascript ? "outlined" : "filled"}
                     avatar={<Avatar alt="js" src={js} />}
                     onClick={() => setJavascript(!javascript)}/>

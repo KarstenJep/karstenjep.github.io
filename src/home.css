@@ -70,30 +70,6 @@ body {
     filter:drop-shadow(3px -4px 6px rgba(0, 0, 0, 0.6));
     margin-bottom: 112vh;
     border-bottom: rgb(0, 128, 0, .3) solid 15px ;
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-  }
-
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
   }
 
   .username {
@@ -233,7 +209,6 @@ body {
     width: 8vh;
     margin-bottom: 127vh;
     left: 15%;
-    filter:drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.75));
   }
   
   .bicycle {
@@ -246,35 +221,30 @@ body {
     width: 6vh;
     margin-bottom: 95%;
     left: 85%;
-    filter:drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.75));
   }
   
   .pg {
     width: 3vh;
     margin-bottom: 200vh;
     left: 76%;
-    filter:drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.75));
   }
 
   .pg2 {
     width: 4vh;
     margin-bottom: 40vh;
     left: 240%;
-    filter:drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.75));
   }
   
   .airplane {
     width: 7vh;
     margin-bottom: 30%;
     left: -140%;
-    filter:drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.75));
   }
   
   .airBalloon {
     width: 5vh;
     margin-bottom: 0%;
     left: 10%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.75));
     z-index: 0;
   }
   
@@ -283,7 +253,6 @@ body {
     margin-bottom: 0%;
     left: -60%;
     z-index: 1;
-    filter:drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.75));
   }
   
   /* Tech Logos */
@@ -291,97 +260,87 @@ body {
     width: 7vh;
     margin-bottom: 154vh;
     left: 10%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.75));
   }
   
   .css {
     width: 10.5vh;
     margin-bottom: 153vh;
     left: 19%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.755));
   }
   
   .javascript {
     width: 7vh;
     margin-bottom: 155vh;
     left: 31%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.755));
   }
   
   .typescript {
     width: 7vh;
     margin-bottom: 155vh;
     left: 42%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.755));
   }
   
   .node {
     width: 7vh;
     margin-bottom: 155vh;
     left: 53%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.755));
   }
   
   .postgresql {
     width: 7vh;
     margin-bottom: 155vh;
     left: 64%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.755));
   }
   
   .python {
     width: 8vh;
     margin-bottom: 155vh;
     left: 75%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.755));
   }
   
   .git {
     width: 7vh;
     margin-bottom: 155vh;
     left: 86%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.75));
   }
 
   .mui {
     width: 8vh;
     margin-bottom: 168vh;
     left: 14%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.75));
   }
   
   .jQ{
     width: 7vh;
     margin-bottom: 168vh;
     left: 25%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.75));
   }
   
   .react {
     width: 7vh;
     margin-bottom: 168vh;
     left: 36.5%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.75));
   }
   
   .redux {
     width: 7vh;
     margin-bottom: 168vh;
     left: 58.5%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.75));
   }
   
   .saga {
     width: 10vh;
     margin-bottom: 168vh;
     left: 69%;
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.75));
   }
   
   .sql {
     width: 7vh;
     margin-bottom: 168vh;
     left: 80%;
+  }
+
+  .sql, .saga, .redux, .react, .jQ, .mui, .git, .python, .postgresql, .node, .typescript, .javascript, .css, .html, .parrot, .airBalloon, .pg, .pg2, .airplane, .rocket {
     filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.75));
   }
   
@@ -435,6 +394,9 @@ body {
   
 /* Mobile */
 @media only screen and (max-width: 600px) {
+  .username {
+    font-size: 7vh;
+  }
   .html, .javascript, .typescript, .node, .postgresql, .git, .jQ, .react, .redux, .sql {
     width: 5vh;
   }
@@ -468,9 +430,9 @@ body {
     left: 25%;
   }
   .info {
-    margin: 146vh auto 60vh;
+    margin: 150vh auto 56vh;
   }
   .hs {
-    margin-bottom: 20vh;
+    margin-bottom: 18vh;
   }
 }
