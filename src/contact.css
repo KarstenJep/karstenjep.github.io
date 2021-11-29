@@ -175,7 +175,7 @@
 
 /* Mobile view */
 @media only screen and (max-width: 600px) {
-  .hill, .hill2, .mtn, .mtn2, .island, .island2, .turtle {
+  .hill, .hill2, .mtn, .mtn2, .island, .island2, .turtle, .hut {
     display: none;
   }
   .formBackground {

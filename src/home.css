@@ -60,20 +60,13 @@ body {
     margin-bottom: 19vh;
     border: solid black 2px;
     box-shadow: 0px 6px 12px rgb(0, 0, 0, 0.7);
-  }
-
-  @media only screen and (max-width: 600px) {
-    .info {
-      margin-bottom: 42vh;
-    }
-    .hs {
-        margin-bottom: 10vh;
-      }
+    z-index: 3;
   }
   
   /****************** Individual settings for each image in animated section *******************/
   .mountains {
-    height: 39%;
+    height: 98vh;
+    width: 140vw;
     filter:drop-shadow(3px -4px 6px rgba(0, 0, 0, 0.6));
     margin-bottom: 112vh;
     border-bottom: rgb(0, 128, 0, .3) solid 15px ;
@@ -182,6 +175,7 @@ body {
     margin-bottom: 10vh;
     left: -35%;
     opacity: 60%;
+    z-index: 0;
     filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
@@ -190,6 +184,7 @@ body {
     margin-bottom: 10vh;
     left: 40%;
     opacity: 60%;
+    z-index: 0;
     filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
@@ -280,6 +275,7 @@ body {
     margin-bottom: 0%;
     left: 10%;
     filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.75));
+    z-index: 0;
   }
   
   .parrot {
@@ -293,7 +289,7 @@ body {
   /* Tech Logos */
   .html {
     width: 7vh;
-    margin-bottom: 155vh;
+    margin-bottom: 154vh;
     left: 10%;
     filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.75));
   }
@@ -413,5 +409,68 @@ body {
       transform: translateY(-80%);
     }
   }
+
+.mountains, .sun, .html, .css, .javascript, .typescript, .node, .postgresql, .python, .git, .mui, .jQ, .redux, .react, .saga, .sql {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
   
-  
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .html, .javascript, .typescript, .node, .postgresql, .git, .jQ, .react, .redux, .sql {
+    width: 5vh;
+  }
+  .python, .mui {
+    width: 6vh;
+  }
+  .css {
+    width: 7vh;
+    margin-bottom: 153.5vh;
+  }
+  .saga {
+    width: 8vh;
+  }
+  .sql {
+    left: 85%
+  }
+  .mui {
+    left: 10%
+  }
+  .jQ {
+    left: 23%;
+  }
+  .mountains {
+    width: 250vw;
+  }
+  .pg {
+    left: 100%;
+  }
+  .moose {
+    margin-bottom: 115vh;
+    left: 25%;
+  }
+  .info {
+    margin: 146vh auto 60vh;
+  }
+  .hs {
+    margin-bottom: 20vh;
+  }
+}
