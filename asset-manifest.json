@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4ebc480.chunk.css",
-    "main.js": "/static/js/main.06eb85db.chunk.js",
-    "main.js.map": "/static/js/main.06eb85db.chunk.js.map",
+    "main.css": "/static/css/main.96845092.chunk.css",
+    "main.js": "/static/js/main.91e50e5e.chunk.js",
+    "main.js.map": "/static/js/main.91e50e5e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c1803b75.js",
     "runtime-main.js.map": "/static/js/runtime-main.c1803b75.js.map",
     "static/js/2.51bd3ee4.chunk.js": "/static/js/2.51bd3ee4.chunk.js",
     "static/js/2.51bd3ee4.chunk.js.map": "/static/js/2.51bd3ee4.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.f4ebc480.chunk.css.map": "/static/css/main.f4ebc480.chunk.css.map",
+    "static/css/main.96845092.chunk.css.map": "/static/css/main.96845092.chunk.css.map",
     "static/js/2.51bd3ee4.chunk.js.LICENSE.txt": "/static/js/2.51bd3ee4.chunk.js.LICENSE.txt",
     "static/media/air-balloon.e3cd9d97.png": "/static/media/air-balloon.e3cd9d97.png",
     "static/media/airplane.d78bb95f.png": "/static/media/airplane.d78bb95f.png",
@@ -20,6 +20,7 @@
     "static/media/css.99426a61.png": "/static/media/css.99426a61.png",
     "static/media/hs.ac04f072.png": "/static/media/hs.ac04f072.png",
     "static/media/html.1d7b133e.png": "/static/media/html.1d7b133e.png",
+    "static/media/hut.8c818c0d.png": "/static/media/hut.8c818c0d.png",
     "static/media/island.86fc69d3.png": "/static/media/island.86fc69d3.png",
     "static/media/island2.8a7aee08.png": "/static/media/island2.8a7aee08.png",
     "static/media/js.608bd72b.png": "/static/media/js.608bd72b.png",
@@ -43,6 +44,7 @@
     "static/media/react.4b0cd286.png": "/static/media/react.4b0cd286.png",
     "static/media/redux-saga.7020de63.svg": "/static/media/redux-saga.7020de63.svg",
     "static/media/redux.0e4fb1c8.svg": "/static/media/redux.0e4fb1c8.svg",
+    "static/media/index.css": "/static/media/river.d9049f6b.png",
     "static/media/rocket.40b6b9fb.png": "/static/media/rocket.40b6b9fb.png",
     "static/media/search.197ebae2.png": "/static/media/search.197ebae2.png",
     "static/media/shark.b2ba7987.png": "/static/media/shark.b2ba7987.png",
@@ -57,7 +59,7 @@
   "entrypoints": [
     "static/js/runtime-main.c1803b75.js",
     "static/js/2.51bd3ee4.chunk.js",
-    "static/css/main.f4ebc480.chunk.css",
-    "static/js/main.06eb85db.chunk.js"
+    "static/css/main.96845092.chunk.css",
+    "static/js/main.91e50e5e.chunk.js"
   ]
 }
