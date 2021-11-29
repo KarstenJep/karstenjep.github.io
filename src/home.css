@@ -96,7 +96,7 @@ body {
     z-index:  1;
   }
   
-  .cloudOne {
+  .cloud1 {
     width: 15%;
     margin-bottom: 180vh;
     left: 85%;
@@ -104,7 +104,7 @@ body {
     filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
-  .cloudTwo {
+  .cloud2 {
     width: 21%;
     margin-bottom: 218vh;
     left: 75%;
@@ -112,7 +112,7 @@ body {
     filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
-  .cloudThree {
+  .cloud3 {
     width: 10%;
     margin-bottom: 195vh;
     left: 0%;
@@ -120,7 +120,7 @@ body {
     filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
-  .cloudFour {
+  .cloud4 {
     width: 20%;
     margin-bottom: 220vh;
     left: 10%;
@@ -128,7 +128,7 @@ body {
     filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
-  .cloudFive {
+  .cloud5 {
     width: 15%;
     margin-bottom: 185vh;
     left: 47%;
@@ -137,7 +137,7 @@ body {
     filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
-  .cloudSix {
+  .cloud6 {
     width: 15%;
     margin-bottom: 225vh;
     left: 2%;
@@ -146,7 +146,7 @@ body {
     filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
-  .cloudSeven {
+  .cloud7 {
     width: 12%;
     margin-bottom: 10vh;
     left: -35%;
@@ -155,7 +155,7 @@ body {
     filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
-  .cloudEight {
+  .cloud8 {
     width: 9%;
     margin-bottom: 10vh;
     left: 40%;
@@ -164,7 +164,7 @@ body {
     filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
-  .cloudNine {
+  .cloud9 {
     width: 8%;
     margin-bottom: 30vh;
     left: -30%;
@@ -344,6 +344,7 @@ body {
     filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.75));
   }
   
+  /* ----- CSS Animations --------- */
   /* Scroll Down Arrow */
   .section {
     position: relative;
@@ -369,30 +370,25 @@ body {
     }
   }
 
-.mountains, .sun, .html, .css, .javascript, .typescript, .node, .postgresql, .python, .git, .mui, .jQ, .redux, .react, .saga, .sql {
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-}
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-@-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-@-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-@-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
+  /* Fade on load */
+  .mountains, .sun, .pg, .rocket, .html, .css, .javascript, .typescript, .node, .postgresql, .python, .git, .mui, .jQ, .redux, .react, .saga, .sql  {
+    animation: fade 5s;
+  }
+  @keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  /* Fade + Scale on load */
+  .username {
+    animation: scaleUp 5s;
+  }
+  @keyframes scaleUp {
+    0% {opacity:0; transform: scale(.2);}
+    100% {opacity:1; transform: scale(1);}
+  }
   
-/* Mobile */
+/* ----------- Mobile ------------ */
 @media only screen and (max-width: 600px) {
   .username {
     font-size: 7vh;
@@ -422,6 +418,9 @@ body {
   .mountains {
     width: 250vw;
   }
+  .sun {
+    width: 50%;
+  }
   .pg {
     left: 100%;
   }
@@ -434,5 +433,8 @@ body {
   }
   .hs {
     margin-bottom: 18vh;
+  }
+  .rocket, .pg2, .airplane, .birds, .crescent, .parrot {
+    display: none;
   }
 }

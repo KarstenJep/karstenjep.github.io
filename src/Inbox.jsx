@@ -9,8 +9,8 @@ export default function Inbox() {
     const dispatch = useDispatch();
     const visitors = useSelector((store) => store.visitorsReducer);
     const mail = useSelector((store) => store.mailReducer);
-    let counter = 0;
-    console.log('inbox', mail)
+    // let counter = 0;
+    // console.log('inbox', mail)
 
     useEffect(() => {
         dispatch({ type: 'FETCH_VISITORS' });
@@ -24,8 +24,8 @@ export default function Inbox() {
             <div style={{ margin: '20% 20%', padding: '0 5%', backgroundColor: 'whitesmoke', borderRadius: '20px', border: 'black 2px solid' }}>
                 <h2>Visitors</h2>
                 { visitors.map(visitor => (
-                    counter++,
-                    <p>&nbsp;{counter} {visitor.name}</p>
+                    // counter++,{counter}
+                    <p>&nbsp; {visitor.name}</p>
                 ))}
             </div>
 

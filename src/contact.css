@@ -2,11 +2,11 @@
 .contactBackground {
     /* background-image:linear-gradient( #f05aac, #e96d60, #ed7b11, #e9ba42); */
     background-image:linear-gradient( #f24ba7, #eb8047, #f24b4b, #ed7b11, #e9ba42);
-
     overflow-x: hidden;
     position: relative;
     width: 100%;
     height: 100vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
 }
@@ -35,7 +35,7 @@
     font-size: 3.5vh;
     font-weight: 900;
     margin: 0;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 0px 1px 1px black;
   }
 
 /* Images */
@@ -172,6 +172,14 @@
     0% {opacity:0; transform: scale(.5);}
     100% {opacity:1; transform: scale(1);}
   }
+
+.mtn, .mtn2, .hut, .island, .island2 {
+  animation: fade 5s;
+}
+@keyframes fade {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
 
 /* Mobile view */
 @media only screen and (max-width: 600px) {
