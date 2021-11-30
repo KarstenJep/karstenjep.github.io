@@ -434,7 +434,7 @@ body {
   .hs {
     margin-bottom: 18vh;
   }
-  .rocket, .pg2, .airplane, .birds, .crescent, .parrot {
+  .rocket, .pg2, .airplane, .birds, .crescent, .parrot, .bicycle {
     display: none;
   }
 }

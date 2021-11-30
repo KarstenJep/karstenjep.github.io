@@ -36,8 +36,6 @@ import saga from "./images/redux-saga.svg";
 import typescript from "./images/typescript.png";
 
 
-
-
 export default function Home() {
 
     const user = useSelector(store => store.userReducer);
