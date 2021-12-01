@@ -15,7 +15,7 @@ export default function Inbox() {
     useEffect(() => {
         dispatch({ type: 'FETCH_VISITORS' });
         dispatch({ type: 'FETCH_MAIL' });
-      }, [])
+      }, [dispatch])
 
     return (
         <>
