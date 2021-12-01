@@ -220,7 +220,7 @@ export default function Contact() {
         {/* Snackbar Alert */}
         <Snackbar open={sentAlert} autoHideDuration={4000} onClose={handleClose}>
             <Alert onClose={handleClose} severity="success" sx={{ maxWidth: '100%' }}>
-                Message Submitted! Woot!
+                <b>Message Received! Thanks!</b>
             </Alert>
         </Snackbar>
         </>
