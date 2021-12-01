@@ -18,8 +18,12 @@
 
   .titleDiv {
     position: absolute;
-    left: 37.5vw;
-    margin-top: 31vh;
+    left: 34.5vw;
+    width: 385px;
+    max-width: 80%;
+    height: 10vh;
+    margin-top: 30vh;
+    margin: 30vh auto 0vh;
     border: solid black 2px;
     border-radius: 20px;
     background-color:whitesmoke;
@@ -30,9 +34,10 @@
   .title {
     font-family: 'BioRhyme';
     font-weight:900;
-    font-size: 4vh;
+    font-size: 4.5vh;
+    text-align: center;
     text-shadow: 0px 1px 1px black;
-    margin: 1.5vh 12vh;
+    margin: 1.5vh;
   }
 
   /* Horizontal scroll properties */
@@ -44,7 +49,7 @@
         repeat(7, calc(45vh))
         15vh;
     grid-template-rows: minmax(150px, 1fr);
-    margin-bottom: 2;
+    margin-bottom: 0;
   }
 
   .wrapper::before,
@@ -54,14 +59,26 @@
 
 .arrow {
     position: absolute;
-    width: 3vh;
-    margin-top: 70vh;
+    width: 10vh;
+    border: none;
+    font-size: 7vh;
+    font-weight: 700;
+    margin-top: 67vh;
     z-index: 3;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: .5rem .5rem;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+.arrow:hover {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0, 0.4);
 }
 
 @media only screen and (max-width: 600px) {
   .titleDiv {
-    left: 12%;
+    left: 10%;
     margin-top: 30vh;
   }
   .beach {
