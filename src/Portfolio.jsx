@@ -1,11 +1,14 @@
 import React, {useRef} from 'react';
 // M-UI
 import ImageList from '@mui/material/ImageList';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIosNew';
 // Files
 import Projects from './Projects.jsx';
 import "./Portfolio.css"
 // Images
 import beach from "./images/beach.png";
+import portfolioIcon from "./images/portfolio.png";
    
 export default function Portfolio() {
 
@@ -19,24 +22,27 @@ export default function Portfolio() {
         <>
         <section className="portfolioBackground">
             {/* Title */}
-            <div className="titleDiv"><h3 className="title">Portfolio</h3></div>
+            <div className="titleDiv">
+                <h3 className="title">
+                    Portfolio&nbsp;
+                    <img src={portfolioIcon} style={{width: '4.5vh', margin: '0vh 0vh -1vh'}}/>
+                </h3>
+            </div>
 
             {/* Left Arrow */}
-            <button 
-                className="arrow" 
+            <ArrowBackIosIcon  
+                className="arrow"
                 onClick={() => scroll(-400)} 
-                style={{ left: '1vh'}}>
-                    &#8656;
-            </button>
+                style={{ left: '1vh', fontSize: '70'}} 
+            />
 
             {/* Right Arrow */}
-            <button 
+            <ArrowForwardIosIcon
                 className="arrow"
                 onClick={() => scroll(400)} 
-                style={{ right: '1vh'}} >
-                    &#8658;
-            </button>
-
+                style={{ right: '1vh', fontSize: '70'}} 
+            />
+                   
             {/* Scrolling list of Projects */}
             <ImageList cols={1.1}
                 className="wrapper"
