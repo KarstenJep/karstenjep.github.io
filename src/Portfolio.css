@@ -45,9 +45,9 @@
     display: grid;
     grid-gap: 10vh;
     grid-template-columns: 
-        3vh
+        5vh
         repeat(7, calc(45vh))
-        15vh;
+        5vh;
     grid-template-rows: minmax(150px, 1fr);
     margin-bottom: 0;
   }

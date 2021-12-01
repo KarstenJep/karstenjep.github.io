@@ -32,14 +32,14 @@ export default function Portfolio() {
             {/* Left Arrow */}
             <ArrowBackIosIcon  
                 className="arrow"
-                onClick={() => scroll(-400)} 
+                onClick={() => scroll(-292.5)} 
                 style={{ left: '1vh', fontSize: '70'}} 
             />
 
             {/* Right Arrow */}
             <ArrowForwardIosIcon
                 className="arrow"
-                onClick={() => scroll(400)} 
+                onClick={() => scroll(292.5)} 
                 style={{ right: '1vh', fontSize: '70'}} 
             />
                    
