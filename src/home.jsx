@@ -54,7 +54,7 @@ export default function Home() {
         <section className="sky">
             {/* <!-- Animation - Sky --> */}
             <img src={mountains} alt="mountains" className="mountains" />
-            <div className="username" style={{ transform: `translateY(-${scrollY * 0.4}vh) translateX(${scrollY * 0.0}vh)`, zIndex: '0'}}>{`Hi ${user}!`}</div>
+            <div className="username" style={{ transform: `translateY(-${scrollY * 0.4}vh) translateX(${scrollY * 0.0}vh)`, zIndex: '2'}}>{`Hi ${user}!`}</div>
             <img src={sun} alt="sun" className="sun" style={{ transform: `translateY(-${scrollY * 0.1}vh) translateX(-${scrollY * 0.05}vh)`, zIndex: '0'}}/>
             <img src={sun} alt="sun" className="sunTwo" style={{ transform: `translateY(-${scrollY * 0.01}vh) translateX(-${scrollY * 0.005}vh)`, zIndex: '0'}}/>
             <img src={clouds} alt="cloud" className="cloud1" style={{ transform: `translateY(-${scrollY * 0.12}vh) translateX(${scrollY * 0.1}vh)`}}/>
@@ -89,7 +89,6 @@ export default function Home() {
             <img src={postgresql} alt="postgresql" className="postgresql" style={{ transform: `translateY(${scrollY * 0.06}vh) translateX(${scrollY * 0.04}vh)`}}/>
             <img src={python} alt="python" className="python" style={{ transform: `translateY(${scrollY * 0.04}vh) translateX(${scrollY * 0.03}vh)`}}/>
             <img src={git} alt="git" className="git" style={{ transform: `translateY(${scrollY * 0.02}vh) translateX(${scrollY * 0.02}vh)`}}/>
-
             <img src={mui} alt="mui" className="mui" style={{ transform: `translateY(${scrollY * 0.03}vh) translateX(-${scrollY * 0.01}vh)`}}/>
             <img src={jQ} alt="jQ" className="jQ" style={{ transform: `translateY(${scrollY * 0.05}vh) translateX(-${scrollY * 0.02}vh)`}}/>
             <img src={react} alt="react" className="react" style={{ transform: `translateY(${scrollY * 0.07}vh) translateX(-${scrollY * 0.03}vh)`}}/>
