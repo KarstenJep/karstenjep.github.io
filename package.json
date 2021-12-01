@@ -31,7 +31,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "node server/server.js",
+    "client": "react-scripts start",
     "server": "nodemon  --watch server server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
