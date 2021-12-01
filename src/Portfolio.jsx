@@ -25,7 +25,7 @@ export default function Portfolio() {
             <div className="titleDiv">
                 <h3 className="title">
                     Portfolio&nbsp;
-                    <img src={portfolioIcon} style={{width: '4.5vh', margin: '0vh 0vh -1vh'}}/>
+                    <img src={portfolioIcon} alt='icon' style={{width: '4.5vh', margin: '0vh 0vh -1vh'}}/>
                 </h3>
             </div>
 
