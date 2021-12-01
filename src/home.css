@@ -12,6 +12,7 @@ body {
     height: 250vh;
     display: flex;
     justify-content: center;
+    scroll-behavior: smooth;
   }
   
   /* Default settings for images in animated section */
