@@ -157,36 +157,36 @@
     -o-animation: fadeIn 3s;
 }
   @keyframes fadeIn {
-    0% {opacity:0; transform: scale(.5);}
+    0% {opacity:0; transform: scale(.75);}
     100% {opacity:1; transform: scale(1);}
   }
   @-moz-keyframes fadeIn {
-    0% {opacity:0; transform: scale(.5);}
+    0% {opacity:0; transform: scale(.75);}
     100% {opacity:1; transform: scale(1);}
   }
   @-webkit-keyframes fadeIn {
-    0% {opacity:0; transform: scale(.5);}
+    0% {opacity:0; transform: scale(.75);}
     100% {opacity:1; transform: scale(1);}
   }
   @-o-keyframes fadeIn {
-    0% {opacity:0; transform: scale(.5);}
+    0% {opacity:0; transform: scale(.75);}
     100% {opacity:1; transform: scale(1);}
   }
 
 .mtn, .mtn2 {
   animation: fade 5s;
 }
-@keyframes fade {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
+  @keyframes fade {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 .hut, .island, .island2 {
   animation: fade2 10s;
 }
-@keyframes fade2 {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
+  @keyframes fade2 {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
 /* Mobile view */
 @media only screen and (max-width: 600px) {
@@ -201,5 +201,14 @@
   }
   .chips {
    overflow-x: scroll;
+  }
+}
+
+@media only screen and (max-height: 300px) {
+  .formBackground {
+    margin: auto;
+  }
+  .sun3, .wave {
+    display: none;
   }
 }
