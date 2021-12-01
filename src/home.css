@@ -416,7 +416,7 @@ body {
     left: 23%;
   }
   .mountains {
-    width: 250vw;
+    width: 180vw;
   }
   .sun {
     width: 50%;
@@ -434,7 +434,7 @@ body {
   .hs {
     margin-bottom: 18vh;
   }
-  .rocket, .pg2, .airplane, .birds, .crescent, .parrot, .bicycle {
+  .rocket, .pg2, .airplane, .birds, .crescent, .parrot, .bicycle, .pg, .sunTwo {
     display: none;
   }
 }
