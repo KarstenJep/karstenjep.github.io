@@ -57,7 +57,7 @@ body {
   /* Head shot image in "About me" section */
   .hs {
     width: 40vh;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-bottom: 19vh;
     border: solid black 2px;
     box-shadow: 0px 6px 12px rgb(0, 0, 0, 0.7);

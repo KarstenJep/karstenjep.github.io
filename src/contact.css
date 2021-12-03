@@ -204,7 +204,7 @@
   }
 }
 
-@media only screen and (max-height: 300px) {
+@media only screen and (max-height: 400px) {
   .formBackground {
     margin: auto;
   }
