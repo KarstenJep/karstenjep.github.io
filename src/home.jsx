@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import {Link} from 'react-scroll'
 // Files
 import Header from './header.jsx';
 import Portfolio from "./Portfolio.jsx"
@@ -34,6 +35,7 @@ import sql from "./images/sql.png";
 import redux from "./images/redux.svg";
 import saga from "./images/redux-saga.svg";
 import typescript from "./images/typescript.png";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIosNew';
 
 
 export default function Home() {
@@ -96,10 +98,10 @@ export default function Home() {
             <img src={saga} alt="saga" className="saga" style={{ transform: `translateY(${scrollY * 0.05}vh) translateX(${scrollY * 0.02}vh)`}}/>
             <img src={sql} alt="sql" className="sql" style={{ transform: `translateY(${scrollY * 0.03}vh) translateX(${scrollY * 0.01}vh)`}}/>
             {/* <!-- Scroll Down Arrow --> */}
-            <div className="section" ></div>
+            <Link className="section" to="aboutMe" offset={-190} spy={true} smooth={true} duration={2800}></Link>
 
             {/* <!-- About Me --> */}
-            <div className="info" >
+            <div className="info" id="aboutMe">
                 <h3 className="subtitles">Hello!</h3>
                 <p className="text">
                     I believe in following life passions and enjoying your work. Practicing this philosophy has led

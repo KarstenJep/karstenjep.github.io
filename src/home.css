@@ -349,21 +349,24 @@ body {
   /* Scroll Down Arrow */
   .section {
     position: relative;
+    cursor: pointer;
     z-index: 2;
     left: 47%;
   }
   .section::before {
     animation: bounce 1.5s ease infinite;
-    bottom: 162vh;
+    bottom: 164vh;
     color: #fff;
     content: '╲╱';
-    font-size: 4vh;
-    font-weight:950;
+    font-size: 3vh;
     letter-spacing: -1px;
     line-height: 4rem;
     filter:drop-shadow(0px 5px 6px black);
     position: absolute;
     text-align: center;
+    border-radius: 10px;
+    padding: 0rem .5rem;
+    background-color: rgb(0, 0, 0, 0.1);
   }
   @keyframes bounce {
     50% {
