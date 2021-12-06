@@ -98,7 +98,6 @@ export default function Contact() {
                             label="Name"
                             variant="outlined"
                             size="small"
-                            color="success"
                             style={{ width: '95%' }}
                             value={name}
                             onChange={(e) => setName(e.target.value)}
@@ -110,7 +109,6 @@ export default function Contact() {
                             // Email Input 
                             label="Email"
                             variant="outlined"
-                            color="secondary"
                             size="small"
                             style={{ width: '100%' }}
                             value={email}
