@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import { useDispatch } from 'react-redux';
-import moment from 'moment';
+// import { useDispatch } from 'react-redux';
+// import moment from 'moment';
+import emailjs from "emailjs-com";
 // Files
 import Header from './header.jsx';
 import TechStack from './TechStack'
@@ -27,7 +28,7 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 
 export default function Contact() {
 
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -35,7 +36,7 @@ export default function Contact() {
     const [emailError, setEmailError] = useState(false);
     const [messageError, setMessageError] = useState(false);
     // Import and format current date via moment.js
-    const date = moment().format('MM DD YYYY');
+    // const date = moment().format('MM DD YYYY');
     const [sentAlert, setSentAlert] = React.useState(false);
 
 
@@ -53,15 +54,22 @@ export default function Contact() {
     }
 
     const handleSubmit = (e) => {
-        dispatch({
-            type: 'NEW_MSG',
-            payload: {
-                name: name,
-                date: date,
-                email: email,
-                message: message,
-            }
+        // Sending form to my inbox via email js so app can be deployed front end only. Commented out below is the code if using a database
+        emailjs.sendForm('service_ut2c8mq', 'template_q8jqjb7', e.target, 'user_Lupji84U8szKulL3UkKWj')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
         });
+        // dispatch({
+        //     type: 'NEW_MSG',
+        //     payload: {
+        //         name: name,
+        //         date: date,
+        //         email: email,
+        //         message: message,
+        //     }
+        // });
         // Clear the form field
         setName('');
         setEmail('');
@@ -87,7 +95,7 @@ export default function Contact() {
 
         <section className="contactBackground">
             {/* Message Form */}
-            <div className="formBackground"> 
+            <form onSubmit={validateForm} className="formBackground"> 
                 <Grid container spacing={1} pt={1} pb={2}>
                     <Grid item xs={12}>
                         <h1 className="sayHi">Leave A Message</h1>
@@ -96,6 +104,7 @@ export default function Contact() {
                         <TextField
                             // Name Input
                             label="Name"
+                            name="name"
                             variant="outlined"
                             size="small"
                             style={{ width: '95%' }}
@@ -108,6 +117,7 @@ export default function Contact() {
                         <TextField 
                             // Email Input 
                             label="Email"
+                            name="email"
                             variant="outlined"
                             size="small"
                             style={{ width: '100%' }}
@@ -120,6 +130,7 @@ export default function Contact() {
                         <TextField
                             // Message body
                             label="Message"
+                            name="message"
                             multiline 
                             rows={3} 
                             style={{ width: '90%'}} 
@@ -136,13 +147,13 @@ export default function Contact() {
                             variant="contained" 
                             color="success"
                             endIcon={<PublishIcon />}
-                            onClick={(e) => validateForm(e)}
+                            // onClick={(e) => validateForm(e)}
                         >
                             Submit
                         </Button>
                     </Grid>
                 </Grid>
-            </div>
+            </form>
 
             <div className="sun3"></div>
             <div className="hill"></div>
