@@ -8,7 +8,7 @@ import './home.css';
 // Images
 import mountains from "./images/mountains.png";
 import sun from "./images/sun.png"
-import clouds from "./images/cloud.png";
+import clouds from "./images/clouds.png";
 // import moon from "./images/moon.png";
 import crescent from "./images/crescent.png"
 import stars from "./images/stars.png";
@@ -108,7 +108,11 @@ export default function Home() {
                     Let's build a better tomorrow!
                 </p>
             </div>
+
             <img src={hs} alt="me" className="hs" id="aboutMe" style={{ zIndex: '1'}}/>
+
+            {/* <!-- Scroll Down Arrow 2 --> */}
+            {/* <Link className="section2" to="aboutMe" offset={400} spy={true} smooth={true} duration={5000}></Link> */}
         </section>
 
         {/* <!-- Projects & Links --> */}
