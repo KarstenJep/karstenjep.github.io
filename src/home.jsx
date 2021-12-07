@@ -9,6 +9,7 @@ import './home.css';
 import mountains from "./images/mountains.png";
 import sun from "./images/sun.png"
 import clouds from "./images/clouds.png";
+import cloud from "./images/cloud.png";
 // import moon from "./images/moon.png";
 import crescent from "./images/crescent.png"
 import stars from "./images/stars.png";
@@ -35,6 +36,7 @@ import sql from "./images/sql.png";
 import redux from "./images/redux.svg";
 import saga from "./images/redux-saga.svg";
 import typescript from "./images/typescript.png";
+import hand from "./images/hello.png";
 
 export default function Home() {
 
@@ -60,12 +62,12 @@ export default function Home() {
             <img src={clouds} alt="cloud" className="cloud1" style={{ transform: `translateY(-${scrollY * 0.12}vh) translateX(${scrollY * 0.1}vh)`}}/>
             <img src={clouds} alt="cloud" className="cloud2" style={{ transform: `translateY(-${scrollY * 0.14}vh) translateX(${scrollY * 0.15}vh)`}}/>
             <img src={clouds} alt="cloud" className="cloud3" style={{ transform: `translateY(-${scrollY * 0.1}vh) translateX(-${scrollY * 0.12}vh)`}}/>
-            <img src={clouds} alt="cloud" className="cloud4" style={{ transform: `translateY(-${scrollY * 0.16}vh) translateX(-${scrollY * 0.15}vh)`}}/>
-            <img src={clouds} alt="cloud" className="cloud5" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(${scrollY * 0.1}vh)`, zIndex: '0'}}/>
-            <img src={clouds} alt="cloud" className="cloud6" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.16}vh)`}}/>
+            <img src={cloud} alt="cloud" className="cloud4" style={{ transform: `translateY(-${scrollY * 0.16}vh) translateX(-${scrollY * 0.15}vh)`}}/>
+            <img src={cloud} alt="cloud" className="cloud5" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(${scrollY * 0.1}vh)`, zIndex: '0'}}/>
+            {/* <img src={clouds} alt="cloud" className="cloud6" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.16}vh)`}}/>
             <img src={clouds} alt="cloud" className="cloud7" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.09}vh)`, zIndex: '0'}}/>
             <img src={clouds} alt="cloud" className="cloud8" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.08}vh)`}}/>
-            <img src={clouds} alt="cloud" className="cloud9" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.07}vh)`}}/>
+            <img src={clouds} alt="cloud" className="cloud9" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.07}vh)`}}/> */}
             {/* <img src={moon} alt="moon" className="moon" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.36}vh)`}}/> */}
             <img src={crescent} alt="crescent" className="crescent" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.36}vh)`}}/>
             <img src={stars} alt="stars" className="stars" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.36}vh)`}}/>
@@ -100,7 +102,10 @@ export default function Home() {
 
             {/* <!-- About Me --> */}
             <div className="info" >
-                <h3 className="subtitles">Hello!</h3>
+                <h3 className="subtitles">
+                    Hello!&nbsp;
+                    <img src={hand} alt='icon' style={{width: '4vh', margin: '0vh 0vh 81vh'}}/>
+                </h3>
                 <p className="text">
                     I believe in following life passions and enjoying your work. Practicing this philosophy has led
                     to successful endeavors in the craft brewing industy, health/fitness field, and more recently the tech space. What
