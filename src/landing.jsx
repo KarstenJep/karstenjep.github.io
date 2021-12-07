@@ -50,7 +50,7 @@ export default function LandingPage() {
       <Header />
       <div className="landingBackground">
           {/* Floating Clouds */}
-          <div class="cloud-content">
+          <div className="cloud-content">
                 <div className="cloud"></div>
                 <div className="cloud x"></div>
           </div>

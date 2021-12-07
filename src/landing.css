@@ -26,6 +26,7 @@
     opacity: .9;
     position: absolute;
     display: table-column;
+    z-index: 1;
 }
 
 

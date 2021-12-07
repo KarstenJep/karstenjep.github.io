@@ -27,6 +27,7 @@
     opacity: .9;
     position: absolute;
     display: table-column;
+    z-index: 3;
 }
 
 /* Form title */
@@ -115,14 +116,14 @@
     width: 2%;
     left: 29%;
     bottom: 18vh;
-    z-index: 2;
+    z-index: 1;
 }
 
 .shark {
     width: 15%;
     left: 83%;
     bottom: -2vh;
-    z-index: 2;
+    z-index: 1;
 }
 
 .hut {
