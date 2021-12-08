@@ -16,6 +16,7 @@ import shark from "./images/shark.png";
 import hut from "./images/hut.png";
 // M-UI
 import PublishIcon from '@mui/icons-material/Publish';
+import EmailIcon from '@mui/icons-material/Email';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
@@ -96,9 +97,9 @@ export default function Contact() {
         <section className="contactBackground">
             {/* Message Form */}
             <form onSubmit={validateForm} className="formBackground"> 
-                <Grid container spacing={1} pt={1} pb={2}>
+                <Grid container spacing={1} pt={2} pb={3}>
                     <Grid item xs={12}>
-                        <h1 className="sayHi">Leave A Message</h1>
+                        <h1 className="sayHi">Leave A Message <EmailIcon style={{margin: '0 0 -1vh'}}/></h1>
                     </Grid>
                     <Grid item xs={4} ml={2.1}>
                         <TextField
@@ -132,7 +133,7 @@ export default function Contact() {
                             label="Message"
                             name="message"
                             multiline 
-                            rows={3} 
+                            rows={4} 
                             style={{ width: '90%'}} 
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
