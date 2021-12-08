@@ -22,8 +22,7 @@
     width: 385px;
     max-width: 80%;
     height: 10vh;
-    margin-top: 30vh;
-    margin: 30vh auto 0vh;
+    margin: 26vh auto 0vh;
     border: solid black 2px;
     border-radius: 30px;
     background-color:whitesmoke;
@@ -60,7 +59,7 @@
 .arrow {
     position: absolute;
     border: none;
-    margin-top: 67vh;
+    margin-top: 65vh;
     z-index: 3;
     color: rgb(255, 255, 255, .7);
     cursor: pointer;

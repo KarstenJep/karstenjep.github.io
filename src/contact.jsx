@@ -147,7 +147,6 @@ export default function Contact() {
                             variant="contained" 
                             color="success"
                             endIcon={<PublishIcon />}
-                            // onClick={(e) => validateForm(e)}
                         >
                             Submit
                         </Button>

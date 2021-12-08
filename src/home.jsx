@@ -98,10 +98,10 @@ export default function Home() {
             <img src={saga} alt="saga" className="saga" style={{ transform: `translateY(${scrollY * 0.05}vh) translateX(${scrollY * 0.02}vh)`}}/>
             <img src={sql} alt="sql" className="sql" style={{ transform: `translateY(${scrollY * 0.03}vh) translateX(${scrollY * 0.01}vh)`}}/>
             {/* <!-- Scroll Down Arrow --> */}
-            <Link className="section" to="aboutMe" offset={400} spy={true} smooth={true} duration={5000}></Link>
+            <Link className="section" to="portfolio" offset={400} spy={true} smooth={true} duration={5000}></Link>
 
             {/* <!-- About Me --> */}
-            <div className="info" >
+            <div className="info" id="aboutMe">
                 <h3 className="subtitles">
                     Hello!&nbsp;
                     <img src={hand} alt='icon' style={{width: '4vh', margin: '0vh 0vh 81vh'}}/>
@@ -114,7 +114,7 @@ export default function Home() {
                 </p>
             </div>
 
-            <img src={hs} alt="me" className="hs" id="aboutMe" style={{ zIndex: '1'}}/>
+            <img src={hs} alt="me" className="hs" id="portfolio" style={{ zIndex: '1'}}/>
 
             {/* <!-- Scroll Down Arrow 2 --> */}
             {/* <Link className="section2" to="aboutMe" offset={400} spy={true} smooth={true} duration={5000}></Link> */}
