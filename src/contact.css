@@ -19,11 +19,11 @@
     font-size: medium;
     width: 420px;
     max-width: 95%;
-    margin: 24vh auto 32vh;
+    margin: 18vh auto 32vh;
     background-color: whitesmoke;
     border: solid black 2px;
     border-radius: 30px;
-    box-shadow:  0px 10px 15px rgb(0, 0, 0, 0.7);
+    box-shadow:  0px 6px 12px rgb(0, 0, 0, 0.7);
     opacity: .9;
     position: absolute;
     display: table-column;
@@ -190,18 +190,9 @@
     min-height: 100vh;
   }
   .formBackground {
-    margin-top: 22vh;
+    margin-top: 20vh;
   }
   .chips {
    overflow-x: scroll;
-  }
-}
-
-@media only screen and (max-height: 400px) {
-  .formBackground {
-    margin: auto;
-  }
-  .sun3, .wave {
-    display: none;
   }
 }

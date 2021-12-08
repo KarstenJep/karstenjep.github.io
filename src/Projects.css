@@ -1,7 +1,7 @@
   /* Card for displaying each project */
   .tech {
     width: 90%;
-    margin: 42vh 2vh 2vh;
+    margin: 40vh 2vh 4vh;
     border: solid black 2px;
     border-radius: 30px;
     background-color:whitesmoke;

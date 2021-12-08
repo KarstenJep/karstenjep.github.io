@@ -1,6 +1,7 @@
 import React, {useRef} from 'react';
 // M-UI
 import ImageList from '@mui/material/ImageList';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIosNew';
 // Files
@@ -8,7 +9,6 @@ import Projects from './Projects.jsx';
 import "./Portfolio.css"
 // Images
 import beach from "./images/beach.png";
-import portfolioIcon from "./images/portfolio.png";
    
 export default function Portfolio() {
 
@@ -25,7 +25,7 @@ export default function Portfolio() {
             <div className="titleDiv">
                 <h3 className="title">
                     Portfolio&nbsp;
-                    <img src={portfolioIcon} alt='icon' style={{width: '4.5vh', margin: '0vh 0vh -1vh'}}/>
+                    <BusinessCenterIcon fontSize='large' style={{margin: '0vh 0vh -1vh'}}/> 
                 </h3>
             </div>
 
