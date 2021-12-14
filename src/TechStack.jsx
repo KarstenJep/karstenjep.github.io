@@ -51,13 +51,13 @@ export default function TechStack() {
             <Stack direction="row" spacing={1}>
                 <Chip 
                     label="HTML" 
-                    color="error"
+                    color="warning"
                     avatar={<Avatar alt="H" src={htmlAv} />}
                     variant={html ? "outlined" : "filled"}
                     onClick={() => setHtml(!html)}/>
                 <Chip 
                     label="CSS" 
-                    color="primary"
+                    color="info"
                     avatar={<Avatar alt="C" src={cssAv} />}
                     variant={css ? "outlined" : "filled"}
                     onClick={() => setCss(!css)}/>
@@ -76,7 +76,7 @@ export default function TechStack() {
                     onClick={() => setNode(!node)}/>
                 <Chip 
                     label="PostrgreSQL" 
-                    color="primary" 
+                    color="info" 
                     avatar={<Avatar alt="P" src={postgresql} />}
                     variant={postgres ? "outlined" : "filled"}
                     onClick={() => setPostgres(!postgres)}/>
@@ -88,19 +88,19 @@ export default function TechStack() {
                     onClick={() => setSql(!sql)}/>
                 <Chip 
                     label="Python" 
-                    color="primary"
+                    color="info"
                     avatar={<Avatar alt="P" src={pythonAv} />}
                     variant={python ? "outlined" : "filled"}
                     onClick={() => setPython(!python)}/>
                 <Chip 
                     label="Typescript" 
-                    color="primary"
+                    color="info"
                     avatar={<Avatar alt="T" src={ts} />}
                     variant={typescript ? "outlined" : "filled"}
                     onClick={() => setTypescript(!typescript)}/>
                 <Chip 
                     label="Git" 
-                    color="error"
+                    color="warning"
                     avatar={<Avatar alt="G" src={gitAv} />}
                     variant={git ? "outlined" : "filled"}
                     onClick={() => setGit(!git)}/>
@@ -115,7 +115,7 @@ export default function TechStack() {
                     onClick={() => setReact(!react)}/>
                 <Chip 
                     label="jQuery" 
-                    color="primary"
+                    color="info"
                     avatar={<Avatar alt="J" src={jqueryAv} />}
                     variant={jquery ? "outlined" : "filled"}
                     onClick={() => setJquery(!jquery)}/>
@@ -127,13 +127,13 @@ export default function TechStack() {
                     onClick={() => setRedux(!redux)}/>
                  <Chip 
                     label="Saga" 
-                    color="primary"
+                    color="secondary"
                     avatar={<Avatar alt="S" src={rs} />}
                     variant={saga ? "outlined" : "filled"}
                     onClick={() => setSaga(!saga)}/>
                 <Chip 
                     label="Express" 
-                    color="primary"
+                    color="info"
                     variant={express ? "outlined" : "filled"}
                     onClick={() => setExpress(!express)}/>
                 <Chip 
@@ -143,19 +143,19 @@ export default function TechStack() {
                     onClick={() => setAjax(!ajax)}/>
                 <Chip 
                     label="Material-UI" 
-                    color="primary"
+                    color="info"
                     avatar={<Avatar alt="M" src={muiAv} />}
                     variant={mui ? "outlined" : "filled"}
                     onClick={() => setMui(!mui)}/>
                 <Chip 
                     label="Passport" 
-                    color="success"
+                    color="info"
                     avatar={<Avatar alt="P" src={passportAv} />}
                     variant={passport ? "outlined" : "filled"}
                     onClick={() => setPassport(!passport)}/>
                 <Chip 
                     label="Postman" 
-                    color="error"
+                    color="warning"
                     avatar={<Avatar alt="P" src={postmanAv} />}
                     variant={postman ? "outlined" : "filled"}
                     onClick={() => setPostman(!postman)}/>

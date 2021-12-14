@@ -159,8 +159,8 @@ export default function Portfolio() {
             <h3 className="subtitles">Movie Gallery</h3>
             <div className="contents">
                 <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio">
-                    <FormControlLabel value="description" control={<Radio color="primary" />} label="Description" onChange={() => setTechMG(false)}/>
-                    <FormControlLabel value="tech" control={<Radio color="primary" />} label="Tech" onChange={() => setTechMG(true)}/>
+                    <FormControlLabel value="description" control={<Radio color="warning" />} label="Description" onChange={() => setTechMG(false)}/>
+                    <FormControlLabel value="tech" control={<Radio color="warning" />} label="Tech" onChange={() => setTechMG(true)}/>
                 </RadioGroup>
             </div>
             <div className="textBox">
@@ -175,7 +175,7 @@ export default function Portfolio() {
                     className="button"
                     style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
                     variant="contained" 
-                    color="primary"
+                    color="warning"
                     onClick={() => window.location.href="https://afternoon-falls-30309.herokuapp.com/#/"}
                 >
                     Open it up!
@@ -223,8 +223,8 @@ export default function Portfolio() {
             <h3 className="subtitles">To Do List</h3>
             <div className="contents">
                 <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio">
-                    <FormControlLabel value="description" control={<Radio color="secondary" />} label="Description" onChange={() => setTechTD(false)}/>
-                    <FormControlLabel value="tech" control={<Radio color="secondary" />} label="Tech" onChange={() => setTechTD(true)}/>
+                    <FormControlLabel value="description" control={<Radio color="info" />} label="Description" onChange={() => setTechTD(false)}/>
+                    <FormControlLabel value="tech" control={<Radio color="info" />} label="Tech" onChange={() => setTechTD(true)}/>
                 </RadioGroup>
             </div>
             <div className="textBox">
@@ -238,7 +238,7 @@ export default function Portfolio() {
                 <Button
                     style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
                     variant="contained" 
-                    color="secondary"
+                    color="info"
                     onClick={() => window.location.href="https://dry-shore-54453.herokuapp.com/"}
                 >
                     Click here!
