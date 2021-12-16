@@ -11,6 +11,7 @@ import mountains from "./images/mountains.png";
 import sun from "./images/sun.png"
 import clouds from "./images/clouds.png";
 import cloud from "./images/cloud.png";
+import cloudss from "./images/cloudss.png";
 // import moon from "./images/moon.png";
 import crescent from "./images/crescent.png"
 import stars from "./images/stars.png";
@@ -60,10 +61,10 @@ export default function Home() {
             <img src={sun} alt="sun" className="sun" style={{ transform: `translateY(-${scrollY * 0.1}vh) translateX(-${scrollY * 0.05}vh)`, zIndex: '0'}}/>
             <img src={sun} alt="sun" className="sunTwo" style={{ transform: `translateY(-${scrollY * 0.01}vh) translateX(-${scrollY * 0.005}vh)`, zIndex: '0'}}/>
             <img src={clouds} alt="cloud" className="cloud1" style={{ transform: `translateY(-${scrollY * 0.12}vh) translateX(${scrollY * 0.1}vh)`}}/>
-            <img src={clouds} alt="cloud" className="cloud2" style={{ transform: `translateY(-${scrollY * 0.14}vh) translateX(${scrollY * 0.15}vh)`}}/>
-            <img src={clouds} alt="cloud" className="cloud3" style={{ transform: `translateY(-${scrollY * 0.1}vh) translateX(-${scrollY * 0.12}vh)`}}/>
+            {/* <img src={clouds} alt="cloud" className="cloud2" style={{ transform: `translateY(-${scrollY * 0.14}vh) translateX(${scrollY * 0.15}vh)`}}/>
+            <img src={clouds} alt="cloud" className="cloud3" style={{ transform: `translateY(-${scrollY * 0.1}vh) translateX(-${scrollY * 0.12}vh)`}}/> */}
             <img src={cloud} alt="cloud" className="cloud4" style={{ transform: `translateY(-${scrollY * 0.16}vh) translateX(-${scrollY * 0.15}vh)`}}/>
-            <img src={cloud} alt="cloud" className="cloud5" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(${scrollY * 0.1}vh)`, zIndex: '0'}}/>
+            <img src={cloudss} alt="cloud" className="cloud5" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(${scrollY * 0.1}vh)`, zIndex: '0'}}/>
             {/* <img src={clouds} alt="cloud" className="cloud6" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.16}vh)`}}/>
             <img src={clouds} alt="cloud" className="cloud7" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.09}vh)`, zIndex: '0'}}/>
             <img src={clouds} alt="cloud" className="cloud8" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.08}vh)`}}/>
