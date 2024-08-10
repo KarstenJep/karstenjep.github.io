@@ -3,13 +3,11 @@ import { useSelector } from 'react-redux';
 import {Link} from 'react-scroll'
 import Portfolio from "./Portfolio.jsx"
 import './home.css';
-import PeopleIcon from '@mui/icons-material/EmojiPeople';
 // Images
 import mountains from "./images/mountains.png";
 import sun from "./images/sun.png"
-// import clouds from "./images/clouds.png";
-import cloudss from "./images/cloudss.png";
-// import moon from "./images/moon.png";
+import cloudss from "./images/clouds.png";
+// import cloudss from "./images/cloudss.png";
 import crescent from "./images/crescent.png"
 import stars from "./images/stars.png";
 import birds from "./images/birds.png";
@@ -28,7 +26,6 @@ import python from "./images/python.png";
 import html from "./images/html.png";
 import css from "./images/css.png";
 import git from "./images/git.png";
-import hs from "./images/hs.png";
 import jQ from "./images/jquery.png";
 import mui from "./images/mui.svg";
 import sql from "./images/sql.png";
@@ -38,7 +35,6 @@ import typescript from "./images/typescript.png";
 
 export default function Home() {
 
-    const user = useSelector(store => store.userReducer);
     const [scrollY, setScrollY] = useState(0);
     const handleScroll = () => setScrollY(window.scrollY);
 
@@ -53,7 +49,7 @@ export default function Home() {
         <section className="sky">
             {/* <!-- Animation - Sky --> */}
             <img src={mountains} alt="mountains" className="mountains" />
-            <div className="username" style={{ transform: `translateY(-${scrollY * 0.4}vh) translateX(${scrollY * 0.0}vh)`, zIndex: '2'}}>{`Hi ${user}!`}</div>
+            <div className="username" style={{ transform: `translateY(-${scrollY * 0.4}vh) translateX(${scrollY * 0.0}vh)`, zIndex: '2'}}>{`Hello!`}</div>
             <img src={sun} alt="sun" className="sun" style={{ transform: `translateY(-${scrollY * 0.1}vh) translateX(-${scrollY * 0.05}vh)`, zIndex: '0'}}/>
             <img src={sun} alt="sun" className="sunTwo" style={{ transform: `translateY(-${scrollY * 0.01}vh) translateX(-${scrollY * 0.005}vh)`, zIndex: '0'}}/>
             <img src={cloudss} alt="cloud" className="cloud1" style={{ transform: `translateY(-${scrollY * 0.12}vh) translateX(${scrollY * 0.1}vh)`}}/>
@@ -65,12 +61,11 @@ export default function Home() {
             <img src={cloudss} alt="cloud" className="cloud7" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.09}vh)`, zIndex: '0'}}/>
             <img src={cloudss} alt="cloud" className="cloud8" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.08}vh)`}}/>
             <img src={cloudss} alt="cloud" className="cloud9" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.07}vh)`}}/>
-            {/* <img src={moon} alt="moon" className="moon" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.36}vh)`}}/> */}
             <img src={crescent} alt="crescent" className="crescent" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.36}vh)`}}/>
             <img src={stars} alt="stars" className="stars" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.36}vh)`}}/>
             <img src={stars} alt="stars" className="starsTwo" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(${scrollY * 0.36}vh)`}}/>
             {/* <!-- Animation - Animals/vehicles --> */}
-            <img src={birds} alt="birds" className="birds" style={{ transform: `translateY(-${scrollY * 0.07}vh) translateX(${scrollY * 0.45}vh)`}}/>
+            <img src={birds} alt="birds" className="birds" style={{ transform: `translateY(-${scrollY * 0.07}vh) translateX(${scrollY * 0.40}vh)`}}/>
             <img src={moose} alt="moose" className="moose" style={{ transform: `translateX(-${scrollY * 0.05}vh)`}}/>
             <img src={bicycle} alt="bicycle" className="bicycle" style={{ transform: `translateY(${scrollY * 0.015}vh) translateX(${scrollY * 0.15}vh)`}}/>
             <img src={rocket} alt="rocket" className="rocket" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(${scrollY * 0.06}vh)`, zIndex: '0'}}/>
@@ -95,23 +90,9 @@ export default function Home() {
             <img src={saga} alt="saga" className="saga" style={{ transform: `translateY(${scrollY * 0.05}vh) translateX(${scrollY * 0.02}vh)`}}/>
             <img src={sql} alt="sql" className="sql" style={{ transform: `translateY(${scrollY * 0.03}vh) translateX(${scrollY * 0.01}vh)`}}/>
             {/* <!-- Scroll Down Arrow --> */}
-            <Link className="section" to="aboutMe" offset={-170} spy={true} smooth={true} duration={2500}></Link>
+            <Link className="section" to="portfolio" offset={2500} spy={true} smooth={true} duration={8000}></Link>
 
-            {/* <!-- About Me --> */}
-            <div className="info" id="aboutMe">
-                <h3 className="subtitles">
-                    Hello!&nbsp;
-                    <PeopleIcon fontSize="large" style={{margin: '0 0 -1vh'}}/>
-                </h3>
-                <p className="text">
-                    I believe in following life passions and enjoying your work. Practicing this philosophy has led
-                    to successful endeavors in the craft brewing industy, health/fitness field, and more recently the tech space. What
-                    I enjoy most about software engineering are the daily opportunites to create, collaborate, problem solve, and learn.
-                    Let's build a better tomorrow!
-                </p>
-            </div>
-
-            <img src={hs} alt="me" className="hs" id="portfolio" style={{ zIndex: '1'}}/>
+            <div id="portfolio"></div>
         </section>
 
         {/* <!-- Projects & Links --> */}
