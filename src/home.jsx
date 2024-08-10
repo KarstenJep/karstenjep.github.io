@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { useParams } from 'react-router';
+import { useSelector } from 'react-redux';
 import {Link} from 'react-scroll'
-// Files
-import Header from './header.jsx';
 import Portfolio from "./Portfolio.jsx"
 import './home.css';
 import PeopleIcon from '@mui/icons-material/EmojiPeople';
@@ -41,8 +38,6 @@ import typescript from "./images/typescript.png";
 
 export default function Home() {
 
-    const dispatch = useDispatch();
-    const {username} = useParams();
     const user = useSelector(store => store.userReducer);
     const [scrollY, setScrollY] = useState(0);
     const handleScroll = () => setScrollY(window.scrollY);
@@ -53,17 +48,8 @@ export default function Home() {
         return () => window.removeEventListener("scroll", handleScroll);
       }, []);
 
-    useEffect(() => {
-        dispatch({
-            type: 'USER',
-            payload: username
-        });
-    }, []);
-      
-
     return (
         <>
-        <Header />
         <section className="sky">
             {/* <!-- Animation - Sky --> */}
             <img src={mountains} alt="mountains" className="mountains" />

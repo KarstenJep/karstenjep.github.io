@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory, useParams } from 'react-router';
+import { useNavigate } from "react-router-dom";
 import {Link} from 'react-scroll'
 import './header.css';
 // M-UI
@@ -9,7 +9,6 @@ import PeopleIcon from '@mui/icons-material/EmojiPeople';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import HomeIcon from '@mui/icons-material/Home';
-import Button from '@mui/material/Button'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -20,25 +19,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-
+import Tab from '@mui/material/Tab';
+import TabContext from '@mui/lab/TabContext';
+import TabList from '@mui/lab/TabList';
 
 export default function Header() {
 
-    const history = useHistory();
-    // using params to determine which button to show (based on the current page)
-    const {id} = useParams();
-    const {username} = useParams();
-
-    const email = () => {
-        history.push(`/visitor=${username}/contact/2`);
-    }
-
-    const home = () => {
-        history.push(`/visitor=${username}/home/1`);
-    }
-
+  const navigate = useNavigate();
+  const [value, setValue] = React.useState('1');
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -46,6 +35,10 @@ export default function Header() {
  
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+  };
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
   };
 
   return (
@@ -58,74 +51,59 @@ export default function Header() {
             fontSize={44}
             noWrap
             component="div"
-            sx={{ ml: 2, mr: 0, color: 'black', fontFamily: 'BioRhyme', display: { xs: 'none', md: 'flex' } }}
+            sx={{ ml: 2, mr: 4, color: 'black', fontFamily: 'BioRhyme', display: { xs: 'none', md: 'flex' } }}
           >
             Karsten Jepsen
           </Typography>
-          { id === '1' ? 
-            <>
-              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              <Link to="aboutMe" offset={-170} spy={true} smooth={true} duration={2500}>
-                  <Button
-                    className='link'
-                    variant="text" 
-                    sx={{ ml: 10, mt: .5, color: 'black', display: 'flex', fontFamily: 'BioRhyme', fontSize: '14px' }}
-                    endIcon={ <PeopleIcon fontSize='large' /> }
-                >
-                    About
-                </Button>
-              </Link>
+        {/* Navbar */}
+          <Box sx={{ width: '30%', ml: '3%', display: { xs: 'none', md: 'flex' } }}>
+            <TabContext value={value}>
+              <Box sx={{ borderBottom: 1, borderColor: 'divider', mt: 0 }}>
+                <TabList onChange={handleChange} >
+                  <Tab 
+                    label="About" 
+                    value="1" 
+                    onClick={() => navigate(`/`)} 
+                    sx={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '18px', mb: -1 }}
+                    icon={ <PeopleIcon /> } iconPosition="end"
+                    />
+                  <Tab 
+                    label="Portfolio" 
+                    value="2" 
+                    onClick={() => navigate(`/portfolio`)} 
+                    sx={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '18px', mb: -1  }}
+                    icon={ <BusinessCenterIcon /> } iconPosition="end"
+                    />
+                  <Tab 
+                    label="Contact" 
+                    value="3" 
+                    onClick={() => navigate(`/contact`)} 
+                    sx={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '18px', mb: -1  }}
+                    icon={ <EmailIcon /> } iconPosition="end"
+                    />
+                </TabList>
               </Box>
-              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              <Link to="portfolio" offset={400} spy={true} smooth={true} duration={4000} underline="hover">
-                <Button
-                    className='link'
-                    variant="text" 
-                    sx={{ mr: 0, mt: .5, color: 'black', display: 'flex', fontFamily: 'BioRhyme', fontSize: '14px' }}
-                    endIcon={ <BusinessCenterIcon /> }
-                >
-                    Portfolio
-                </Button>
-              </Link>
-              </Box>
-              </>
-              :
-              <>
-              <Box sx={{ flexGrow: 1 }}></Box>
-              <Box sx={{ flexGrow: 1 }}></Box>
-              </>
-          }
-          <Box sx={{ flexGrow: 0, mr: 5, display: { xs: 'none', md: 'flex' } }}>
-              <Button
-                variant="contained"
-                style={{ color: 'black', backgroundColor: 'lightblue', display: 'flex', fontFamily: 'BioRhyme', width: '9rem', fontSize: '14px' }}
-                endIcon={id === '2' ? <HomeIcon /> : <EmailIcon />}
-                onClick={id === '2' ? () => home() : () => email()}  
-              >
-                {id === '2' ? 'Return': 'Contact'} 
-              </Button>
+            </TabContext>
           </Box>
-          {/* Links section */}
-            <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-                <Tooltip title="Github">
-                <IconButton
-                    sx={{mr: -1 }}
-                    onClick={() => window.location.href="https://github.com/KarstenJep"} 
-                >
-                    <GitHubIcon fontSize="large"  style={{color: "black"}} />
-                </IconButton>
-                </Tooltip>
-            </Box>
-            <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-                <Tooltip title="LinkedIn">
-                <IconButton 
-                    sx={{ mr: 0 }}
-                    onClick={() => window.location.href="https://www.linkedin.com/in/karsten-jepsen-067a67a2/"}
-                >
-                    <LinkedInIcon fontSize="large" style={{color: "black"}} />
-                </IconButton>
-                </Tooltip>
-            </Box>
+        {/* Links section */}
+          <Box sx={{ flexGrow: 0, ml: '24%', display: { xs: 'none', md: 'flex' } }}>
+            <Tooltip title="Github">
+              <IconButton
+                  sx={{mr: 0 }}
+                  onClick={() => window.open("https://github.com/KarstenJep", '_blank')} 
+              >
+                  <GitHubIcon style={{color: "black", fontSize: "4.5vh"}} />
+            </IconButton>
+            </Tooltip>
+            <Tooltip title="LinkedIn">
+              <IconButton 
+                  sx={{ mr: 0 }}
+                  onClick={() => window.open("https://www.linkedin.com/in/karsten-jepsen-067a67a2/", '_blank')}
+              >
+                  <LinkedInIcon style={{color: "black", fontSize: "5vh"}} />
+              </IconButton>
+            </Tooltip>
+          </Box>
 
           {/* Mobile View */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -157,7 +135,6 @@ export default function Header() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-                { id === '1' && 
                 <>
                 <Link to="aboutMe" offset={-100} spy={true} smooth={true} duration={2500}>
                     <MenuItem key={1} onClick={handleCloseNavMenu}>
@@ -178,42 +155,37 @@ export default function Header() {
                     </MenuItem>
                 </Link >
                 </>
-                }
-                { id !== '2' &&
                 <MenuItem key={3} onClick={handleCloseNavMenu}>
                     <Typography 
                         style={{fontFamily: 'BioRhyme', fontSize: '20px'}} 
-                        onClick={() => email()}
+                        onClick={() => navigate(`/contact`)}
                     >
                         {'Contact  '}<EmailIcon style={{margin: '0 0 -1vh'}}/>
                     </Typography>
                 </MenuItem>
-                }
-                { id === '2' &&
-                     <MenuItem key={4} onClick={handleCloseNavMenu}>
-                     <Typography 
-                         style={{fontFamily: 'BioRhyme', fontSize: '20px'}} 
-                         onClick={() => home()}
-                     >
-                         {'Home '}<HomeIcon style={{margin: '0 0 -1vh'}}/>
+                  <MenuItem key={4} onClick={handleCloseNavMenu}>
+                    <Typography 
+                      style={{fontFamily: 'BioRhyme', fontSize: '20px'}} 
+                      onClick={() => navigate(`/portfolio`)}
+                    >
+                      {'Home '}<HomeIcon style={{margin: '0 0 -1vh'}}/>
                      </Typography>
                  </MenuItem>
-                }
                 <MenuItem key={5} onClick={handleCloseNavMenu}>
-                    <Typography 
-                        style={{fontFamily: 'BioRhyme', fontSize: '20px'}} 
-                        onClick={() => window.location.href="https://github.com/KarstenJep"}
+                  <Typography 
+                      style={{fontFamily: 'BioRhyme', fontSize: '20px'}} 
+                      onClick={() => window.location.href="https://github.com/KarstenJep"}
                     >
-                        {'GitHub  '}<GitHubIcon style={{margin: '0 0 -1vh'}}/>
+                      {'GitHub  '}<GitHubIcon style={{margin: '0 0 -1vh'}}/>
                     </Typography>
                 </MenuItem>
                 <MenuItem key={6} onClick={handleCloseNavMenu}>
-                    <Typography 
-                        style={{fontFamily: 'BioRhyme', fontSize: '20px'}} 
-                        onClick={() => window.location.href="https://www.linkedin.com/in/karsten-jepsen-067a67a2/"}
-                    >
-                        {'LinkedIn  '}<LinkedInIcon style={{margin: '0 0 -1vh'}}/>
-                    </Typography>
+                  <Typography 
+                    style={{fontFamily: 'BioRhyme', fontSize: '20px'}} 
+                    onClick={() => window.location.href="https://www.linkedin.com/in/karsten-jepsen-067a67a2/"}
+                  >
+                    {'LinkedIn  '}<LinkedInIcon style={{margin: '0 0 -1vh'}}/>
+                  </Typography>
                 </MenuItem>
             </Menu>
           </Box>

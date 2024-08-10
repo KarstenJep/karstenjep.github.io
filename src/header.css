@@ -29,10 +29,6 @@ header {
     margin: -3vh auto 2vh;
   }
 
-  .link:hover {
-    border-bottom: 1px solid black;
-  }
-
   .socials {
     display: flex;
     margin: -2vh 8% -2vh;

@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router';
 import { useDispatch } from 'react-redux';
-// Files
-import Header from './header.jsx';
 import './landing.css';
 // M-UI
 import PublishIcon from '@mui/icons-material/Publish';
@@ -40,14 +38,14 @@ export default function LandingPage() {
           payload: username
       });
       // Send user to home page
-      history.push(`/visitor=${username}/home/1`)
+      history.push(`/portfolio`)
       // Clear the form field
       setUsername('');
   };
   
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="landingBackground">
           {/* Floating Clouds */}
           <div className="cloud-content">

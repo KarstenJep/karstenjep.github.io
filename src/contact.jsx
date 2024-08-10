@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 // import { useDispatch } from 'react-redux';
 // import moment from 'moment';
 import emailjs from "emailjs-com";
-// Files
-import Header from './header.jsx';
 import TechStack from './TechStack'
 import './contact.css';
 // Imgs
@@ -92,8 +90,6 @@ export default function Contact() {
     
     return (
         <>
-        <Header />
-
         <section className="contactBackground">
             {/* Message Form */}
             <form onSubmit={validateForm} className="formBackground"> 
