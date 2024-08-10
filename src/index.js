@@ -16,7 +16,6 @@ import App from './App';
 //   yield takeEvery('NEW_NAME', postName);
 //   yield takeEvery('FETCH_MAIL', fetchMail);
 //   yield takeEvery('FETCH_VISITORS', fetchVisitors);
-
 // }
 
 // function* postMessage(action) {
@@ -68,6 +67,32 @@ const userReducer = (state = [], action) => {
         return state;
   }
 };
+
+// const user = useSelector(store => store.userReducer);
+
+// const validateForm = (e) => {
+//   e.preventDefault();
+//   if (username === ''){
+//     setNameError(true)
+// } else {
+//     handleSubmit(e)
+//     dispatch({
+//         type: 'NEW_NAME',
+//         payload: {
+//             name: username
+//         }
+//     });
+// }
+// }
+
+// const handleSubmit = (e) => {
+//   dispatch({
+//       type: 'USER',
+//       payload: username
+//   });
+//   history.push(`/portfolio`)
+//   setUsername('');
+// };
 
 // const visitorsReducer = (state = [], action) => {
 //   switch (action.type) {

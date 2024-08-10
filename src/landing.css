@@ -10,24 +10,38 @@
     justify-content: center;
 }
 
-/* Login Form container */
-.login {
+.about-container {
     font-family: 'BioRhyme';
     box-sizing: border-box;
     text-align: center;
-    font-size: medium;
-    width: 420px;
+    width: 75vh;
     max-width: 90%;
-    margin: 36vh auto 36vh;
+    margin: 33vh auto 36vh;
     background-color: whitesmoke;
     border: solid black 2px;
     border-radius: 30px;
     box-shadow:  0px 6px 12px rgb(0, 0, 0, 0.7);
-    opacity: .9;
+    opacity: .85;
     position: absolute;
     display: table-column;
     z-index: 1;
 }
+
+.subtitles {
+    text-align: left;
+    font-size: 1.5vh;
+    font-weight:900;
+    margin: 2vh auto 0vh;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+    font-family: 'BioRhyme';
+  }
+  
+.text {
+    font-size: 1vh;
+    margin: 0vh 3vh 3vh;
+    min-width: 45%;
+    text-align: center;
+  }
 
 
 /* Floating clouds  */
@@ -35,9 +49,9 @@
     display:inline-flex;
     align-items: center;
     justify-content:center;
-    padding-top:20px;
+    padding-top:-10px;
     padding-bottom: 0px;
-   }
+}
 
 .cloud {
     display:inline-block;
@@ -91,7 +105,7 @@
 }
 
 /* Fade/Scale Animation */
-.login {
+.about-container {
     animation: fadeIn 3s;
     -webkit-animation: fadeIn 3s;
     -moz-animation: fadeIn 3s;
