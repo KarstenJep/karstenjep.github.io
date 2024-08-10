@@ -27,17 +27,18 @@ export default function Header() {
     const history = useHistory();
     // using params to determine which button to show (based on the current page)
     const {id} = useParams();
+    const {username} = useParams();
 
     const email = () => {
-        history.push('/contact/2');
+        history.push(`/visitor=${username}/contact/2`);
     }
 
     const home = () => {
-        history.push('/home/1');
+        history.push(`/visitor=${username}/home/1`);
     }
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);

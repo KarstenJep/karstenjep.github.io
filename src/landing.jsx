@@ -40,7 +40,7 @@ export default function LandingPage() {
           payload: username
       });
       // Send user to home page
-      history.push(`/home/1`)
+      history.push(`/visitor=${username}/home/1`)
       // Clear the form field
       setUsername('');
   };

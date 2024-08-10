@@ -17,10 +17,10 @@ function App() {
           <Route exact path="/">
             <Landing />
           </Route>
-          <Route exact path="/home/:id">
+          <Route exact path="/visitor=:username/home/:id">
             <Home  />
           </Route>
-          <Route exact path="/contact/:id">
+          <Route exact path="/visitor=:username/contact/:id">
             <Contact/>
           </Route>
           <Route exact path="/inbox">
