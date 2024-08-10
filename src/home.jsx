@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useParams } from 'react-router';
 import {Link} from 'react-scroll'
 // Files
 import Header from './header.jsx';
@@ -9,8 +10,7 @@ import PeopleIcon from '@mui/icons-material/EmojiPeople';
 // Images
 import mountains from "./images/mountains.png";
 import sun from "./images/sun.png"
-import clouds from "./images/clouds.png";
-import cloud from "./images/cloud.png";
+// import clouds from "./images/clouds.png";
 import cloudss from "./images/cloudss.png";
 // import moon from "./images/moon.png";
 import crescent from "./images/crescent.png"
@@ -41,6 +41,8 @@ import typescript from "./images/typescript.png";
 
 export default function Home() {
 
+    const dispatch = useDispatch();
+    const {username} = useParams();
     const user = useSelector(store => store.userReducer);
     const [scrollY, setScrollY] = useState(0);
     const handleScroll = () => setScrollY(window.scrollY);
@@ -51,6 +53,14 @@ export default function Home() {
         return () => window.removeEventListener("scroll", handleScroll);
       }, []);
 
+    useEffect(() => {
+        dispatch({
+            type: 'USER',
+            payload: username
+        });
+    }, []);
+      
+
     return (
         <>
         <Header />
@@ -60,15 +70,15 @@ export default function Home() {
             <div className="username" style={{ transform: `translateY(-${scrollY * 0.4}vh) translateX(${scrollY * 0.0}vh)`, zIndex: '2'}}>{`Hi ${user}!`}</div>
             <img src={sun} alt="sun" className="sun" style={{ transform: `translateY(-${scrollY * 0.1}vh) translateX(-${scrollY * 0.05}vh)`, zIndex: '0'}}/>
             <img src={sun} alt="sun" className="sunTwo" style={{ transform: `translateY(-${scrollY * 0.01}vh) translateX(-${scrollY * 0.005}vh)`, zIndex: '0'}}/>
-            <img src={clouds} alt="cloud" className="cloud1" style={{ transform: `translateY(-${scrollY * 0.12}vh) translateX(${scrollY * 0.1}vh)`}}/>
-            {/* <img src={clouds} alt="cloud" className="cloud2" style={{ transform: `translateY(-${scrollY * 0.14}vh) translateX(${scrollY * 0.15}vh)`}}/>
-            <img src={clouds} alt="cloud" className="cloud3" style={{ transform: `translateY(-${scrollY * 0.1}vh) translateX(-${scrollY * 0.12}vh)`}}/> */}
-            <img src={cloud} alt="cloud" className="cloud4" style={{ transform: `translateY(-${scrollY * 0.16}vh) translateX(-${scrollY * 0.15}vh)`}}/>
+            <img src={cloudss} alt="cloud" className="cloud1" style={{ transform: `translateY(-${scrollY * 0.12}vh) translateX(${scrollY * 0.1}vh)`}}/>
+            <img src={cloudss} alt="cloud" className="cloud2" style={{ transform: `translateY(-${scrollY * 0.14}vh) translateX(${scrollY * 0.15}vh)`}}/>
+            <img src={cloudss} alt="cloud" className="cloud3" style={{ transform: `translateY(-${scrollY * 0.1}vh) translateX(-${scrollY * 0.12}vh)`}}/>
+            <img src={cloudss} alt="cloud" className="cloud4" style={{ transform: `translateY(-${scrollY * 0.16}vh) translateX(-${scrollY * 0.15}vh)`}}/>
             <img src={cloudss} alt="cloud" className="cloud5" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(${scrollY * 0.1}vh)`, zIndex: '0'}}/>
-            {/* <img src={clouds} alt="cloud" className="cloud6" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.16}vh)`}}/>
-            <img src={clouds} alt="cloud" className="cloud7" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.09}vh)`, zIndex: '0'}}/>
-            <img src={clouds} alt="cloud" className="cloud8" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.08}vh)`}}/>
-            <img src={clouds} alt="cloud" className="cloud9" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.07}vh)`}}/> */}
+            <img src={cloudss} alt="cloud" className="cloud6" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.16}vh)`}}/>
+            <img src={cloudss} alt="cloud" className="cloud7" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.09}vh)`, zIndex: '0'}}/>
+            <img src={cloudss} alt="cloud" className="cloud8" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.08}vh)`}}/>
+            <img src={cloudss} alt="cloud" className="cloud9" style={{ transform: `translateY(-${scrollY * 0.02}vh) translateX(${scrollY * 0.07}vh)`}}/>
             {/* <img src={moon} alt="moon" className="moon" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.36}vh)`}}/> */}
             <img src={crescent} alt="crescent" className="crescent" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.36}vh)`}}/>
             <img src={stars} alt="stars" className="stars" style={{ transform: `translateY(-${scrollY * 0.2}vh) translateX(-${scrollY * 0.36}vh)`}}/>
