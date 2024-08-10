@@ -58,7 +58,8 @@ export default function LandingPage() {
             <Grid container spacing={1} >
                 <Grid item xs={12}>
                     {/* Helper Text */}
-                    <h3 style={{fontSize: '3vh'}}>Enter Your Name To Continue</h3>
+                    <h3 style={{fontSize: '4vh', marginBottom: '-3vh'}}>Welcome!</h3>
+                    <h3 style={{fontSize: '3vh'}}>What's your name?</h3>
                 </Grid>
                 <Grid item xs={12} mt={-1}>
                     <TextField
