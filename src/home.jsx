@@ -99,7 +99,7 @@ export default function Home() {
             <img src={saga} alt="saga" className="saga" style={{ transform: `translateY(${scrollY * 0.05}vh) translateX(${scrollY * 0.02}vh)`}}/>
             <img src={sql} alt="sql" className="sql" style={{ transform: `translateY(${scrollY * 0.03}vh) translateX(${scrollY * 0.01}vh)`}}/>
             {/* <!-- Scroll Down Arrow --> */}
-            <Link className="section" to="portfolio" offset={400} spy={true} smooth={true} duration={5000}></Link>
+            <Link className="section" to="aboutMe" offset={400} spy={true} smooth={true} duration={2500}></Link>
 
             {/* <!-- About Me --> */}
             <div className="info" id="aboutMe">
