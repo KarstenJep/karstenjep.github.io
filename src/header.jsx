@@ -67,8 +67,9 @@ export default function Header() {
               <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               <Link to="aboutMe" offset={-170} spy={true} smooth={true} duration={2500}>
                   <Button
+                    className='link'
                     variant="text" 
-                    sx={{ ml: 4, mt: .5, color: 'black', display: 'flex', fontFamily: 'BioRhyme', fontSize: '14px' }}
+                    sx={{ ml: 10, mt: .5, color: 'black', display: 'flex', fontFamily: 'BioRhyme', fontSize: '14px' }}
                     endIcon={ <PeopleIcon fontSize='large' /> }
                 >
                     About
@@ -76,8 +77,9 @@ export default function Header() {
               </Link>
               </Box>
               <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              <Link to="portfolio" offset={400} spy={true} smooth={true} duration={4000}>
+              <Link to="portfolio" offset={400} spy={true} smooth={true} duration={4000} underline="hover">
                 <Button
+                    className='link'
                     variant="text" 
                     sx={{ mr: 0, mt: .5, color: 'black', display: 'flex', fontFamily: 'BioRhyme', fontSize: '14px' }}
                     endIcon={ <BusinessCenterIcon /> }
@@ -93,7 +95,7 @@ export default function Header() {
               <Box sx={{ flexGrow: 1 }}></Box>
               </>
           }
-          <Box sx={{ flexGrow: 0, mr: 3, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 0, mr: 5, display: { xs: 'none', md: 'flex' } }}>
               <Button
                 variant="contained"
                 style={{ color: 'black', backgroundColor: 'lightblue', display: 'flex', fontFamily: 'BioRhyme', width: '9rem', fontSize: '14px' }}

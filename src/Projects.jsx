@@ -13,6 +13,7 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
+import { Link } from '@mui/material';
 
 export default function Portfolio() {
     
@@ -48,10 +49,10 @@ export default function Portfolio() {
             </div>
             < div className="contents">
                 <Button
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
-                    variant="contained" 
+                    style={{ color: 'success', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
+                    variant="contained"
                     color="success"
-                    onClick={() => window.location.href="https://boiling-plains-09195.herokuapp.com/#/home"}
+                    onClick={() => window.open('https://boiling-plains-09195.herokuapp.com/#/home', '_blank')}
                 >
                     Check it out!
                 </Button>
@@ -79,10 +80,10 @@ export default function Portfolio() {
             </div>
             < div className="contents">
                 <Button
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
+                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained" 
                     color="primary"
-                    onClick={() => window.location.href="https://safe-plains-34698.herokuapp.com/#/home"}
+                    onClick={() => window.open('"https://safe-plains-34698.herokuapp.com/#/home', '_blank')}
                 >
                     Have a look!
                 </Button>
@@ -110,10 +111,10 @@ export default function Portfolio() {
             </div>
             <div className="contents">
                 <Button
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
+                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained" 
                     color="secondary"
-                    onClick={() => window.location.href="https://karstenjep.github.io/react-interview-exercise/"}
+                    onClick={() => window.open('https://karstenjep.github.io/react-interview-exercise/', '_blank')}
                 >
                     Take a gander!
                 </Button>
@@ -141,10 +142,10 @@ export default function Portfolio() {
             </div>
             <div className="contents">
                 <Button
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
+                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained" 
                     color="error"
-                    onClick={() => window.location.href="https://karstenjep.github.io/Mario-Kaboom.js/"}
+                    onClick={() => window.open('https://karstenjep.github.io/Mario-Kaboom.js/', '_blank')}
                 >
                     Game on!
                 </Button>
@@ -173,10 +174,10 @@ export default function Portfolio() {
             <div className="contents">
                 <Button
                     className="button"
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
+                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained" 
                     color="warning"
-                    onClick={() => window.location.href="https://afternoon-falls-30309.herokuapp.com/#/"}
+                    onClick={() => window.open('https://afternoon-falls-30309.herokuapp.com/#/', '_blank')}
                 >
                     Open it up!
                 </Button>
@@ -205,10 +206,10 @@ export default function Portfolio() {
             <div className="contents">
                 <Button
                     className="button"
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
+                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained" 
                     color="success"
-                    onClick={() => window.location.href="https://shielded-plateau-72344.herokuapp.com/"}
+                    onClick={() => window.open('https://shielded-plateau-72344.herokuapp.com/', '_blank')}
                 >
                     Another one!
                 </Button>
@@ -236,10 +237,10 @@ export default function Portfolio() {
             </div>
             <div className="contents">
                 <Button
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '75%', margin: 'auto'}}
+                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained" 
                     color="info"
-                    onClick={() => window.location.href="https://dry-shore-54453.herokuapp.com/"}
+                    onClick={() => window.open('https://dry-shore-54453.herokuapp.com/', '_blank')}
                 >
                     Click here!
                 </Button>
