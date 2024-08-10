@@ -95,9 +95,9 @@ export default function Contact() {
             <form onSubmit={validateForm} className="formBackground"> 
                 <Grid container spacing={1} pt={2} pb={3}>
                     <Grid item xs={12}>
-                        <h1 className="sayHi">Leave A Message <EmailIcon style={{margin: '0 0 -1vh'}}/></h1>
+                        <h1 className="sayHi">Leave A Message <EmailIcon style={{marginBottom: '-1vh', fontSize: '3.5vh'}}/></h1>
                     </Grid>
-                    <Grid item xs={4} ml={2.1}>
+                    <Grid item xs={4} ml={3}>
                         <TextField
                             // Name Input
                             label="Name"
@@ -140,7 +140,7 @@ export default function Contact() {
                         <Button
                             // Submit Btn
                             type="submit"
-                            style={{  fontFamily: 'BioRhyme', width: '60%', backgroundColor: 'skyblue', color: 'black' }}
+                            style={{  fontFamily: 'BioRhyme', width: '40%', backgroundColor: 'skyblue', color: 'black' }}
                             variant="contained" 
                             color="success"
                             endIcon={<PublishIcon />}
