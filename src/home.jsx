@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
 import {Link} from 'react-scroll'
 import Portfolio from "./Portfolio.jsx"
 import './home.css';
@@ -26,12 +25,12 @@ import python from "./images/python.png";
 import html from "./images/html.png";
 import css from "./images/css.png";
 import git from "./images/git.png";
-import jQ from "./images/jquery.png";
+import spring from "./images/spring.png";
 import mui from "./images/mui.svg";
 import sql from "./images/sql.png";
 import redux from "./images/redux.svg";
-import saga from "./images/redux-saga.svg";
 import typescript from "./images/typescript.png";
+import java from "./images/java.png";
 
 export default function Home() {
 
@@ -79,16 +78,16 @@ export default function Home() {
             <img src={css} alt="css" className="css" style={{ transform: `translateY(${scrollY * 0.04}vh) translateX(-${scrollY * 0.03}vh)`}}/>
             <img src={js} alt="js" className="javascript" style={{ transform: `translateY(${scrollY * 0.06}vh) translateX(-${scrollY * 0.04}vh)`}}/>
             <img src={typescript} alt="typescript" className="typescript" style={{ transform: `translateY(${scrollY * 0.08}vh) translateX(-${scrollY * 0.05}vh)`}}/>
-            <img src={node} alt="node" className="node" style={{ transform: `translateY(${scrollY * 0.08}vh) translateX(${scrollY * 0.05}vh)`}}/>
-            <img src={postgresql} alt="postgresql" className="postgresql" style={{ transform: `translateY(${scrollY * 0.06}vh) translateX(${scrollY * 0.04}vh)`}}/>
-            <img src={python} alt="python" className="python" style={{ transform: `translateY(${scrollY * 0.04}vh) translateX(${scrollY * 0.03}vh)`}}/>
+            <img src={java} alt="java" className="java" style={{ transform: `translateY(${scrollY * 0.08}vh) translateX(${scrollY * 0.05}vh)`}}/>
+            <img src={python} alt="python" className="python" style={{ transform: `translateY(${scrollY * 0.06}vh) translateX(${scrollY * 0.04}vh)`}}/>
+            <img src={sql} alt="sql" className="sql" style={{ transform: `translateY(${scrollY * 0.04}vh) translateX(${scrollY * 0.03}vh)`}}/>
             <img src={git} alt="git" className="git" style={{ transform: `translateY(${scrollY * 0.02}vh) translateX(${scrollY * 0.02}vh)`}}/>
             <img src={mui} alt="mui" className="mui" style={{ transform: `translateY(${scrollY * 0.03}vh) translateX(-${scrollY * 0.01}vh)`}}/>
-            <img src={jQ} alt="jQ" className="jQ" style={{ transform: `translateY(${scrollY * 0.05}vh) translateX(-${scrollY * 0.02}vh)`}}/>
+            <img src={redux} alt="redux" className="redux" style={{ transform: `translateY(${scrollY * 0.05}vh) translateX(-${scrollY * 0.02}vh)`}}/>
             <img src={react} alt="react" className="react" style={{ transform: `translateY(${scrollY * 0.07}vh) translateX(-${scrollY * 0.03}vh)`}}/>
-            <img src={redux} alt="redux" className="redux" style={{ transform: `translateY(${scrollY * 0.07}vh) translateX(${scrollY * 0.03}vh)`}}/>
-            <img src={saga} alt="saga" className="saga" style={{ transform: `translateY(${scrollY * 0.05}vh) translateX(${scrollY * 0.02}vh)`}}/>
-            <img src={sql} alt="sql" className="sql" style={{ transform: `translateY(${scrollY * 0.03}vh) translateX(${scrollY * 0.01}vh)`}}/>
+            <img src={node} alt="node" className="node" style={{ transform: `translateY(${scrollY * 0.07}vh) translateX(${scrollY * 0.03}vh)`}}/>
+            <img src={spring} alt="spring" className="spring" style={{ transform: `translateY(${scrollY * 0.05}vh) translateX(${scrollY * 0.02}vh)`}}/>
+            <img src={postgresql} alt="postgresql" className="postgresql" style={{ transform: `translateY(${scrollY * 0.03}vh) translateX(${scrollY * 0.01}vh)`}}/>
             {/* <!-- Scroll Down Arrow --> */}
             <Link className="section" to="portfolio" offset={2500} spy={true} smooth={true} duration={8000}></Link>
 

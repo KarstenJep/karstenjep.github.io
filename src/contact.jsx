@@ -161,6 +161,7 @@ export default function Contact() {
             <img src={turtle} alt="mountain" className="turtle" />
             <img src={shark} alt="mountain" className="shark" />
             <img src={hut} alt="hut" className="hut" />
+            <img src={hut} alt="hut" className="hut2" />
 
             {/* Animation for wave */}
             <svg version="1.1" className="wave"
