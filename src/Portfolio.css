@@ -45,7 +45,7 @@
     grid-gap: 10vh;
     grid-template-columns: 
         5vh
-        repeat(7, calc(45vh))
+        repeat(8, calc(45vh))
         5vh;
     grid-template-rows: minmax(150px, 1fr);
     margin-bottom: 0;

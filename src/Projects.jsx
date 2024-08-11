@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./Projects.css"
 // Images
+import quotation from "./images/quotation.png";
 import wh from "./images/wh.png";
 import oel from "./images/oel.png";
 import search from "./images/search.png";
@@ -13,11 +14,11 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
-import { Link } from '@mui/material';
 
 export default function Portfolio() {
     
     // Declaring state for each project. Toggles rendering description or tech stach
+    const [techQuotes, setTechQuotes] = useState(false);
     const [techWH, setTechWH] = useState(false);
     const [techOEL, setTechOEL] = useState(false);
     const [techDF, setTechDF] = useState(false);
@@ -28,6 +29,37 @@ export default function Portfolio() {
 
     return (
         <>
+        {/* Quote Game */}
+        <div className="tech">
+            <div className="contents">
+                <img src={quotation} className="quotation"/>
+            </div>
+            <h3 className="subtitles">Quote Game</h3>
+            <div className="contents">
+                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio" >
+                    <FormControlLabel value="description" control={<Radio color="warning" />} label="Description" onChange={() => setTechQuotes(false)}/>
+                    <FormControlLabel value="tech" control={<Radio color="warning" />} label="Tech" onChange={() => setTechQuotes(true)}/>
+                </RadioGroup>
+            </div>
+            <div className="textBox">
+                { !techQuotes ? 
+                    <p>A Test your knowledge in a fun and challenging game where you guess who said the famous quote!</p>          
+                :
+                    <p>[ ReactJs, External API's, Material-UI, CSS ]</p>
+                }
+            </div>
+            < div className="contents">
+                <Button
+                    style={{ color: 'warning', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
+                    variant="contained"
+                    color="warning"
+                    onClick={() => window.open('https://karstenjep.github.io/quote-generator-api/', '_blank')}
+                >
+                    Click Here!
+                </Button>
+            </div>
+        </div>
+
         {/* What's Hop'nin? */}
         <div className="tech">
             <div className="contents">

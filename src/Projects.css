@@ -38,6 +38,11 @@
   }
   
   /* Project Images */
+  .quotation {
+    width: 16vh;
+    margin: 4vh auto 0vh;
+  }
+
   .wh {
     width: 14vh;
     margin: 4vh auto 0vh;
