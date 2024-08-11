@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.c711605e.css",
-    "main.js": "/static/js/main.dd52b62a.js",
+    "main.css": "/static/css/main.b905bcaf.css",
+    "main.js": "/static/js/main.9374b5d3.js",
     "static/media/sun.png": "/static/media/sun.915c74a93f67c7ad268b.png",
     "static/media/parrot.png": "/static/media/parrot.e4f3119448b87700fae3.png",
     "static/media/lake.jpg": "/static/media/lake.c5354228065f5e9cbe29.jpg",
     "static/media/mountains.png": "/static/media/mountains.bddbbf44a1c9ff79a133.png",
     "static/media/river.png": "/static/media/river.d9049f6bac05e86289f8.png",
-    "static/media/hs.png": "/static/media/hs.ac04f0724c94ffb81c17.png",
     "static/media/rocket.png": "/static/media/rocket.40b6b9fb0e12bc8f4b94.png",
     "static/media/beach.png": "/static/media/beach.f4662ffece0711517103.png",
     "static/media/turtle.png": "/static/media/turtle.8e089fd24476676084d4.png",
@@ -22,11 +21,11 @@
     "static/media/stars.png": "/static/media/stars.e3a5faeb507fe1a7cfae.png",
     "static/media/passport.png": "/static/media/passport.86414fbaae13e0cb1920.png",
     "static/media/airplane.png": "/static/media/airplane.d78bb95fb26946258883.png",
+    "static/media/clouds.png": "/static/media/clouds.d976d273df874dd5df47.png",
     "static/media/mtn2.png": "/static/media/mtn2.a5a98f4a9bef39b51f47.png",
     "static/media/island.png": "/static/media/island.8a6c3197fe239ec51cd8.png",
     "static/media/html.png": "/static/media/html.1d7b133e22ffe4829da6.png",
     "static/media/shark.png": "/static/media/shark.b2ba7987cdcd275b0c9a.png",
-    "static/media/cloudss.png": "/static/media/cloudss.8bbc82cf263a1557a175.png",
     "static/media/react.png": "/static/media/react.4b0cd2860f07bc5cd6d6.png",
     "static/media/postgresql.png": "/static/media/postgresql.a442d7ae86221ddf6ee5.png",
     "static/media/birds.png": "/static/media/birds.bfc49cb32e740538f480.png",
@@ -35,7 +34,9 @@
     "static/media/node.png": "/static/media/node.85fedea58efe86438f00.png",
     "static/media/mario.png": "/static/media/mario.ead83410722695e8a315.png",
     "static/media/air-balloon.png": "/static/media/air-balloon.e3cd9d9713d1cd0c9964.png",
+    "static/media/quotation.png": "/static/media/quotation.0e854ee3ba38667e9d45.png",
     "static/media/search.png": "/static/media/search.197ebae285b60d43ebe5.png",
+    "static/media/java.png": "/static/media/java.7a2aa6ad3a281e612214.png",
     "static/media/sql.png": "/static/media/sql.e742a0a409270dbe6e7e.png",
     "static/media/js.png": "/static/media/js.608bd72b5dfcd340a0d0.png",
     "static/media/css.png": "/static/media/css.99426a611bd5b768e71d.png",
@@ -47,11 +48,11 @@
     "static/media/redux.svg": "/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
     "static/media/mui.svg": "/static/media/mui.4d05798a9d3243e7634aa7741f05e4a7.svg",
     "index.html": "/index.html",
-    "main.c711605e.css.map": "/static/css/main.c711605e.css.map",
-    "main.dd52b62a.js.map": "/static/js/main.dd52b62a.js.map"
+    "main.b905bcaf.css.map": "/static/css/main.b905bcaf.css.map",
+    "main.9374b5d3.js.map": "/static/js/main.9374b5d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.c711605e.css",
-    "static/js/main.dd52b62a.js"
+    "static/css/main.b905bcaf.css",
+    "static/js/main.9374b5d3.js"
   ]
 }
