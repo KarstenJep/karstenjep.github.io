@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./Projects.css"
 // Images
+import fact from "./images/facts.png";
 import quotation from "./images/quotation.png";
 import wh from "./images/wh.png";
 import oel from "./images/oel.png";
@@ -14,10 +15,12 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 
 export default function Portfolio() {
     
     // Declaring state for each project. Toggles rendering description or tech stach
+    const [techFacts, setTechFacts] = useState(false);
     const [techQuotes, setTechQuotes] = useState(false);
     const [techWH, setTechWH] = useState(false);
     const [techOEL, setTechOEL] = useState(false);
@@ -29,6 +32,37 @@ export default function Portfolio() {
 
     return (
         <>
+        {/* Fact Generator */}
+        <div className="tech">
+            <div className="contents">
+                <img src={fact} className="quotation"/>
+            </div>
+            <h3 className="subtitles">Fact Generator</h3>
+            <div className="contents">
+                <RadioGroup row aria-label="gender" name="row-radio-buttons-group" defaultValue="description" className="radio" >
+                    <FormControlLabel value="description" control={<Radio color="error" />} label="Description" onChange={() => setTechFacts(false)}/>
+                    <FormControlLabel value="tech" control={<Radio color="error" />} label="Tech" onChange={() => setTechFacts(true)}/>
+                </RadioGroup>
+            </div>
+            <div className="textBox">
+                { !techFacts ? 
+                    <p>Use AI to learn fun facts! Project utilizing Gen-AI and hosted GCP with CI/CD.</p>          
+                :
+                    <p>[ Gen-AI, GCP, Node, JS, HTML, CSS ]</p>
+                }
+            </div>
+            < div className="contents">
+                <Button
+                    style={{ color: 'error', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
+                    variant="contained"
+                    color="error"
+                    onClick={() => window.open('https://gen-ai-deployment-kwhwzio4da-uc.a.run.app', '_blank')}
+                >
+                    Try it out!
+                </Button>
+            </div>
+        </div>
+
         {/* Quote Game */}
         <div className="tech">
             <div className="contents">
@@ -43,9 +77,9 @@ export default function Portfolio() {
             </div>
             <div className="textBox">
                 { !techQuotes ? 
-                    <p>A Test your knowledge in a fun and challenging game where you guess who said the famous quote!</p>          
+                    <p>Test your knowledge and guess who said the famous quote! Sound on <VolumeUpIcon fontSize="medium" style={{marginBottom: '-.5vh'}}/></p>          
                 :
-                    <p>[ ReactJs, External API's, Material-UI, CSS ]</p>
+                    <p>[ ReactJS, External API's, Material-UI, CSS ]</p>
                 }
             </div>
             < div className="contents">
@@ -76,7 +110,7 @@ export default function Portfolio() {
                 { !techWH ? 
                     <p>A scheduling app made for Big Wood Brewery to help the brewers track hop additions!</p>          
                 :
-                    <p>[ ReactJs, Redux, Sagas, Node, Express, Postgresql, Material-UI, CSS, Moment.js ]</p>
+                    <p>[ ReactJS, Redux, Sagas, Node, Express, Postgresql, Material-UI, CSS, Moment.js ]</p>
                 }
             </div>
             < div className="contents">
@@ -105,9 +139,9 @@ export default function Portfolio() {
             </div>
             <div className="textBox">
                 { !techOEL ? 
-                    <p>A tiered app made for St. Paul Jack to help users discover potential career paths. Group Project.</p>          
+                    <p>A tiered app made for St. Paul Jack to help users discover potential career paths.</p>          
                 :
-                    <p>[ ReactJs, Redux, Sagas, Node, Express, CSV, Postgresql, Material-UI ]</p>
+                    <p>[ ReactJS, Redux, Sagas, Node, Express, CSV, Postgresql, Material-UI ]</p>
                 }
             </div>
             < div className="contents">
@@ -115,7 +149,7 @@ export default function Portfolio() {
                     style={{ color: 'black', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained" 
                     color="primary"
-                    onClick={() => window.open('"https://safe-plains-34698.herokuapp.com/#/home', '_blank')}
+                    onClick={() => window.open('https://safe-plains-34698.herokuapp.com/#/home', '_blank')}
                 >
                     Have a look!
                 </Button>
@@ -200,7 +234,7 @@ export default function Portfolio() {
                 { !techMG ? 
                     <p>A movie application allowing users to add new movies, and read details!</p>          
                 :
-                    <p>[ ReactJs, Redux, Saga, Node, Express, Postgresql, Material UI, CSS ]</p>
+                    <p>[ ReactJS, Redux, Saga, Node, Express, Postgresql, Material UI, CSS ]</p>
                 }
             </div>
             <div className="contents">
@@ -232,7 +266,7 @@ export default function Portfolio() {
                 { !techPG ? 
                     <p>A small photo gallery of my life, and my first website in React!</p>          
                 :
-                    <p>[ ReactJs, Ajax, Node, Express, CSS ]</p>
+                    <p>[ ReactJS, Ajax, Node, Express, CSS ]</p>
                 }
             </div>
             <div className="contents">

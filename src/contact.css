@@ -81,16 +81,16 @@
 }
 
 .island {
-    height: 20vh;
-    width: 41vw;
+    height: 22vh;
+    width: 42vw;
     margin-top: 59.5vh;
     z-index: 2;
     left: -11%;
 }
 
 .island2 {
-    height: 17vh;
-    width: 32vw;
+    height: 19vh;
+    width: 33vw;
     margin-top: 61vh;
     z-index: 2;
     left: 71%;

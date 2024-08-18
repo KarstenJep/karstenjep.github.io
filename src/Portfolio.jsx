@@ -4,6 +4,9 @@ import ImageList from '@mui/material/ImageList';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIosNew';
+import InfoIcon from '@mui/icons-material/InfoOutlined';
+import Tooltip from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
 // Files
 import Projects from './Projects.jsx';
 import "./Portfolio.css"
@@ -11,7 +14,6 @@ import "./Portfolio.css"
 import beach from "./images/beach.png";
    
 export default function Portfolio() {
-
     const ref = useRef(null)
 
     const scroll = (scrollOffset) => {
@@ -25,9 +27,15 @@ export default function Portfolio() {
             <div className="titleDiv">
                 <h3 className="title">
                     Portfolio&nbsp;
-                    <BusinessCenterIcon fontSize='large' style={{margin: '0vh 0vh -1vh'}}/> 
+                    <BusinessCenterIcon fontSize='large' style={{margin: '0vh 0vh -.5vh 0vh '}}/>
                 </h3>
             </div>
+            <Tooltip 
+                placement="right"    
+                title={<div style={{fontSize: 14}}>This application is hosted on Heroku and may take 5-10 seconds to appear in the browser</div>}
+              >
+                <InfoIcon fontSize='medium' className='infoIcon' />
+            </Tooltip>
 
             {/* Left Arrow */}
             <ArrowBackIosIcon  
