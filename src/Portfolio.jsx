@@ -32,7 +32,7 @@ export default function Portfolio() {
             </div>
             <Tooltip 
                 placement="right"    
-                title={<div style={{fontSize: 14}}>This application is hosted on Heroku and may take 5-10 seconds to appear in the browser</div>}
+                title={<div style={{fontSize: 14}}>Some applications are hosted on Heroku and may take 5-10 seconds to appear in the browser</div>}
               >
                 <InfoIcon fontSize='medium' className='infoIcon' />
             </Tooltip>
