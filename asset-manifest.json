@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b905bcaf.css",
-    "main.js": "/static/js/main.9374b5d3.js",
+    "main.css": "/static/css/main.0f329106.css",
+    "main.js": "/static/js/main.f8b0260b.js",
     "static/media/sun.png": "/static/media/sun.915c74a93f67c7ad268b.png",
     "static/media/parrot.png": "/static/media/parrot.e4f3119448b87700fae3.png",
     "static/media/lake.jpg": "/static/media/lake.c5354228065f5e9cbe29.jpg",
@@ -34,6 +34,7 @@
     "static/media/node.png": "/static/media/node.85fedea58efe86438f00.png",
     "static/media/mario.png": "/static/media/mario.ead83410722695e8a315.png",
     "static/media/air-balloon.png": "/static/media/air-balloon.e3cd9d9713d1cd0c9964.png",
+    "static/media/facts.png": "/static/media/facts.35b9b3e93962942b15e1.png",
     "static/media/quotation.png": "/static/media/quotation.0e854ee3ba38667e9d45.png",
     "static/media/search.png": "/static/media/search.197ebae285b60d43ebe5.png",
     "static/media/java.png": "/static/media/java.7a2aa6ad3a281e612214.png",
@@ -48,11 +49,11 @@
     "static/media/redux.svg": "/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
     "static/media/mui.svg": "/static/media/mui.4d05798a9d3243e7634aa7741f05e4a7.svg",
     "index.html": "/index.html",
-    "main.b905bcaf.css.map": "/static/css/main.b905bcaf.css.map",
-    "main.9374b5d3.js.map": "/static/js/main.9374b5d3.js.map"
+    "main.0f329106.css.map": "/static/css/main.0f329106.css.map",
+    "main.f8b0260b.js.map": "/static/js/main.f8b0260b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b905bcaf.css",
-    "static/js/main.9374b5d3.js"
+    "static/css/main.0f329106.css",
+    "static/js/main.f8b0260b.js"
   ]
 }
