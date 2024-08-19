@@ -19,10 +19,10 @@
     font-size: medium;
     width: 600px;
     max-width: 95%;
-    margin: 26vh auto 32vh;
+    margin: 26vh auto 16vh;
     background-color: whitesmoke;
     border: solid black 2px;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow:  0px 6px 12px rgb(0, 0, 0, 0.7);
     opacity: .9;
     position: absolute;
