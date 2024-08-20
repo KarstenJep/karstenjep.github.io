@@ -53,17 +53,17 @@ export default function Portfolio() {
                 }
             </div>
             < div className="contents">
-                <Link color="error" variant='h5' className="custom-link" sx={{ margin: 'auto', fontWeight: 'bold'}} to="/">
+                {/* <Link color="error" variant='h5' className="custom-link" sx={{ margin: 'auto', fontWeight: 'bold'}} to="/">
                     Try the Generator!
-                </Link>
-                {/* <Button
-                    style={{ color: 'error', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
+                </Link> */}
+                <Button
+                    style={{ fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained"
                     color="error"
                     onClick={() => window.open('https://gen-ai-deployment-kwhwzio4da-uc.a.run.app', '_blank')}
                 >
-                    Try it out!
-                </Button> */}
+                    Get a fact!
+                </Button>
             </div>
         </div>
 
@@ -88,12 +88,12 @@ export default function Portfolio() {
             </div>
             < div className="contents">
                 <Button
-                    style={{ color: 'warning', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
+                    style={{ fontFamily: 'BioRhyme', width: '60%', margin: 'auto'}}
                     variant="contained"
                     color="warning"
                     onClick={() => window.open('https://karstenjep.github.io/quote-generator-api/', '_blank')}
                 >
-                    Click Here!
+                    Guess a quote!
                 </Button>
             </div>
         </div>
@@ -119,12 +119,12 @@ export default function Portfolio() {
             </div>
             < div className="contents">
                 <Button
-                    style={{ color: 'success', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
+                    style={{ fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained"
                     color="success"
                     onClick={() => window.open('https://boiling-plains-09195.herokuapp.com/#/home', '_blank')}
                 >
-                    Check it out!
+                    Plan a brew!
                 </Button>
             </div>
         </div>
@@ -150,12 +150,12 @@ export default function Portfolio() {
             </div>
             < div className="contents">
                 <Button
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
+                    style={{ fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained" 
                     color="primary"
                     onClick={() => window.open('https://safe-plains-34698.herokuapp.com/#/home', '_blank')}
                 >
-                    Have a look!
+                    Try the app!
                 </Button>
             </div>
         </div>
@@ -181,12 +181,12 @@ export default function Portfolio() {
             </div>
             <div className="contents">
                 <Button
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
+                    style={{ fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained" 
                     color="secondary"
                     onClick={() => window.open('https://karstenjep.github.io/react-interview-exercise/', '_blank')}
                 >
-                    Take a gander!
+                    Find a school!
                 </Button>
             </div>
         </div>
@@ -212,7 +212,7 @@ export default function Portfolio() {
             </div>
             <div className="contents">
                 <Button
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
+                    style={{ fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained" 
                     color="error"
                     onClick={() => window.open('https://karstenjep.github.io/Mario-Kaboom.js/', '_blank')}
@@ -244,12 +244,12 @@ export default function Portfolio() {
             <div className="contents">
                 <Button
                     className="button"
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
+                    style={{ fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained" 
                     color="warning"
                     onClick={() => window.open('https://afternoon-falls-30309.herokuapp.com/#/', '_blank')}
                 >
-                    Open it up!
+                    Admit one!
                 </Button>
             </div>
         </div>
@@ -268,7 +268,7 @@ export default function Portfolio() {
             </div>
             <div className="textBox">
                 { !techPG ? 
-                    <p>A small photo gallery of my life, and my first website in React!</p>          
+                    <p>My first website in React! A small photo galleria.</p>          
                 :
                     <p>[ ReactJS, Ajax, Node, Express, CSS ]</p>
                 }
@@ -276,12 +276,12 @@ export default function Portfolio() {
             <div className="contents">
                 <Button
                     className="button"
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
+                    style={{ fontFamily: 'BioRhyme', width: '60%', margin: 'auto'}}
                     variant="contained" 
                     color="success"
                     onClick={() => window.open('https://shielded-plateau-72344.herokuapp.com/', '_blank')}
                 >
-                    Another one!
+                    Enter the gallery!
                 </Button>
             </div>
         </div>
@@ -307,12 +307,12 @@ export default function Portfolio() {
             </div>
             <div className="contents">
                 <Button
-                    style={{ color: 'black', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
+                    style={{ fontFamily: 'BioRhyme', width: '60%', margin: 'auto'}}
                     variant="contained" 
                     color="info"
                     onClick={() => window.open('https://dry-shore-54453.herokuapp.com/', '_blank')}
                 >
-                    Click here!
+                    Check your list!
                 </Button>
             </div>
         </div>
