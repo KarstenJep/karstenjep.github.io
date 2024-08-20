@@ -28,10 +28,10 @@ export default function LandingPage() {
                         <Grid item xs={12}>
                         <p className="text" style={{fontSize: '2.3vh'}}>
                             I believe in following life passions and enjoying your work. 
-                            I'm fervent for responsive, reusable, and intuitive frontend designs. 
+                            I'm fervent for responsive, modular, and intuitive frontend design. 
                             I'm ardent about robust, scalable, and performant backend services. 
-                            I'm inspired by, and enthusiastic about, the great outdoors.
-                            Here's to life's passions.
+                            When not developing, I'm inspired by the great outdoors.
+                            <br/>Here's to life's passions.
                         </p>
                     </Grid>
                 </Grid>

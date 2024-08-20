@@ -16,6 +16,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+import Link from '@mui/material/Link';
 
 export default function Portfolio() {
     
@@ -35,7 +36,7 @@ export default function Portfolio() {
         {/* Fact Generator */}
         <div className="tech">
             <div className="contents">
-                <img src={fact} className="quotation"/>
+                <img src={fact} alt="fact" className="quotation"/>
             </div>
             <h3 className="subtitles">Fact Generator</h3>
             <div className="contents">
@@ -52,21 +53,24 @@ export default function Portfolio() {
                 }
             </div>
             < div className="contents">
-                <Button
+                <Link color="error" variant='h5' className="custom-link" sx={{ margin: 'auto', fontWeight: 'bold'}} to="/">
+                    Try the Generator!
+                </Link>
+                {/* <Button
                     style={{ color: 'error', fontFamily: 'BioRhyme', width: '50%', margin: 'auto'}}
                     variant="contained"
                     color="error"
                     onClick={() => window.open('https://gen-ai-deployment-kwhwzio4da-uc.a.run.app', '_blank')}
                 >
                     Try it out!
-                </Button>
+                </Button> */}
             </div>
         </div>
 
         {/* Quote Game */}
         <div className="tech">
             <div className="contents">
-                <img src={quotation} className="quotation"/>
+                <img src={quotation} alt='quotation' className="quotation"/>
             </div>
             <h3 className="subtitles">Quote Game</h3>
             <div className="contents">

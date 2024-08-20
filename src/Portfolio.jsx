@@ -4,9 +4,6 @@ import ImageList from '@mui/material/ImageList';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIosNew';
-import InfoIcon from '@mui/icons-material/InfoOutlined';
-import Tooltip from '@mui/material/Tooltip';
-import Typography from '@mui/material/Typography';
 // Files
 import Projects from './Projects.jsx';
 import "./Portfolio.css"

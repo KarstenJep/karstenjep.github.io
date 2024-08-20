@@ -34,7 +34,7 @@
 .sayHi {
     color: black;
     font-size: 3.5vh;
-    font-weight: 900;
+    font-weight: 700;
     margin: 0;
     text-shadow: 0px 1px 1px black;
   }
@@ -190,7 +190,7 @@
 
 /* Mobile view */
 @media only screen and (max-width: 600px) {
-  .hill, .hill2, .mtn, .mtn2, .island, .island2, .turtle, .hut {
+  .hill, .hill2, .mtn, .mtn2, .island, .island2, .turtle, .hut, .hut2 {
     display: none;
   }
   .contactBackground {

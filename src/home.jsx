@@ -89,7 +89,7 @@ export default function Home() {
             <img src={spring} alt="spring" className="spring" style={{ transform: `translateY(${scrollY * 0.05}vh) translateX(${scrollY * 0.02}vh)`}}/>
             <img src={postgresql} alt="postgresql" className="postgresql" style={{ transform: `translateY(${scrollY * 0.03}vh) translateX(${scrollY * 0.01}vh)`}}/>
             {/* <!-- Scroll Down Arrow --> */}
-            <Link className="section" to="portfolio" offset={2500} spy={true} smooth={true} duration={8000}></Link>
+            <Link className="section" to="portfolio" offset={2300} spy={true} smooth={true} duration={8000}></Link>
 
             <div id="portfolio"></div>
         </section>
