@@ -5,8 +5,8 @@ import './home.css';
 // Images
 import mountains from "./images/mountains.png";
 import sun from "./images/sun.png"
-import cloudss from "./images/clouds.png";
-// import cloudss from "./images/cloudss.png";
+// import cloudss from "./images/clouds.png";
+import cloudss from "./images/cloudss.png";
 import crescent from "./images/crescent.png"
 import stars from "./images/stars.png";
 import birds from "./images/birds.png";

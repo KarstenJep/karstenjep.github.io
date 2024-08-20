@@ -21,16 +21,19 @@ import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 
-
 function useSessionStorage(key, initialValue) {
-  const storedValue = JSON.parse(sessionStorage.getItem(key));
-  const [value, setValue] = useState(storedValue || initialValue);
+  // Retrieve the stored value from sessionStorage or use the initial value
+  const storedValue = sessionStorage.getItem(key);
+  const initial = storedValue ? JSON.parse(storedValue) : initialValue
+  // Initialize state with the stored value or the initial value
+  const [value, setValue] = useState(initial);
 
-  useEffect(() => {
-    sessionStorage.setItem(key, JSON.stringify(value));
-  }, [key, value]);
-
-  return [value, setValue];
+  const setStoredValue = (newValue) => {
+    setValue(newValue);
+    // Store the new value in sessionStorage
+    sessionStorage.setItem(key, JSON.stringify(newValue));
+  };
+  return [value, setStoredValue];
 }
 
 export default function Header() {
@@ -161,7 +164,7 @@ export default function Header() {
 
         {/* Title - Small view */}
           <Typography
-            variant="h5"
+            variant="h6"
             noWrap
             sx={{
               display: { xs: 'flex', md: 'none', lg: 'none' },

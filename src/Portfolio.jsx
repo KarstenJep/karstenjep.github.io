@@ -30,12 +30,6 @@ export default function Portfolio() {
                     <BusinessCenterIcon fontSize='large' style={{margin: '0vh 0vh -.5vh 0vh '}}/>
                 </h3>
             </div>
-            <Tooltip 
-                placement="right"    
-                title={<div style={{fontSize: 14}}>Some applications are hosted on Heroku and may take 5-10 seconds to appear in the browser</div>}
-              >
-                <InfoIcon fontSize='medium' className='infoIcon' />
-            </Tooltip>
 
             {/* Left Arrow */}
             <ArrowBackIosIcon  
