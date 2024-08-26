@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from "react-router-dom";
 import './header.css';
 // M-UI
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
@@ -21,26 +21,22 @@ import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 
-function useSessionStorage(key, initialValue) {
-  // Retrieve the stored value from sessionStorage or use the initial value
-  const storedValue = sessionStorage.getItem(key);
-  const initial = storedValue ? JSON.parse(storedValue) : initialValue
-  // Initialize state with the stored value or the initial value
-  const [value, setValue] = useState(initial);
-
-  const setStoredValue = (newValue) => {
-    setValue(newValue);
-    // Store the new value in sessionStorage
-    sessionStorage.setItem(key, JSON.stringify(newValue));
-  };
-  return [value, setStoredValue];
-}
-
 export default function Header() {
 
   const navigate = useNavigate();
-  const [value, setValue] = useSessionStorage('value', 1);
+  const [value, setValue] = useState('1');
   const [anchorElNav, setAnchorElNav] = useState(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if ( location.pathname === '/'){
+      setValue('1')
+    } if ( location.pathname === '/portfolio'){
+      setValue('2')
+    } if ( location.pathname === '/contact'){
+      setValue('3')
+    } 
+  }, []);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);

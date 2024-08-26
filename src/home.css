@@ -22,25 +22,11 @@ body {
     z-index: 2;
   }
   
-  /* Container for "About Me" section */
-  .info {
-    box-sizing: border-box;
-    width: 75vh;
-    max-width: 95%;
-    margin: 162vh auto 52vh;
-    border: solid black 2px;
-    border-radius: 30px;
-    background-color:whitesmoke;
-    box-shadow: 0px 6px 12px rgb(0, 0, 0, 0.7);
-    display:inline-table;
-    z-index: 2;
-  }
-  
   /****************** Individual settings for each image in animated section *******************/
   .mountains {
     height: 98vh;
     width: 140vw;
-    filter:drop-shadow(3px -4px 6px rgba(0, 0, 0, 0.6));
+    filter:drop-shadow(3px -4px 6px rgba(0, 0, 0, 0.4));
     margin-bottom: 112vh;
     border-bottom: rgb(0, 128, 0, .3) solid 15px ;
   }
@@ -74,7 +60,6 @@ body {
     margin-bottom: 180vh;
     left: 85%;
     opacity: 40%;
-    filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
   .cloud2 {
@@ -82,7 +67,6 @@ body {
     margin-bottom: 218vh;
     left: 75%;
     opacity: 40%;
-    filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
   .cloud3 {
@@ -90,7 +74,6 @@ body {
     margin-bottom: 195vh;
     left: 0%;
     opacity: 40%;
-    filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
   .cloud4 {
@@ -98,7 +81,6 @@ body {
     margin-bottom: 220vh;
     left: 10%;
     opacity: 40%;
-    filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
   .cloud5 {
@@ -107,7 +89,6 @@ body {
     left: 47%;
     opacity: 40%;
     z-index: 1;
-    filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
   .cloud6 {
@@ -116,7 +97,6 @@ body {
     left: 2%;
     opacity: 40%;
     z-index: 0;
-    filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
   .cloud7 {
@@ -125,7 +105,6 @@ body {
     left: -35%;
     opacity: 40%;
     z-index: 0;
-    filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
   .cloud8 {
@@ -134,7 +113,6 @@ body {
     left: 10%;
     opacity: 40%;
     z-index: 0;
-    filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
   .cloud9 {
@@ -142,7 +120,6 @@ body {
     margin-bottom: 30vh;
     left: -30%;
     opacity: 40%;
-    filter:drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
   }
   
   .crescent {
@@ -306,8 +283,8 @@ body {
     left: 75%;
   }
 
-  .sql, .saga, .redux, .react, .jQ, .mui, .git, .python, .postgresql, .node, .typescript, .javascript, .css, .html, .parrot, .airBalloon, .pg, .pg2, .airplane, .rocket {
-    filter:drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.75));
+  img:not(.sun, .sunTwo, .crescent, .stars, .starsTwo, .mountains, .username) {
+    filter:drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
   }
   
   /* ----- CSS Animations --------- */
@@ -367,7 +344,7 @@ body {
   }
 
   /* Fade on load */
-  .mountains, .sun, .pg, .rocket, .html, .css, .javascript, .typescript, .node, .postgresql, .python, .git, .mui, .jQ, .redux, .react, .saga, .sql  {
+  .mountains, .sun, .pg, .rocket, .html, .css, .java, .javascript, .typescript, .node, .postgresql, .python, .git, .mui, .jQ, .redux, .react, .saga, .sql, .spring  {
     animation: fade 5s;
   }
   @keyframes fade {
