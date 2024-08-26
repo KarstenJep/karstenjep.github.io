@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import moment from 'moment';
-import Header from './header';
+import Header from './Header';
 
 
 export default function Inbox() {

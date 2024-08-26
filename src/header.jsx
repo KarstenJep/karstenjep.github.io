@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
-import './header.css';
+import './Header.css';
 // M-UI
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -29,13 +29,16 @@ export default function Header() {
   const location = useLocation();
 
   useEffect(() => {
-    if ( location.pathname === '/'){
-      setValue('1')
-    } if ( location.pathname === '/portfolio'){
-      setValue('2')
-    } if ( location.pathname === '/contact'){
-      setValue('3')
-    } 
+    switch(location.pathname) {
+      case '/contact':
+        setValue('3')
+        break;
+      case '/portfolio':
+        setValue('2')
+        break;
+      default:
+        setValue('1')
+    }
   }, []);
 
   const handleOpenNavMenu = (event) => {
@@ -53,12 +56,12 @@ export default function Header() {
   return (
     <AppBar position="fixed" sx={{ backgroundColor: 'whitesmoke', opacity: '.8', padding: '.5vh', width: '80%', margin: '0 10%'}} >
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
-        {/* Title - Large view */}
+        <Toolbar disableGutters >
+        {/* Title */}
           <Typography
             noWrap
             sx={{
-              fontSize: 'clamp(1.3rem, 2.5vw, 2.5rem)',
+              fontSize: 'clamp(1.3rem, 2.5vw, 2.8rem)',
               ml: '.5vw',
               display: { xs: 'flex', md: 'flex', lg: 'flex' },
               fontFamily: 'BioRhyme',
@@ -208,7 +211,7 @@ export default function Header() {
                   sx={{px: '.5vw' }}
                   onClick={() => window.open("https://github.com/KarstenJep", '_blank')} 
               >
-                <GitHubIcon style={{color: "black", fontSize: "3vw"}} />
+                <GitHubIcon style={{color: "black", fontSize: "clamp(2rem, 3vw, 4rem"}} />
               </IconButton>
             </Tooltip>
             <Tooltip title="LinkedIn">
@@ -216,7 +219,7 @@ export default function Header() {
                   sx={{ px: '.5vw' }}
                   onClick={() => window.open("https://www.linkedin.com/in/karsten-jepsen-067a67a2/", '_blank')}
               >
-                <LinkedInIcon style={{color: "black", fontSize: "3.4vw"}} />
+                <LinkedInIcon style={{color: "black", fontSize: "clamp(2rem, 3.4vw, 4.5rem"}} />
               </IconButton>
             </Tooltip>
           </Box>

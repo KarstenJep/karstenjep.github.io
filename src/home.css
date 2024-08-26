@@ -366,7 +366,7 @@ body {
   .username {
     font-size: 7vh;
   }
-  .html, .javascript, .typescript, .node, .postgresql, .git, .jQ, .react, .redux, .sql {
+  .html, .javascript, .typescript, .node, .postgresql, .git, .java, .react, .redux, .sql, .spring6 {
     width: 5vh;
   }
   .python, .mui {
@@ -376,17 +376,22 @@ body {
     width: 7vh;
     margin-bottom: 153.5vh;
   }
-  .saga {
-    width: 8vh;
+  .java {
+    width: 9vh;
+    margin-bottom: 153vh;
+  }
+  .spring {
+    width: 15vh;
+    left: 60%
   }
   .sql {
-    left: 85%
+    left: 76%
   }
   .mui {
-    left: 10%
+    left: 12%
   }
-  .jQ {
-    left: 23%;
+  .postgresql {
+    margin-bottom: 166.5vh;
   }
   .mountains {
     width: 180vw;
