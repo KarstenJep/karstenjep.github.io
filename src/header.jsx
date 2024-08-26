@@ -55,19 +55,19 @@ export default function Header() {
   };
 
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: 'whitesmoke', opacity: '.8', padding: '.5vh', width: '80%', margin: '0 10%', boxShadow:  '0px 6px 12px rgb(0, 0, 0, 0.5)'}} >
+    <AppBar position="fixed" sx={{ backgroundColor: 'whitesmoke', opacity: '.8', padding: '.5vh', width: '80%', margin: '0 10%'}} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
         {/* Title - Large view */}
           <Typography
-            fontSize={38}
             noWrap
             sx={{
+              fontSize: 'clamp(1.3rem, 2.5vw, 2.5rem)',
               ml: '.5vw',
-              display: { xs: 'none', md: 'none', lg: 'flex' },
+              display: { xs: 'flex', md: 'flex', lg: 'flex' },
               fontFamily: 'BioRhyme',
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              letterSpacing: '.3vw',
               color: 'black',
               flexGrow: 1
             }}
@@ -75,27 +75,27 @@ export default function Header() {
             Karsten Jepsen
           </Typography>
 
-        {/* Nav - Med, Small view */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex', lg: 'none' } }}>
+        {/* Nav - Small view */}
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none', lg: 'none' } }}>
             <IconButton
               aria-label="menu options"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="black"
             >
-              <MenuIcon sx={{ width: '3.5vh', height: '3.5vh'}} />
+              <MenuIcon sx={{ fontSize: '5vw' }} />
             </IconButton>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: 'bottom',
-                horizontal: 'left',
+                horizontal: 'right',
               }}
               keepMounted
               transformOrigin={{
                 vertical: 'top',
-                horizontal: 'left',
+                horizontal: 'right',
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
@@ -103,7 +103,7 @@ export default function Header() {
                 display: { xs: 'block', md: 'block' },
               }}
             >
-              <MenuItem key={1} onClick={handleCloseNavMenu}>
+              <MenuItem key={1} onClick={handleCloseNavMenu} sx={{ width: '50vw', justifyContent: 'right'}}>
                 <Typography 
                     style={{fontFamily: 'BioRhyme', fontSize: '20px'}}
                     onClick={() => navigate(`/`)} 
@@ -111,15 +111,15 @@ export default function Header() {
                     {'About  '}<PeopleIcon style={{margin: '0 0 -.5vh'}}/>
                 </Typography>
               </MenuItem>
-              <MenuItem  key={2} onClick={handleCloseNavMenu}>
+              <MenuItem  key={2} onClick={handleCloseNavMenu} sx={{ width: '50vw', justifyContent: 'right'}}>
                 <Typography
                     style={{fontFamily: 'BioRhyme', fontSize: '20px'}}
                     onClick={() => navigate(`/portfolio`)} 
                 >
                     {'Portfolio  '}<BusinessCenterIcon style={{margin: '0 0 -.5vh'}}/>
                 </Typography>
-              </MenuItem>
-              <MenuItem key={3} onClick={handleCloseNavMenu}>
+              </MenuItem >
+              <MenuItem key={3} onClick={handleCloseNavMenu} sx={{ width: '50vw', justifyContent: 'right'}}>
                   <Typography 
                       style={{fontFamily: 'BioRhyme', fontSize: '20px'}} 
                       onClick={() => navigate(`/contact`)}
@@ -127,7 +127,7 @@ export default function Header() {
                       {'Contact  '}<EmailIcon style={{margin: '0 0 -.5vh'}}/>
                   </Typography>
               </MenuItem>
-              <MenuItem key={4} onClick={handleCloseNavMenu}>
+              <MenuItem key={4} onClick={handleCloseNavMenu} sx={{ width: '50vw', justifyContent: 'right'}}>
                 <Typography 
                     style={{fontFamily: 'BioRhyme', fontSize: '20px'}} 
                     onClick={() => window.location.href="https://github.com/KarstenJep"}
@@ -135,7 +135,7 @@ export default function Header() {
                     {'GitHub  '}<GitHubIcon style={{margin: '0 0 -.5vh'}}/>
                   </Typography>
               </MenuItem>
-              <MenuItem key={5} onClick={handleCloseNavMenu}>
+              <MenuItem key={5} onClick={handleCloseNavMenu} sx={{ width: '50vw', justifyContent: 'right'}}>
                 <Typography 
                   style={{fontFamily: 'BioRhyme', fontSize: '20px'}} 
                   onClick={() => window.location.href="https://www.linkedin.com/in/karsten-jepsen-067a67a2/"}
@@ -146,38 +146,6 @@ export default function Header() {
             </Menu>
           </Box>
           
-        {/* Title - Med view */}
-          <Typography
-            variant="h4"
-            noWrap
-            sx={{
-              display: { xs: 'none', md: 'flex', lg: 'none' },
-              flexGrow: 1,
-              fontFamily: 'BioRhyme',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'black',
-            }}
-          >
-            Karsten Jepsen
-          </Typography>
-
-        {/* Title - Small view */}
-          <Typography
-            variant="h6"
-            noWrap
-            sx={{
-              display: { xs: 'flex', md: 'none', lg: 'none' },
-              flexGrow: 1,
-              fontFamily: 'BioRhyme',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'black',
-            }}
-          >
-            Karsten Jepsen
-          </Typography>
-
         {/* Nav - Large view */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'none', lg: 'flex' }}}>
             <TabContext value={value}>
@@ -187,21 +155,49 @@ export default function Header() {
                     label="About" 
                     value="1" 
                     onClick={() => navigate(`/`)} 
-                    sx={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '16px', mb: -1 }}
+                    sx={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '1vw', mb: -1 }}
                     icon={ <PeopleIcon /> } iconPosition="end"
                     />
                   <Tab 
                     label="Portfolio" 
                     value="2" 
                     onClick={() => navigate(`/portfolio`)} 
-                    sx={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '16px', mb: -1  }}
+                    sx={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '1vw', mb: -1  }}
                     icon={ <BusinessCenterIcon /> } iconPosition="end"
                     />
                   <Tab 
                     label="Contact" 
                     value="3" 
                     onClick={() => navigate(`/contact`)} 
-                    sx={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '16px', mb: -1  }}
+                    sx={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '1vw', mb: -1  }}
+                    icon={ <EmailIcon /> } iconPosition="end"
+                    />
+                </TabList>
+              </Box>
+            </TabContext>
+          </Box>
+
+          {/* Nav - Large view */}
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', lg: 'none' }}}>
+            <TabContext value={value}>
+              <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                <TabList onChange={handleChange} >
+                  <Tab 
+                    value="1" 
+                    onClick={() => navigate(`/`)} 
+                    sx={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '1vw', mb: -1 }}
+                    icon={ <PeopleIcon /> } iconPosition="end"
+                    />
+                  <Tab 
+                    value="2" 
+                    onClick={() => navigate(`/portfolio`)} 
+                    sx={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '1vw', mb: -1  }}
+                    icon={ <BusinessCenterIcon /> } iconPosition="end"
+                    />
+                  <Tab 
+                    value="3" 
+                    onClick={() => navigate(`/contact`)} 
+                    sx={{ color: 'black', fontFamily: 'BioRhyme', fontSize: '1vw', mb: -1  }}
                     icon={ <EmailIcon /> } iconPosition="end"
                     />
                 </TabList>
@@ -216,7 +212,7 @@ export default function Header() {
                   sx={{px: '.5vw' }}
                   onClick={() => window.open("https://github.com/KarstenJep", '_blank')} 
               >
-                <GitHubIcon style={{color: "black", fontSize: "4.5vh"}} />
+                <GitHubIcon style={{color: "black", fontSize: "3vw"}} />
               </IconButton>
             </Tooltip>
             <Tooltip title="LinkedIn">
@@ -224,7 +220,7 @@ export default function Header() {
                   sx={{ px: '.5vw' }}
                   onClick={() => window.open("https://www.linkedin.com/in/karsten-jepsen-067a67a2/", '_blank')}
               >
-                <LinkedInIcon style={{color: "black", fontSize: "5vh"}} />
+                <LinkedInIcon style={{color: "black", fontSize: "3.4vw"}} />
               </IconButton>
             </Tooltip>
           </Box>
