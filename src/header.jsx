@@ -61,14 +61,15 @@ export default function Header() {
           <Typography
             noWrap
             sx={{
-              fontSize: 'clamp(1.3rem, 2.5vw, 2.8rem)',
+              fontSize: 'clamp(1.4rem, 2.5vw, 2.8rem)',
               ml: '.5vw',
               display: { xs: 'flex', md: 'flex', lg: 'flex' },
               fontFamily: 'BioRhyme',
               fontWeight: 700,
               letterSpacing: '.3vw',
               color: 'black',
-              flexGrow: 1
+              flexGrow: 1,
+              textShadow: '0px 1px 2px rgba(0, 0, 0, 0.2)'
             }}
           >
             Karsten Jepsen
@@ -82,7 +83,7 @@ export default function Header() {
               onClick={handleOpenNavMenu}
               color="black"
             >
-              <MenuIcon sx={{ fontSize: '5vw' }} />
+              <MenuIcon sx={{ fontSize: 'clamp(1.6rem, 5vw, 2.8rem)' }} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -176,7 +177,7 @@ export default function Header() {
             </TabContext>
           </Box>
 
-          {/* Nav - Large view */}
+          {/* Nav - Medium View */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', lg: 'none' }}}>
             <TabContext value={value}>
               <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>

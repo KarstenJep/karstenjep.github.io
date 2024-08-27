@@ -21,10 +21,10 @@ export default function Portfolio() {
         <section className="portfolioBackground">
             {/* Title */}
             <div className="titleDiv">
-                <h3 className="title">
+                <span className="container-title">
                     Portfolio&nbsp;
-                    <BusinessCenterIcon fontSize='large' style={{margin: '0vh 0vh -.5vh 0vh '}}/>
-                </h3>
+                    <BusinessCenterIcon fontSize='large' style={{margin: '0vh 0vh -.3vh 0vh '}}/>
+                </span>
             </div>
 
             {/* Left Arrow */}

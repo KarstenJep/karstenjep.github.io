@@ -11,36 +11,6 @@
     justify-content: center;
 }
 
-/* Form settings */
-.formBackground {
-    font-family: 'BioRhyme';
-    box-sizing: border-box;
-    text-align: center;
-    font-size: medium;
-    width: 600px;
-    max-width: 95%;
-    margin: 26vh auto 16vh;
-    background-color: whitesmoke;
-    border: solid black 2px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
-    4px 4px 10px rgba(0, 0, 0, 0.25),
-    8px 8px 20px rgba(0, 0, 0, 0.2);
-    opacity: .9;
-    position: absolute;
-    display: table-column;
-    z-index: 3;
-}
-
-/* Form title */
-.sayHi {
-    color: black;
-    font-size: 3.5vh;
-    font-weight: 700;
-    margin: 0;
-    text-shadow: 0px 1px 1px black;
-  }
-
 /* Images */
 .sun3, .hill, .hill2, .island, .island2, .mtn, .mtn2, .turtle, .shark, .hut, .hut2 {
     position: absolute;
@@ -54,9 +24,9 @@
     margin-top: 66vh;
     background:orange;
     box-shadow: 0 0 10px rgb(255, 145, 0),
-                  0 0 60px orange,
-                  0 0 150px yellow,
-                  inset 0 0 80px yellow;
+                0 0 60px orange,
+                0 0 150px yellow,
+                inset 0 0 80px yellow;
     z-index:12;
     align:center;
     z-index:0;
@@ -159,7 +129,7 @@
 }
 
 /* Animation */
-.formBackground, .chips {
+.chips {
     animation: fadeIn 3s;
     -webkit-animation: fadeIn 3s;
     -moz-animation: fadeIn 3s;
@@ -197,9 +167,6 @@
   }
   .contactBackground {
     min-height: 100vh;
-  }
-  .formBackground {
-    margin-top: 20vh;
   }
   .chips {
    overflow-x: scroll;

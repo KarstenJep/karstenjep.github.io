@@ -17,9 +17,9 @@ import PublishIcon from '@mui/icons-material/Publish';
 import EmailIcon from '@mui/icons-material/Email';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
+import { Stack } from '@mui/material';
 // M-UI Snackbar alert
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -91,64 +91,65 @@ export default function Contact() {
     return (
         <>
         <section className="contactBackground">
-            {/* Message Form */}
-            <form onSubmit={validateForm} className="formBackground"> 
-                <Grid container spacing={1} pt={2} pb={3}>
-                    <Grid item xs={12}>
-                        <h1 className="sayHi">Leave A Message <EmailIcon style={{marginBottom: '-1vh', fontSize: '3.5vh'}}/></h1>
-                    </Grid>
-                    <Grid item xs={4} ml={3}>
+          {/* Message Form */}
+            <form onSubmit={validateForm} className="container"> 
+                <Stack 
+                    spacing={'1vh'} 
+                    alignItems="center" 
+                    padding={'2vh 4%'}
+                    >
+                    <span className="container-title">
+                        Leave A Message&nbsp; 
+                        <EmailIcon 
+                            fontSize="clamp(1.6rem, 5vw, 2.8rem)" 
+                            style={{marginBottom: '-.8vh'}}/>
+                    </span>
+                    <Stack 
+                        direction={'row'}
+                        spacing={'1vh'}
+                        sx={{ width: '90%'}}>
                         <TextField
-                            // Name Input
                             label="Name"
                             name="name"
-                            variant="outlined"
+                            variant="filled"
                             size="small"
-                            style={{ width: '95%' }}
+                            style={{ width: '40%' }}
                             value={name}
                             onChange={(e) => setName(e.target.value)}
-                            error={nameError} 
+                            error={nameError}
                             />
-                    </Grid>
-                    <Grid item xs={7} ml={-.5}>
                         <TextField 
-                            // Email Input 
                             label="Email"
                             name="email"
-                            variant="outlined"
+                            variant="filled"
                             size="small"
-                            style={{ width: '100%' }}
+                            style={{ width: '60%' }}
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             error={emailError} 
                             />
-                    </Grid>
-                    <Grid item xs={12}>
-                        <TextField
-                            // Message body
-                            label="Message"
-                            name="message"
-                            multiline 
-                            rows={4} 
-                            style={{ width: '90%'}} 
-                            value={message}
-                            onChange={(e) => setMessage(e.target.value)}
-                            error={messageError} 
-                            />
-                    </Grid>
-                    <Grid item xs={12} mt={.5}>
-                        <Button
-                            // Submit Btn
-                            type="submit"
-                            style={{  fontFamily: 'BioRhyme', width: '30%', backgroundColor: 'skyblue', color: 'black', borderRadius: '30px' }}
-                            variant="contained" 
-                            color="success"
-                            endIcon={<PublishIcon />}
-                        >
-                            Submit
-                        </Button>
-                    </Grid>
-                </Grid>
+                    </Stack>
+                    <TextField
+                        label="Message"
+                        name="message"
+                        variant="filled"
+                        multiline 
+                        rows={4} 
+                        style={{ width: '90%'}} 
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        error={messageError} 
+                        />
+                    <Button
+                        type="submit"
+                        style={{  fontFamily: 'BioRhyme', width: '30%', borderRadius: '30px', margin: '2vh auto 1vh', fontSize: 'medium' }}
+                        variant="contained" 
+                        color="info"
+                        endIcon={<PublishIcon />}
+                    >
+                        Submit
+                    </Button>
+                </Stack>
             </form>
 
             <div className="sun3"></div>

@@ -28,17 +28,9 @@
     background-color:whitesmoke;
     box-shadow: 0px 6px 12px rgb(0, 0, 0, 0.4);
     z-index: 3;
-    opacity: .8;
-  }
-
-  .title {
-    font-family: 'BioRhyme';
-    font-weight:700;
-    font-size: 4.3vh;
+    opacity: .9;
     text-align: center;
-    text-shadow: 0px 1px 1px black;
-    margin: 1.5vh;
-    letter-spacing: .3rem,
+    padding-top: 2vh;
   }
 
   /* Horizontal scroll properties */

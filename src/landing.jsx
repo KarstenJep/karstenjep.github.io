@@ -1,14 +1,14 @@
 import React from 'react';
-import './landing.css';
+import './Landing.css';
 // M-UI
 import PeopleIcon from '@mui/icons-material/EmojiPeople';
-import Grid from '@mui/material/Grid';
+import { Stack } from '@mui/material';
 
 export default function LandingPage() {
 
     return (
         <div className="landingBackground">
-            {/* Floating Clouds */}
+          {/* Floating Clouds */}
             <div className="cloud-content">
                 <div className="cloud"></div>
                 <div className="cloud x"></div>
@@ -17,24 +17,27 @@ export default function LandingPage() {
                 <div className="cloud"></div>
                 <div className="cloud x"></div>
             </div>
-            <div className="about-container">
-                <Grid container spacing={1} >
-                    <Grid item xs={12}>
-                        <h3 className="subtitles">
-                            Welcome!&nbsp;
-                            <PeopleIcon fontSize="large" style={{marginBottom: '-1vh'}}/>
-                        </h3>
-                        </Grid>
-                        <Grid item xs={12}>
-                        <p className="text" style={{fontSize: '2.3vh'}}>
-                            I believe in following life passions and enjoying your work. 
-                            I'm fervent for responsive, modular, and intuitive frontend design. 
-                            I'm ardent about robust, scalable, and performant backend services. 
-                            When not developing, I'm inspired by the great outdoors.
-                            <br/>Here's to life's passions.
-                        </p>
-                    </Grid>
-                </Grid>
+          {/* About Blurb */}
+            <div className="container">
+                <Stack 
+                    spacing={'1vh'} 
+                    alignItems="center" 
+                    padding={'2.5vh 4%'}
+                    >
+                    <span className="container-title">
+                        Welcome!&nbsp;
+                        <PeopleIcon 
+                            fontSize="clamp(1.6rem, 5vw, 2.8rem)" 
+                            style={{marginBottom: '-.6vh'}}/>
+                    </span>
+                    <span className="container-text">
+                        I believe in following life passions and enjoying your work. 
+                        I'm fervent for responsive, modular, and intuitive frontend design. 
+                        I'm ardent about robust, scalable, and performant backend services. 
+                        When not developing, I'm inspired by the great outdoors.
+                        <br/>Here's to life's passions.
+                    </span>
+                </Stack>
             </div>
         </div>
     )
