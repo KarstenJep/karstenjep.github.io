@@ -1,5 +1,5 @@
   /* Card for displaying each project */
-  .tech {
+  .card-container {
     width: 90%;
     margin: 40vh 2vh 4vh;
     border: solid black 2px;
@@ -21,54 +21,43 @@
   }
   
   /* Radio btns */
-  .radio {
-    margin: 0vh auto;
-    font-size: '2vh';
-  }
+  /* .radio {
+    font-size: '3vh';
+  } */
   
   /* Project Images */
   .facts {
-    width: 14vh;
-    margin: 4vh auto 0vh;
+    width: 13vh;
+  }
+  
+  .oel {
+    width: 13.5vh;
+  }
+
+  .wh {
+    width: 11.5vh;
   }
 
   .quotation {
     width: 13.5vh;
-    margin: 4vh auto 0vh;
   }
 
-  .wh {
-    width: 12.5vh;
-    margin: 4vh auto 0vh;
-  }
-  
-  .oel {
-    width: 14vh;
-    margin: 4vh auto 0vh;
-    font-size: 1.4vh;
-  }
-  
   .search {
-    width: 8vh;
-    margin: 2vh auto 0vh;
+    width: 13vh;
   }
 
   .mario {
-    width: 11vh;
-    margin: 4vh auto 0vh;
+    width: 10.6vh;
   }
     
   .film {
-    width: 11vh;
-    margin: 4vh auto 0vh;
+    width: 11.5vh;
   }
 
   .camera {
-    width: 13vh;
-    margin: 6vh auto 0vh;
+    width: 13.7vh;
   }
 
   .todo {
-    width: 9vh;
-    margin: 4vh auto 0vh;
+    width: 10vh;
   }

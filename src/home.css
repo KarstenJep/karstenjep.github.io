@@ -283,7 +283,7 @@ body {
     left: 75%;
   }
 
-  img:not(.sun, .sunTwo, .crescent, .stars, .starsTwo, .mountains, .username) {
+  img:not(.sun, .sunTwo, .crescent, .stars, .starsTwo, .mountains, .username ) {
     filter:drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
   }
   

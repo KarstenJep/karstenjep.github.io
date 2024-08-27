@@ -18,11 +18,11 @@ export default function ProjectCard({ image, title, description, tech, color, ur
     const [toggleContent, setToggleContent] = useState(false);
 
     return (
-        <div className="tech">
+        <div className="card-container">
             <Stack 
-                spacing={'1vw'} 
+                spacing={'2vh'} 
                 alignItems="center" 
-                padding={'12% 8% 6%'}
+                padding={'14% 8% 14%'}
                 >
                 <img src={image} alt="project logo" className={className}/>
                 <h3 className="subtitles">{title}</h3>
@@ -34,13 +34,13 @@ export default function ProjectCard({ image, title, description, tech, color, ur
                     <FormControlLabel 
                         value="description" 
                         control={<Radio color={color} />} 
-                        label="Description" 
+                        label={<span style={{ fontSize: '2vh' }}>Description</span>}
                         onChange={() => setToggleContent(false)}
                         />
                     <FormControlLabel 
                         value="tech" 
                         control={<Radio color={color} />} 
-                        label="Tech" 
+                        label={<span style={{ fontSize: '2vh' }}>Tech</span>}
                         onChange={() => setToggleContent(true)}
                         />
                 </RadioGroup>
@@ -61,14 +61,14 @@ export default function ProjectCard({ image, title, description, tech, color, ur
                             <Chip 
                                 label={item}
                                 color={color}
-                                sx={{ marginX: .5, marginBottom: 1, fontSize: '1.6vh'}}
+                                sx={{ marginX: .5, marginBottom: 1, fontSize: '1.6vh', fontWeight: 'bold'}}
                                 variant={"outlined"}
                                 key={i}/>
                         )})
                     }
                 </Box>
                 <Button
-                    style={{ fontFamily: 'BioRhyme', width: '50%', marginBottom: '0', fontSize: 'medium', borderRadius: '45px'}}
+                    style={{ fontFamily: 'BioRhyme', width: '50%', fontSize: 'medium', borderRadius: '20px'}}
                     variant="contained"
                     color={color}
                     onClick={() => window.open(`${url}`, '_blank')}

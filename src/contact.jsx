@@ -140,7 +140,7 @@ export default function Contact() {
                         <Button
                             // Submit Btn
                             type="submit"
-                            style={{  fontFamily: 'BioRhyme', width: '40%', backgroundColor: 'skyblue', color: 'black' }}
+                            style={{  fontFamily: 'BioRhyme', width: '30%', backgroundColor: 'skyblue', color: 'black', borderRadius: '30px' }}
                             variant="contained" 
                             color="success"
                             endIcon={<PublishIcon />}
