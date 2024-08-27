@@ -1,0 +1,83 @@
+[
+    {
+        "title": "Fact Generator",
+        "description": "Use AI to learn fun facts! Project utilizing Gen-AI and built exclusively on Google Cloud Platform.",
+        "tech": [ "Vertex AI", "Google Cloud Platform", "NodeJS", "HTML", "CSS" ],
+        "color": "error",
+        "image": "/images/facts.png",
+        "url": "https://gen-ai-deployment-kwhwzio4da-uc.a.run.app",
+        "className": "facts"
+    },
+    {
+        "title": "What's Hop'nin'?",
+        "description": "A mobile scheduling app made for Big Wood Brewery to help the brewers track hop additions!",
+        "tech": [ "ReactJS", "Redux", "Sagas", "NodeJS", "Express", "Postgresql", "Material-UI", "CSS" ],
+        "color": "success",
+        "image": "/images/wh.png",
+        "url": "https://boiling-plains-09195.herokuapp.com/#/home",
+        "className": "wh"
+    },
+    {
+        "title": "Economic Lives",
+        "description": "A multi-tier app made for St. Paul Jack to help users discover potential career paths.",
+        "tech": [ "ReactJS", "Redux", "Sagas", "NodeJS", "Express", "Postgresql", "Material-UI", "CSV" ],
+        "color": "primary",
+        "image": "/images/oel.png",
+        "url": "https://safe-plains-34698.herokuapp.com/#/home",
+        "className": "oel"
+    },
+    {
+        "title": "Quote Game",
+        "description": "Test your knowledge and guess who said the famous quote! Sound on 🔉",
+        "tech": [ "ReactJS", "External API's", "Material-UI", "CSS" ],
+        "color": "warning",
+        "image": "/images/quotation.png",
+        "url": "https://karstenjep.github.io/quote-generator-api/",
+        "className": "oel"
+    },
+    {
+        "title": "Data Finder",
+        "description": "An API data finder allowing users to search through U.S. schools and districts.",
+        "tech": [ "ReactTS", "Vite", "External API", "Chakra-UI", "GitHub Actions" ],
+        "color": "secondary",
+        "image": "/images/search.png",
+        "url": "https://karstenjep.github.io/react-interview-exercise/",
+        "className": "oel"
+    },
+    {
+        "title": "Mario",
+        "description": "An old school Mario game with 3 levels, built with Kaboom.JS. Press space to jump!",
+        "tech": [ "Kaboom.JS", "HTML" ],
+        "color": "error",
+        "image": "/images/mario.png",
+        "url": "https://karstenjep.github.io/Mario-Kaboom.js/",
+        "className": "mario"
+    },
+    {
+        "title": "Movie Gallery",
+        "description": "A movie application allowing users to add new movies, and read details!",
+        "tech": [ "ReactJS", "Redux", "Sagas", "NodeJS", "Express", "Postgresql", "Material-UI", "CSS" ],
+        "color": "info",
+        "image": "/images/film.png",
+        "url": "https://afternoon-falls-30309.herokuapp.com/#/",
+        "className": "film"
+    },
+    {
+        "title": "Photo Gallery",
+        "description": "My first website in React! A small photo galleria.",
+        "tech": [ "ReactJS", "Ajax", "NodeJS", "Express", "CSS" ],
+        "color": "success",
+        "image": "/images/camera.png",
+        "url": "https://shielded-plateau-72344.herokuapp.com/",
+        "className": "camera"
+    },
+    {
+        "title": "To Do List",
+        "description": "My first full stack app! A to-do list to track tasks.",
+        "tech": [ "jQuery", "Ajax", "NodeJS", "Express", "Postgresql", "HTML", "CSS" ],
+        "color": "primary",
+        "image": "/images/todolist.png",
+        "url": "https://shielded-plateau-72344.herokuapp.com/",
+        "className": "todo"
+    }
+]

@@ -5,81 +5,70 @@
     border: solid black 2px;
     border-radius: 20px;
     background-color:whitesmoke;
-    box-shadow: 0px 6px 12px rgb(0, 0, 0, 0.5);
+    box-shadow: 0px 6px 12px rgb(0, 0, 0, 0.4);
     display:table-column;
     z-index: 2;
     opacity: .9;
-  }
-
-  /* tech card contents (allows for auto centering) */
-  .contents {
-    display: flex;
   }
   
   /* Headings in "Projects" sections */
   .subtitles {
     text-align: center;
-    font-size: 3.5vh;
-    font-weight:900;
+    font-size: 3.3vh;
+    font-weight:600;
     text-shadow: 0px 1px 1px black;
     font-family: 'BioRhyme';
-  }
-
-  .custom-link:hover {
-    color: red;
-    text-decoration-color: red;
   }
   
   /* Radio btns */
   .radio {
     margin: 0vh auto;
-  }
-
-  /* Description / Tech list */
-  .textBox {
-    height: 17vh;
-    text-align: center;
-    font-size: 2.5vh;
-    margin: -2vh 2vh 0vh;
+    font-size: '2vh';
   }
   
   /* Project Images */
-  .quotation {
-    width: 16vh;
-    margin: 4vh auto 0vh;
-  }
-
-  .wh {
+  .facts {
     width: 14vh;
     margin: 4vh auto 0vh;
   }
-  
-  .oel {
-    width: 16vh;
-    margin: 4vh auto 0vh;
-  }
-  
-  .search {
-    width: 15.5vh;
-    margin: 4vh auto 0vh;
-  }
-  
-  .film {
+
+  .quotation {
     width: 13.5vh;
     margin: 4vh auto 0vh;
   }
 
-  .camera {
+  .wh {
+    width: 12.5vh;
+    margin: 4vh auto 0vh;
+  }
+  
+  .oel {
     width: 14vh;
-    margin: 6vh auto 0vh;
+    margin: 4vh auto 0vh;
+    font-size: 1.4vh;
+  }
+  
+  .search {
+    width: 8vh;
+    margin: 2vh auto 0vh;
   }
 
   .mario {
-    width: 12vh;
+    width: 11vh;
+    margin: 4vh auto 0vh;
+  }
+    
+  .film {
+    width: 11vh;
     margin: 4vh auto 0vh;
   }
 
+  .camera {
+    width: 13vh;
+    margin: 6vh auto 0vh;
+  }
+
   .todo {
-    width: 12vh;
+    width: 9vh;
     margin: 4vh auto 0vh;
   }

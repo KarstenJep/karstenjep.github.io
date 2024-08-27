@@ -26,10 +26,10 @@ export default function Header() {
   const navigate = useNavigate();
   const [value, setValue] = useState('1');
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const location = useLocation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    switch(location.pathname) {
+    switch(pathname) {
       case '/contact':
         setValue('3')
         break;
@@ -39,7 +39,7 @@ export default function Header() {
       default:
         setValue('1')
     }
-  }, []);
+  }, [pathname]);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);

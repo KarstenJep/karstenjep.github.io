@@ -5,20 +5,19 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIosNew';
 // Files
-import Projects from './Projects.jsx';
-import "./Portfolio.css"
+import "./Portfolio.css";
+import ProjectList from "./ProjectList.json";
+import ProjectCard from "./components/ProjectCard.jsx"
 // Images
 import beach from "./images/beach.png";
    
 export default function Portfolio() {
     const ref = useRef(null)
-
     const scroll = (scrollOffset) => {
         ref.current.scrollLeft += scrollOffset;
       };
 
     return (
-        <>
         <section className="portfolioBackground">
             {/* Title */}
             <div className="titleDiv">
@@ -47,12 +46,24 @@ export default function Portfolio() {
                 className="wrapper"
                 ref={ref}
             > 
-                <Projects /> 
+                {ProjectList?.map((project, i) => {
+                    return (
+                        <ProjectCard
+                            image={project.image} 
+                            title={project.title} 
+                            description={project.description} 
+                            tech={project.tech}
+                            color={project.color}
+                            url={project.url}
+                            className={project.className}
+                            index={i}
+                            key={i}/>
+                    )
+                })}
             </ImageList>
 
             {/* Background Img */}
             <img src={beach} alt="beach" className="beach"/>
         </section>
-        </>
     )
 }
