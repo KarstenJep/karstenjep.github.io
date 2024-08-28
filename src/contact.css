@@ -1,10 +1,9 @@
-/* Background setting for Contact view */
-.contactBackground {
-    /* background-image:linear-gradient( #f05aac, #e96d60, #ed7b11, #e9ba42); */
-    background-image:linear-gradient( #f24ba7, #eb8047, #f24b4b, #ed7b11, #e9ba42);
+.contact-background {
+    /* background-image:linear-gradient( #f05aac, #e96d60, #ed7b11, #e9ba42, rgb(255, 238, 169)); */
+    background-image:linear-gradient( #f24ba7, #eb8047, #f24b4b, #ed7b11, #e9ba42, rgb(255, 238, 169));
     overflow-x: hidden;
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     min-height: 100vh;
     display: flex;
@@ -12,7 +11,7 @@
 }
 
 /* Images */
-.sun3, .hill, .hill2, .island, .island2, .mtn, .mtn2, .turtle, .shark, .hut, .hut2 {
+.sun3, .hill, .hill2, .island, .island2, .mtn, .mtn2, .turtle, .shark, .hut, .hammock, .ship {
     position: absolute;
 }
 
@@ -21,7 +20,7 @@
     height:175px;
     width:175px;
     margin: 0;
-    margin-top: 66vh;
+    margin-top: 68vh;
     background:orange;
     box-shadow: 0 0 10px rgb(255, 145, 0),
                 0 0 60px orange,
@@ -53,19 +52,19 @@
 }
 
 .island {
-    height: 20vh;
-    width: 42vw;
-    margin-top: 59.5vh;
+    height: 18vh;
+    width: 40vw;
+    margin-top: 61vh;
     z-index: 2;
-    left: -11%;
+    left: -12%;
 }
 
 .island2 {
-    height: 17vh;
-    width: 33vw;
-    margin-top: 61vh;
+    height: 16vh;
+    width: 32vw;
+    margin-top: 62vh;
     z-index: 2;
-    left: 71%;
+    left: 72%;
 }
 
 .mtn {
@@ -85,9 +84,9 @@
 }
 
 .turtle {
-    width: 4%;
-    left: 29%;
-    bottom: 18vh;
+    width: 3%;
+    left: 31%;
+    bottom: 20vh;
     z-index: 1;
 }
 
@@ -98,77 +97,59 @@
     z-index: 1;
 }
 
-.hut {
-    width: 7%;
-    left: 70%;
-    bottom: 25vh;
+.hammock {
+    width: 5%;
+    left: 69%;
+    bottom: 24.5vh;
     z-index: 2;
 }
 
-.hut2 {
+.hut {
   width: 7%;
-  left: 22%;
+  left: 22.5%;
   bottom: 25vh;
   z-index: 2;
 }
 
-/* moving wave (animation in contact.jsx) */
-.wave {
-    fill: rgba(111, 227, 247, 0.99);
-    width: 100vw;
-    height: 35vh;
-    position: fixed;
-    bottom: 0;
-    z-index: 2;
-    opacity: .9;
-}
-  
-.chips {
-    margin-top: 85vh;
-    z-index: 3;
+.ship {
+  width: 11%;
+  left: 12%;
+  bottom: 1vh;
+  z-index: 2;
 }
 
-/* Animation */
-.chips {
-    animation: fadeIn 3s;
-    -webkit-animation: fadeIn 3s;
-    -moz-animation: fadeIn 3s;
-    -o-animation: fadeIn 3s;
-}
-  @keyframes fadeIn {
-    0% {opacity:0; transform: scale(.8);}
-    100% {opacity:1; transform: scale(1);}
-  }
-  @-moz-keyframes fadeIn {
-    0% {opacity:0; transform: scale(.8);}
-    100% {opacity:1; transform: scale(1);}
-  }
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0; transform: scale(.8);}
-    100% {opacity:1; transform: scale(1);}
-  }
-  @-o-keyframes fadeIn {
-    0% {opacity:0; transform: scale(.8);}
-    100% {opacity:1; transform: scale(1);}
-  }
-
-.mtn, .mtn2, .hut, .island, .island2 {
+.mtn, .mtn2, .hut, .island, .island2, .ship, .turtle, .hut, .hammock, .shark {
   animation: fade 5s;
+  -webkit-animation: fade 5s;
+  -moz-animation: fade 5s;
+  -o-animation: fade 5s;
 }
-  @keyframes fade {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+@keyframes fade {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-moz-keyframes fade {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-webkit-keyframes fade {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-o-keyframes fade {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
 
 /* Mobile view */
 @media only screen and (max-width: 600px) {
-  .hill, .hill2, .mtn, .mtn2, .island, .island2, .turtle, .hut, .hut2 {
+  .hill, .hill2, .mtn, .mtn2, .island, .island2, .turtle, .hut, .hammock, .turtle, .shark, .ship {
     display: none;
   }
   .contactBackground {
     min-height: 100vh;
   }
-  .chips {
+  /* .chips {
    overflow-x: scroll;
-  }
+  } */
 }

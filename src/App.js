@@ -1,10 +1,10 @@
 import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import { HashRouter as Router, Route, Routes} from "react-router-dom";
-import Header from './Header.jsx';
+import Header from './components/Header.jsx';
 import Landing from './Landing.jsx';
 import Home from './home';
-import Contact from './contact';
+import Contact from './Contact.jsx';
 import './App.css';
 
 function App() {

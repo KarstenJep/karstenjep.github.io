@@ -1,5 +1,6 @@
 import React from 'react';
 import './Landing.css';
+import FloatingCloud from './components/FloatingCloud.jsx'
 // M-UI
 import PeopleIcon from '@mui/icons-material/EmojiPeople';
 import { Stack } from '@mui/material';
@@ -7,16 +8,10 @@ import { Stack } from '@mui/material';
 export default function LandingPage() {
 
     return (
-        <div className="landingBackground">
-          {/* Floating Clouds */}
-            <div className="cloud-content">
-                <div className="cloud"></div>
-                <div className="cloud x"></div>
-            </div>
-            <div className="cloud-content2">
-                <div className="cloud"></div>
-                <div className="cloud x"></div>
-            </div>
+        <div className="landing-background">
+            <FloatingCloud />
+            <FloatingCloud className={'cloud-content2'}/>
+
           {/* About Blurb */}
             <div className="container">
                 <Stack 
