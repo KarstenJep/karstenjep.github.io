@@ -3,7 +3,7 @@
         "title": "Fact Generator",
         "description": "Use AI to learn fun facts! Project utilizing Gen-AI and built exclusively on Google Cloud Platform.",
         "tech": [ "Vertex AI", "Google Cloud Platform", "NodeJS", "HTML", "CSS" ],
-        "color": "info",
+        "color": "primary",
         "image": "/images/facts.png",
         "url": "https://gen-ai-deployment-kwhwzio4da-uc.a.run.app",
         "className": "facts"
@@ -12,7 +12,7 @@
         "title": "Economic Lives",
         "description": "A multi-tier app made for St. Paul Jack to help users discover potential career paths.",
         "tech": [ "ReactJS", "Redux", "Sagas", "NodeJS", "Express", "Postgresql", "Material-UI", "CSV" ],
-        "color": "primary",
+        "color": "info",
         "image": "/images/oel.png",
         "url": "https://safe-plains-34698.herokuapp.com/#/home",
         "className": "oel"
@@ -57,7 +57,7 @@
         "title": "Movie Gallery",
         "description": "A movie application allowing users to add new movies, and read details!",
         "tech": [ "ReactJS", "Redux", "Sagas", "NodeJS", "Express", "Postgresql", "Material-UI", "CSS" ],
-        "color": "info",
+        "color": "primary",
         "image": "/images/film.png",
         "url": "https://afternoon-falls-30309.herokuapp.com/#/",
         "className": "film"
@@ -66,7 +66,7 @@
         "title": "Photo Gallery",
         "description": "My first website in React! A small photo galleria.",
         "tech": [ "ReactJS", "Ajax", "NodeJS", "Express", "CSS" ],
-        "color": "primary",
+        "color": "info",
         "image": "/images/camera.png",
         "url": "https://shielded-plateau-72344.herokuapp.com/",
         "className": "camera"

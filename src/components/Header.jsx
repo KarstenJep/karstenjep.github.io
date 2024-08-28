@@ -54,7 +54,7 @@ export default function Header() {
   };
 
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: 'whitesmoke', opacity: '.85', padding: '.5vh', width: '80%', margin: '0 10%'}} >
+    <AppBar position="fixed" sx={{ backgroundColor: '#ffffff', opacity: '.85', padding: '.5vh', width: '80%', margin: '0 10%'}} >
       <Container maxWidth="xl">
         <Toolbar disableGutters >
         {/* Title */}

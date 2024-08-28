@@ -130,7 +130,6 @@ export default function Contact() {
                         type="submit"
                         style={{  fontFamily: 'BioRhyme', width: '30%', minWidth: '140px', borderRadius: '30px', margin: '2.5vh auto 1vh', fontSize: 'medium' }}
                         variant="contained" 
-                        color="info"
                         endIcon={<SendIcon />}
                         >
                         Send

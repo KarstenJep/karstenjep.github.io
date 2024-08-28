@@ -47,7 +47,7 @@
     position: absolute;
     border: none;
     margin-top: 65vh;
-    z-index: 3;
+    z-index: 4;
     color: rgb(255, 255, 255, .7);
     cursor: pointer;
     border-radius: 10px;
