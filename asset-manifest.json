@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc2d1af4.css",
-    "main.js": "/static/js/main.ba238b27.js",
+    "main.css": "/static/css/main.a7ffbfbc.css",
+    "main.js": "/static/js/main.3e5e8cf1.js",
+    "static/media/hammock.png": "/static/media/hammock.601158a11a4b11516934.png",
     "static/media/sun.png": "/static/media/sun.915c74a93f67c7ad268b.png",
     "static/media/parrot.png": "/static/media/parrot.e4f3119448b87700fae3.png",
     "static/media/lake.jpg": "/static/media/lake.c5354228065f5e9cbe29.jpg",
     "static/media/mountains.png": "/static/media/mountains.bddbbf44a1c9ff79a133.png",
     "static/media/river.png": "/static/media/river.d9049f6bac05e86289f8.png",
+    "static/media/ship.png": "/static/media/ship.5ecaed2940a006a64eec.png",
     "static/media/rocket.png": "/static/media/rocket.40b6b9fb0e12bc8f4b94.png",
+    "static/media/crescent.png": "/static/media/crescent.e91ab9ed3c7bee5a718d.png",
     "static/media/beach.png": "/static/media/beach.f4662ffece0711517103.png",
     "static/media/turtle.png": "/static/media/turtle.8e089fd24476676084d4.png",
     "static/media/island2.png": "/static/media/island2.65d3c92858873464aad6.png",
@@ -16,10 +19,7 @@
     "static/media/moose.png": "/static/media/moose.39c7943b47c1041f4250.png",
     "static/media/pg.png": "/static/media/pg.9f102777dd4d6ba87c6e.png",
     "static/media/hut.png": "/static/media/hut.e495f3652360b128274f.png",
-    "static/media/crescent.png": "/static/media/crescent.11533bc6b943d10dfd3e.png",
-    "static/media/js2.png": "/static/media/js2.29c4f0d15cec05bd0a2d.png",
     "static/media/stars.png": "/static/media/stars.e3a5faeb507fe1a7cfae.png",
-    "static/media/passport.png": "/static/media/passport.86414fbaae13e0cb1920.png",
     "static/media/airplane.png": "/static/media/airplane.d78bb95fb26946258883.png",
     "static/media/mtn2.png": "/static/media/mtn2.a5a98f4a9bef39b51f47.png",
     "static/media/island.png": "/static/media/island.8a6c3197fe239ec51cd8.png",
@@ -36,17 +36,15 @@
     "static/media/sql.png": "/static/media/sql.e742a0a409270dbe6e7e.png",
     "static/media/js.png": "/static/media/js.608bd72b5dfcd340a0d0.png",
     "static/media/css.png": "/static/media/css.99426a611bd5b768e71d.png",
-    "static/media/postman.png": "/static/media/postman.bdbd633e185bcfb67540.png",
     "static/media/typescript.png": "/static/media/typescript.01020bf72a8c4f1a889d.png",
-    "static/media/redux-saga.svg": "/static/media/redux-saga.7020de63dcc408a69b7ab86392e5bd5f.svg",
     "static/media/redux.svg": "/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
     "static/media/mui.svg": "/static/media/mui.4d05798a9d3243e7634aa7741f05e4a7.svg",
     "index.html": "/index.html",
-    "main.cc2d1af4.css.map": "/static/css/main.cc2d1af4.css.map",
-    "main.ba238b27.js.map": "/static/js/main.ba238b27.js.map"
+    "main.a7ffbfbc.css.map": "/static/css/main.a7ffbfbc.css.map",
+    "main.3e5e8cf1.js.map": "/static/js/main.3e5e8cf1.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc2d1af4.css",
-    "static/js/main.ba238b27.js"
+    "static/css/main.a7ffbfbc.css",
+    "static/js/main.3e5e8cf1.js"
   ]
 }
