@@ -6,7 +6,6 @@ import { Provider } from 'react-redux';
 // import { put, takeEvery } from 'redux-saga/effects';
 // import logger from 'redux-logger';
 // import axios from 'axios';
-import './index.css';
 import App from './App';
 
 

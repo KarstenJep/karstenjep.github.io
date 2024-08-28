@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Link} from 'react-scroll'
 import Portfolio from "./Portfolio.jsx"
-import './home.css';
+import './Home.css';
 // Images
 import mountains from "./images/mountains.png";
 import sun from "./images/sun.png"
@@ -48,7 +48,7 @@ export default function Home() {
         <section className="sky">
             {/* <!-- Animation - Sky --> */}
             <img src={mountains} alt="mountains" className="mountains" />
-            <div className="username" style={{ transform: `translateY(-${scrollY * 0.4}vh) translateX(${scrollY * 0.0}vh)`, zIndex: '2'}}>{`Hello!`}</div>
+            <div className="username" style={{ transform: `translateY(-${scrollY * 0.4}vh) translateX(${scrollY * 0.0}vh)`, zIndex: '2'}}>{`Come On In!`}</div>
             <img src={sun} alt="sun" className="sun" style={{ transform: `translateY(-${scrollY * 0.1}vh) translateX(-${scrollY * 0.05}vh)`, zIndex: '0'}}/>
             <img src={sun} alt="sun" className="sunTwo" style={{ transform: `translateY(-${scrollY * 0.01}vh) translateX(-${scrollY * 0.005}vh)`, zIndex: '0'}}/>
             <img src={cloudss} alt="cloud" className="cloud1" style={{ transform: `translateY(-${scrollY * 0.12}vh) translateX(${scrollY * 0.1}vh)`}}/>
@@ -89,7 +89,7 @@ export default function Home() {
             <img src={spring} alt="spring" className="spring" style={{ transform: `translateY(${scrollY * 0.05}vh) translateX(${scrollY * 0.02}vh)`}}/>
             <img src={postgresql} alt="postgresql" className="postgresql" style={{ transform: `translateY(${scrollY * 0.03}vh) translateX(${scrollY * 0.01}vh)`}}/>
             {/* <!-- Scroll Down Arrow --> */}
-            <Link className="section" to="portfolio" offset={2800} spy={true} smooth={true} duration={8000}></Link>
+            <Link className="section" to="portfolio" offset={3000} spy={true} smooth={true} duration={8000}></Link>
 
             <div id="portfolio"></div>
         </section>

@@ -1,47 +1,64 @@
 import React, {useRef} from 'react';
+import ProjectList from "./ProjectList.json";
+import ProjectCard from "./components/ProjectCard.jsx"
+import "./Portfolio.css";
 // M-UI
 import ImageList from '@mui/material/ImageList';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIosNew';
-// Files
-import "./Portfolio.css";
-import ProjectList from "./ProjectList.json";
-import ProjectCard from "./components/ProjectCard.jsx"
+import Stack from '@mui/material/Stack';
+import Divider from '@mui/material/Divider';
 // Images
 import beach from "./images/beach.png";
    
 export default function Portfolio() {
+
     const ref = useRef(null)
     const scroll = (scrollOffset) => {
         ref.current.scrollLeft += scrollOffset;
       };
 
     return (
-        <section className="portfolioBackground">
-            {/* Title */}
-            <div className="titleDiv">
-                <span className="container-title">
-                    Portfolio&nbsp;
-                    <BusinessCenterIcon fontSize='large' style={{margin: '0vh 0vh -.3vh 0vh '}}/>
-                </span>
+        <section className="portfolio-background">
+          {/* Title */}
+            <div className="container portfolio-container">
+                <Stack
+                    spacing={'.5vh'} 
+                    alignItems="center"
+                    padding={'0% 2%'}
+                    >
+                    <span className="container-title">
+                        Portfolio&nbsp;
+                        <BusinessCenterIcon 
+                            fontSize='clamp(1.6rem, 5vw, 2.8rem)' 
+                            style={{margin: '0vh 0vh -.3vh 0vh '}}/>
+                    </span>
+                    <Divider 
+                        orientation="horizontal" 
+                        color="black" 
+                        sx={{ width: '80%', border: 'solid .2vh'}}
+                        />
+                    <span className='container-text'>side work & passion projects</span>
+                </Stack>
+                
             </div>
 
-            {/* Left Arrow */}
+          {/* Left Arrow */}
             <ArrowBackIosIcon  
                 className="arrow"
                 onClick={() => scroll(-292.5)} 
                 style={{ left: '1vh', fontSize: '70'}} 
             />
 
-            {/* Right Arrow */}
+          {/* Right Arrow */}
             <ArrowForwardIosIcon
                 className="arrow"
                 onClick={() => scroll(292.5)} 
                 style={{ right: '1vh', fontSize: '70'}} 
             />
                    
-            {/* Scrolling list of Projects */}
+          {/* Scrolling list of Projects */}
             <ImageList cols={1.1}
                 className="wrapper"
                 ref={ref}
@@ -62,7 +79,7 @@ export default function Portfolio() {
                 })}
             </ImageList>
 
-            {/* Background Img */}
+          {/* Background Img */}
             <img src={beach} alt="beach" className="beach"/>
         </section>
     )

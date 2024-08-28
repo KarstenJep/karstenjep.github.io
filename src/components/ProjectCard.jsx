@@ -18,14 +18,14 @@ export default function ProjectCard({ image, title, description, tech, color, ur
     const [toggleContent, setToggleContent] = useState(false);
 
     return (
-        <div className="card-container">
+        <div className="container project-container">
             <Stack 
                 spacing={'2vh'} 
                 alignItems="center" 
                 padding={'14% 8% 14%'}
                 >
                 <img src={image} alt="project logo" className={className}/>
-                <h3 className="subtitles">{title}</h3>
+                <h3 className="container-title">{title}</h3>
                 <RadioGroup 
                     row aria-label="gender" 
                     defaultValue="description" 

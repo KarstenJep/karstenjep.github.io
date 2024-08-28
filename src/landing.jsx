@@ -13,7 +13,7 @@ export default function LandingPage() {
             <FloatingCloud className={'cloud-content2'}/>
 
           {/* About Blurb */}
-            <div className="container">
+            <div className="container landing-container">
                 <Stack 
                     spacing={'1vh'} 
                     alignItems="center" 

@@ -1,23 +1,9 @@
   /* Card for displaying each project */
-  .card-container {
+  .project-container {
     width: 90%;
     margin: 40vh 2vh 4vh;
-    border: solid black 2px;
-    border-radius: 20px;
-    background-color:whitesmoke;
-    box-shadow: 0px 6px 12px rgb(0, 0, 0, 0.4);
     display:table-column;
     z-index: 2;
-    opacity: .9;
-  }
-  
-  /* Headings in "Projects" sections */
-  .subtitles {
-    text-align: center;
-    font-size: 3.3vh;
-    font-weight:600;
-    text-shadow: 0px 1px 1px black;
-    font-family: 'BioRhyme';
   }
   
   /* Project Images */

@@ -61,7 +61,7 @@ export default function Header() {
           <Typography
             noWrap
             sx={{
-              fontSize: 'clamp(1.5rem, 2.5vw, 2.8rem)',
+              fontSize: 'clamp(1.4rem, 2.5vw, 2.8rem)',
               ml: '.5vw',
               display: { xs: 'flex', md: 'flex', lg: 'flex' },
               fontFamily: 'BioRhyme',

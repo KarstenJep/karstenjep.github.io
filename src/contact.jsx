@@ -76,14 +76,15 @@ export default function Contact() {
     return (
         <>
         <section className="contact-background">
-            <form onSubmit={validateForm} className="container"> 
+          {/* Contact Form */}
+            <form onSubmit={validateForm} className="container contact-container"> 
                 <Stack 
                     spacing={'1vh'} 
                     alignItems="center" 
                     padding={'2vh 4%'}
                     >
                     <span className="container-title">
-                        Send A Message&nbsp; 
+                        Contact Me&nbsp; 
                         <EmailIcon 
                             fontSize="clamp(1.6rem, 5vw, 2.8rem)" 
                             style={{marginBottom: '-.8vh'}}/>
@@ -127,7 +128,7 @@ export default function Contact() {
                         />
                     <Button
                         type="submit"
-                        style={{  fontFamily: 'BioRhyme', width: '30%', minWidth: '140px', borderRadius: '30px', margin: '2vh auto 1vh', fontSize: 'medium' }}
+                        style={{  fontFamily: 'BioRhyme', width: '30%', minWidth: '140px', borderRadius: '30px', margin: '2.5vh auto 1vh', fontSize: 'medium' }}
                         variant="contained" 
                         color="info"
                         endIcon={<SendIcon />}
@@ -137,7 +138,7 @@ export default function Contact() {
                 </Stack>
             </form>
 
-            {/* Images */}
+          {/* Images */}
             <div className="sun3"></div>
             <div className="hill"></div>
             <div className="hill2"></div>
@@ -154,7 +155,7 @@ export default function Contact() {
             <RollingWave />
         </section>
 
-        {/* Snackbar Alert */}
+      {/* Snackbar Alert */}
         <Snackbar open={sentAlert} autoHideDuration={4000} onClose={handleClose}>
             <Alert onClose={handleClose} severity="success" sx={{ maxWidth: '100%' }}>
                 <b>Message Received! Thanks!</b>

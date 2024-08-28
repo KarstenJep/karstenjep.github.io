@@ -283,10 +283,6 @@ body {
     left: 75%;
   }
 
-  img:not(.sun, .sunTwo, .crescent, .stars, .starsTwo, .mountains, .username, .island, .island2, .hammock, .hut, .turtle ) {
-    filter:drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
-  }
-  
   /* ----- CSS Animations --------- */
   /* Scroll Down Arrow */
   .section {
@@ -313,33 +309,6 @@ body {
   @keyframes bounce {
     50% {
       transform: translateY(-80%);
-    }
-  }
-  /* Scroll Down Arrow 2 */
-  .section2 {
-    position: relative;
-    cursor: pointer;
-    z-index: 4;
-    left: 17%;
-  }
-  .section2::before {
-    animation: slide 1.5s ease infinite;
-    bottom: 144vh;
-    color: #fff;
-    content: '╲╱';
-    font-size: 3vh;
-    letter-spacing: -1px;
-    line-height: 4rem;
-    filter:drop-shadow(0px 5px 6px black);
-    position: absolute;
-    text-align: center;
-    border-radius: 10px;
-    padding: 0rem .5rem;
-    background-color: rgb(0, 0, 0, 0.1);
-  }
-  @keyframes slide {
-    50% {
-      transform: translateX(-80%);
     }
   }
 
@@ -405,9 +374,6 @@ body {
   .moose {
     margin-bottom: 115vh;
     left: 25%;
-  }
-  .info {
-    margin: 153vh auto 50vh;
   }
   .hs {
     margin-bottom: 18vh;

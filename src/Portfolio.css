@@ -1,5 +1,5 @@
   /* Background Setting for "Projects" section. No animation */
-  .portfolioBackground {
+  .portfolio-background {
     height: 110vh;
     background-image: linear-gradient(#35adf3,#f8f8f8);
     overflow-x: hidden;
@@ -16,21 +16,14 @@
     z-index: 0;
   }
 
-  .titleDiv {
+  .portfolio-container {
     position: absolute;
-    left: 37.5vw;
-    width: 385px;
+    left: 36.5vw;
+    width: 46vh;
     max-width: 80%;
-    height: 10vh;
-    margin: 26vh auto 0vh;
-    border: solid black 2px;
-    border-radius: 20px;
-    background-color:whitesmoke;
-    box-shadow: 0px 6px 12px rgb(0, 0, 0, 0.4);
-    z-index: 3;
-    opacity: .9;
-    text-align: center;
-    padding-top: 2vh;
+    height: 14vh;
+    margin: 23vh auto 0vh;
+    padding-top: 1.5vh;
   }
 
   /* Horizontal scroll properties */
@@ -67,9 +60,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .titleDiv {
+  .portfolio-container {
     left: 10%;
-    margin-top: 26vh;
+    margin-top: 22vh;
+    height: 16vh;
   }
   .beach {
     width: 120vw;
