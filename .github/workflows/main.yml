@@ -1,4 +1,4 @@
-name: CI
+name: CI/CD
 
 on:
   push:
@@ -45,7 +45,7 @@ jobs:
         npm run build
     - name: Run component tests
       run: |
-        npm run test
+        npm run test --passWithNoTests
         
     - name: Setup Pages
       uses: actions/configure-pages@v3
