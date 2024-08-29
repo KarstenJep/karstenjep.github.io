@@ -4,13 +4,13 @@
 
 Duration: Ongoing
 
-What started as a fun, quick foray into playing with basic animations in javascript, has now evolved into a fully animated react app that doubles as my personal website. This will be a project I will revisit periodically in my free time to further practice animation, experiment with interactive user experience, and look for opportunities to improve.
+What started as a fun, quick foray into playing with basic animations in vanilla javascript, has now evolved into a fully animated react typescript app that doubles as my personal website. This will be a project I will revisit periodically in my free time to further practice animation, experiment with interactive user experience, and look for opportunities to improve.
 
 ## [Demo](https://karstenjep.github.io/)
 
 ## EDA Project
 
-This application uses React, Redux, Material-UI, CSS, EmailJS (a full list of dependencies can be found in `package.json`)
+This application uses TypeScript, React, Material-UI, CSS, EmailJS, GitHub Actions, Github Pages(a full list of dependencies can be found in `package.json`)
 
 ## Development Setup Instructions
 
@@ -34,12 +34,14 @@ Directory Structure:
 
 ## Built With
 
-- JavaScript
+- TypeScript
 - React
-- Redux
-- HTML
 - CSS
 - Material-UI
+- ESLint
+- Prettier
+- GitHub Actions
+- Github Workflows
 
 ## Support
 
