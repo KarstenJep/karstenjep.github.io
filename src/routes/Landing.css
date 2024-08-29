@@ -1,17 +1,17 @@
 .landing-background {
-    background-image: url('../assets/images/lake.jpg');
-    background-size: cover;
-    overflow-x: hidden;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+  background-image: url('../assets/images/lake.jpg');
+  background-size: cover;
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .landing-container {
-    position: absolute;
-    margin: 30vh auto 30vh;
-    width: 75vh;
-    max-width: 90%;
+  position: absolute;
+  margin: 30vh auto 30vh;
+  width: 75vh;
+  max-width: 90%;
 }
