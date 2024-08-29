@@ -1,44 +1,61 @@
-  /* Card for displaying each project */
-  .project-container {
-    width: 90%;
-    margin: 40vh 2vh 4vh;
-    display:table-column;
-    z-index: 2;
-  }
-  
-  /* Project Images */
-  .facts {
-    width: 13vh;
-  }
-  
-  .oel {
-    width: 13.5vh;
-  }
+/* Card for displaying each project */
+.project-container {
+  width: 90%;
+  margin: 40vh 2vh 4vh;
+  display: table-column;
+  text-align: center;
+  background-color: #ffffff;
+  border: solid black 2px;
+  border-radius: 20px;
+  box-shadow:
+    2px 2px 5px rgba(0, 0, 0, 0.3),
+    4px 4px 10px rgba(0, 0, 0, 0.25),
+    8px 8px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+  z-index: 3;
+}
 
-  .wh {
-    width: 11.5vh;
-  }
+.project-title {
+  font-size: clamp(1.6rem, 3vh, 2.1rem);
+  font-weight: 700;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  font-family: 'BioRhyme';
+  letter-spacing: 0.1vw;
+}
 
-  .quotation {
-    width: 13.5vh;
-  }
+/* Project Images */
+.facts {
+  width: 13vh;
+}
 
-  .search {
-    width: 13vh;
-  }
+.oel {
+  width: 13.5vh;
+}
 
-  .mario {
-    width: 10.6vh;
-  }
-    
-  .film {
-    width: 11.5vh;
-  }
+.wh {
+  width: 11.5vh;
+}
 
-  .camera {
-    width: 13.7vh;
-  }
+.quotation {
+  width: 13.5vh;
+}
 
-  .todo {
-    width: 10vh;
-  }
+.search {
+  width: 13vh;
+}
+
+.mario {
+  width: 10.6vh;
+}
+
+.film {
+  width: 11.5vh;
+}
+
+.camera {
+  width: 13.7vh;
+}
+
+.todo {
+  width: 10vh;
+}

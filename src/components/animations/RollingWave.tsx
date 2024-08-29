@@ -1,16 +1,16 @@
+import React from 'react';
 import './RollingWave.css';
 
-export default function WaveAnimation() {
-
-    return (
-        <svg 
-            version="1.1" 
-            className="wave"
-            xlmns="http://www.w3.org/200/svg"
-            preserveAspectRatio="none"
-            >
-            <path
-                d="
+export default function RollingWave() {
+  return (
+    <svg
+      version="1.1"
+      className="wave"
+      xmlns="http://www.w3.org/200/svg"
+      preserveAspectRatio="none"
+    >
+      <path
+        d="
                 M0 67
                 C 273,183
                 822, -40
@@ -19,13 +19,14 @@ export default function WaveAnimation() {
                 H 0
                 V 67
                 Z
-                ">
-                <animate
-                    repeatCount="indefinite"
-                    attributeName="d"
-                    dur="30s"
-                    attributeType="XML"
-                    values="
+                "
+      >
+        <animate
+          repeatCount="indefinite"
+          attributeName="d"
+          dur="30s"
+          attributeType="XML"
+          values="
                         M0 77
                         C 473, 283
                         822, -40
@@ -57,9 +58,9 @@ export default function WaveAnimation() {
                         V 600
                         H 0
                         V 300
-                        Z">
-                </animate>
-            </path>
-        </svg>
-    )
+                        Z"
+        ></animate>
+      </path>
+    </svg>
+  );
 }
