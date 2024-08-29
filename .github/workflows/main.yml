@@ -45,7 +45,7 @@ jobs:
         npm run build
     - name: Run component tests
       run: |
-        npm run test --passWithNoTests
+        npm run test--passWithNoTests
         
     - name: Setup Pages
       uses: actions/configure-pages@v3
