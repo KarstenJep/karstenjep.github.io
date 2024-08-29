@@ -1,12 +1,12 @@
 import './RollingWave.css';
 
-export default function WaveAnimation() {
+export default function RollingWave() {
 
     return (
         <svg 
             version="1.1" 
             className="wave"
-            xlmns="http://www.w3.org/200/svg"
+            xmlns="http://www.w3.org/200/svg"
             preserveAspectRatio="none"
             >
             <path

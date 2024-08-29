@@ -24,8 +24,8 @@ import TabList from '@mui/lab/TabList';
 export default function Header() {
 
   const navigate = useNavigate();
-  const [value, setValue] = useState('1');
-  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [value, setValue] = useState<string>('1');
+  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);;
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export default function Header() {
     }
   }, [pathname]);
 
-  const handleOpenNavMenu = (event) => {
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorElNav(event.currentTarget);
   };
  
@@ -49,9 +49,9 @@ export default function Header() {
     setAnchorElNav(null);
   };
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  // const handleChange = (event, newValue) => {
+  //   setValue(newValue);
+  // };
 
   return (
     <AppBar position="fixed" sx={{ backgroundColor: '#ffffff', opacity: '.85', padding: '.5vh', width: '80%', margin: '0 10%'}} >
@@ -81,7 +81,7 @@ export default function Header() {
               aria-label="menu options"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="black"
+              color="inherit"
             >
               <MenuIcon sx={{ fontSize: 'clamp(1.6rem, 5vw, 2.8rem)' }} />
             </IconButton>
@@ -150,7 +150,7 @@ export default function Header() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'none', lg: 'flex' }}}>
             <TabContext value={value}>
               <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                <TabList onChange={handleChange} >
+                <TabList>
                   <Tab 
                     label="About" 
                     value="1" 
@@ -181,7 +181,7 @@ export default function Header() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', lg: 'none' }}}>
             <TabContext value={value}>
               <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                <TabList onChange={handleChange} >
+                <TabList>
                   <Tab 
                     value="1" 
                     onClick={() => navigate(`/`)} 

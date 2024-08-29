@@ -13,7 +13,18 @@ import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
 
-export default function ProjectCard({ image, title, description, tech, color, url, className, index}) {
+interface ProjectCardProps {
+    image: string,
+    title: string,
+    description: string,
+    tech: Array<string>,
+    color: "primary" | "secondary" | "success" | "error" | "info" | "warning",
+    url: string,
+    className: string,
+    index: number
+}
+
+export default function ProjectCard({ image, title, description, tech, color, url, className, index}: ProjectCardProps) {
     
     const [toggleContent, setToggleContent] = useState(false);
 

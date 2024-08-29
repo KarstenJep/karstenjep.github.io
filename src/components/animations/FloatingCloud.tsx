@@ -1,6 +1,10 @@
 import './FloatingCloud.css';
 
-export default function CloudAnimation({ className }) {
+interface FloatingCloudProps { 
+    className?: string;
+}
+
+export default function FloatingCloud({ className }: FloatingCloudProps) {
 
     return (
         <div className={ className ? className : "cloud-content"}>

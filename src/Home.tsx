@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import {Link} from 'react-scroll'
-import Portfolio from "./Portfolio.jsx"
+import { Link } from 'react-scroll'
+import Portfolio from "./Portfolio"
 import './Home.css';
 // Images
 import mountains from "./images/mountains.png";
@@ -34,7 +34,7 @@ import java from "./images/java.png";
 
 export default function Home() {
 
-    const [scrollY, setScrollY] = useState(0);
+    const [scrollY, setScrollY] = useState<number>(0);
     const handleScroll = () => setScrollY(window.scrollY);
 
     useEffect(() => {

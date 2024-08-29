@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import emailjs from "emailjs-com";
 import './Contact.css';
-import RollingWave from "./components/RollingWave.jsx";
+import RollingWave from "./components/animations/RollingWave";
 // Imgs
 import island from "./images/island.png";
 import island2 from "./images/island2.png";
@@ -18,23 +18,23 @@ import EmailIcon from '@mui/icons-material/Email';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
-import MuiAlert from '@mui/material/Alert';
+// import MuiAlert, { AlertProps } from '@mui/material/Alert';
 import { Stack } from '@mui/material';
 
-const Alert = React.forwardRef(function Alert(props, ref) {
-  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-});
+// const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(props, ref) {
+//   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+// });
 
 export default function Contact() {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [nameError, setNameError] = useState(false);
-    const [emailError, setEmailError] = useState(false);
-    const [messageError, setMessageError] = useState(false);
-    const [sentAlert, setSentAlert] = React.useState(false);
+    const [name, setName] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
+    const [message, setMessage] = useState<string>('');
+    const [nameError, setNameError] = useState<boolean>(false);
+    const [emailError, setEmailError] = useState<boolean>(false);
+    const [messageError, setMessageError] = useState<boolean>(false);
+    const [sentAlert, setSentAlert] = React.useState<boolean>(false);
 
-    const validateForm = (e) => {
+    const validateForm = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (name === ''){
             setNameError(true)
@@ -47,8 +47,8 @@ export default function Contact() {
         }
     }
 
-    const handleSubmit = (e) => {
-        emailjs.sendForm('service_ut2c8mq', 'template_q8jqjb7', e.target, 'user_Lupji84U8szKulL3UkKWj')
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        emailjs.sendForm('service_ut2c8mq', 'template_q8jqjb7', e.currentTarget, 'user_Lupji84U8szKulL3UkKWj')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -62,16 +62,16 @@ export default function Contact() {
         setEmailError(false);
         setMessageError(false);
         // Activate snackbar alert
-        setSentAlert(true);
+        // setSentAlert(true);
     };
 
     // Close snackbar alert
-    const handleClose = (event, reason) => {
-        if (reason === 'clickaway') {
-        return;
-        }
-        setSentAlert(false);
-    };
+    // const handleClose = (event, reason) => {
+    //     if (reason === 'clickaway') {
+    //     return;
+    //     }
+    //     setSentAlert(false);
+    // };
     
     return (
         <>
@@ -85,9 +85,8 @@ export default function Contact() {
                     >
                     <span className="container-title">
                         Contact Me&nbsp; 
-                        <EmailIcon 
-                            fontSize="clamp(1.6rem, 5vw, 2.8rem)" 
-                            style={{marginBottom: '-.8vh'}}/>
+                        <EmailIcon  
+                            style={{marginBottom: '-.8vh', fontSize: 'clamp(1.6rem, 5vw, 2.8rem)'}}/>
                     </span>
                     <Stack 
                         direction={'row'}
@@ -155,11 +154,11 @@ export default function Contact() {
         </section>
 
       {/* Snackbar Alert */}
-        <Snackbar open={sentAlert} autoHideDuration={4000} onClose={handleClose}>
+        {/* <Snackbar open={sentAlert} autoHideDuration={4000} onClose={handleClose}>
             <Alert onClose={handleClose} severity="success" sx={{ maxWidth: '100%' }}>
                 <b>Message Received! Thanks!</b>
             </Alert>
-        </Snackbar>
+        </Snackbar> */}
         </>
     )
 }

@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import ProjectList from "./ProjectList.json";
-import ProjectCard from "./components/ProjectCard.jsx"
+import ProjectCard from "./components/ProjectCard"
 import "./Portfolio.css";
 // M-UI
 import ImageList from '@mui/material/ImageList';
@@ -14,9 +14,12 @@ import beach from "./images/beach.png";
    
 export default function Portfolio() {
 
-    const ref = useRef(null)
-    const scroll = (scrollOffset) => {
+    const ref = useRef<HTMLUListElement>(null);
+    
+    const scroll = (scrollOffset: number) => {
+        if (ref.current !== null) {
         ref.current.scrollLeft += scrollOffset;
+        }
       };
 
     return (
@@ -30,9 +33,8 @@ export default function Portfolio() {
                     >
                     <span className="container-title">
                         Portfolio&nbsp;
-                        <BusinessCenterIcon 
-                            fontSize='clamp(1.6rem, 5vw, 2.8rem)' 
-                            style={{margin: '0vh 0vh -.3vh 0vh '}}/>
+                        <BusinessCenterIcon  
+                            style={{margin: '0vh 0vh -.3vh 0vh ', fontSize: 'clamp(1.6rem, 5vw, 2.8rem)'}}/>
                     </span>
                     <Divider 
                         orientation="horizontal" 
@@ -70,7 +72,7 @@ export default function Portfolio() {
                             title={project.title} 
                             description={project.description} 
                             tech={project.tech}
-                            color={project.color}
+                            color={project.color as 'primary' | 'info' | 'success' | 'warning' | 'secondary' | 'error'}
                             url={project.url}
                             className={project.className}
                             index={i}

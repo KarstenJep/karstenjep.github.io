@@ -1,6 +1,6 @@
 import React from 'react';
 import './Landing.css';
-import FloatingCloud from './components/FloatingCloud.jsx'
+import FloatingCloud from './components/animations/FloatingCloud'
 // M-UI
 import PeopleIcon from '@mui/icons-material/EmojiPeople';
 import { Stack } from '@mui/material';
@@ -21,9 +21,8 @@ export default function LandingPage() {
                     >
                     <span className="container-title">
                         Welcome!&nbsp;
-                        <PeopleIcon 
-                            fontSize="clamp(1.6rem, 5vw, 2.8rem)" 
-                            style={{marginBottom: '-.6vh'}}/>
+                        <PeopleIcon  
+                            style={{ marginBottom: '-.6vh', fontSize: 'clamp(1.6rem, 5vw, 2.8rem)' }}/>
                     </span>
                     <span className="container-text">
                         I believe in following life passions and enjoying your work. 
