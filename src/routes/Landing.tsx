@@ -1,6 +1,6 @@
 import React from 'react';
 import './Landing.css';
-import FloatingCloud from './components/animations/FloatingCloud'
+import FloatingCloud from '../components/animations/FloatingCloud'
 // M-UI
 import PeopleIcon from '@mui/icons-material/EmojiPeople';
 import { Stack } from '@mui/material';

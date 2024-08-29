@@ -1,29 +1,22 @@
 import React, {useState} from 'react';
 import emailjs from "emailjs-com";
 import './Contact.css';
-import RollingWave from "./components/animations/RollingWave";
+import RollingWave from "../components/animations/RollingWave";
+import SnackbarAlert from '../components/SnackbarAlert';
 // Imgs
-import island from "./images/island.png";
-import island2 from "./images/island2.png";
-import mtn from "./images/mtn.png";
-import mtn2 from "./images/mtn2.png";
-import turtle from "./images/turtle.png";
-import shark from "./images/shark.png";
-import hut from "./images/hut.png";
-import hammock from "./images/hammock.png";
-import ship from "./images/ship.png";
+import island from "../assets/images/island.png";
+import island2 from "../assets/images/island2.png";
+import mtn from "../assets/images/mtn.png";
+import mtn2 from "../assets/images/mtn2.png";
+import turtle from "../assets/images/turtle.png";
+import shark from "../assets/images/shark.png";
+import hut from "../assets/images/hut.png";
+import hammock from "../assets/images/hammock.png";
+import ship from "../assets/images/ship.png";
 // M-UI
 import SendIcon from '@mui/icons-material/Send';
 import EmailIcon from '@mui/icons-material/Email';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import Snackbar from '@mui/material/Snackbar';
-// import MuiAlert, { AlertProps } from '@mui/material/Alert';
-import { Stack } from '@mui/material';
-
-// const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(props, ref) {
-//   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-// });
+import { Stack, Button, TextField, SnackbarCloseReason } from '@mui/material';
 
 export default function Contact() {
     const [name, setName] = useState<string>('');
@@ -32,7 +25,7 @@ export default function Contact() {
     const [nameError, setNameError] = useState<boolean>(false);
     const [emailError, setEmailError] = useState<boolean>(false);
     const [messageError, setMessageError] = useState<boolean>(false);
-    const [sentAlert, setSentAlert] = React.useState<boolean>(false);
+    const [showSnackbar, setShowSnackbar] = useState<boolean>(false);
 
     const validateForm = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -44,6 +37,9 @@ export default function Contact() {
             setMessageError(true)
         } else {
             handleSubmit(e)
+            setNameError(false);
+            setEmailError(false);
+            setMessageError(false);
         }
     }
 
@@ -51,27 +47,24 @@ export default function Contact() {
         emailjs.sendForm('service_ut2c8mq', 'template_q8jqjb7', e.currentTarget, 'user_Lupji84U8szKulL3UkKWj')
         .then((result) => {
             console.log(result.text);
+            setName('');
+            setEmail('');
+            setMessage('');
+            setShowSnackbar(true);
         }, (error) => {
             console.log(error.text);
         });
-        // Clear the form field
-        setName('');
-        setEmail('');
-        setMessage('');
-        setNameError(false);
-        setEmailError(false);
-        setMessageError(false);
-        // Activate snackbar alert
-        // setSentAlert(true);
     };
 
-    // Close snackbar alert
-    // const handleClose = (event, reason) => {
-    //     if (reason === 'clickaway') {
-    //     return;
-    //     }
-    //     setSentAlert(false);
-    // };
+    const handleClose = (
+        event?: React.SyntheticEvent | Event,
+        reason?: SnackbarCloseReason,
+    ) => {
+        if (reason === 'clickaway') {
+        return;
+        }
+        setShowSnackbar(false);
+    };
     
     return (
         <>
@@ -86,7 +79,7 @@ export default function Contact() {
                     <span className="container-title">
                         Contact Me&nbsp; 
                         <EmailIcon  
-                            style={{marginBottom: '-.8vh', fontSize: 'clamp(1.6rem, 5vw, 2.8rem)'}}/>
+                            style={{marginBottom: '-.8vh', fontSize: 'clamp(1.6rem, 4vw, 2.4rem)'}}/>
                     </span>
                     <Stack 
                         direction={'row'}
@@ -151,14 +144,9 @@ export default function Contact() {
             <img src={ship} alt="ship" className="ship" />
 
             <RollingWave />
-        </section>
 
-      {/* Snackbar Alert */}
-        {/* <Snackbar open={sentAlert} autoHideDuration={4000} onClose={handleClose}>
-            <Alert onClose={handleClose} severity="success" sx={{ maxWidth: '100%' }}>
-                <b>Message Received! Thanks!</b>
-            </Alert>
-        </Snackbar> */}
+            <SnackbarAlert showSnackBar={showSnackbar} handleClose={handleClose} />
+        </section>
         </>
     )
 }

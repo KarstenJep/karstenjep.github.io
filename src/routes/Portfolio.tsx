@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
-import ProjectList from "./ProjectList.json";
-import ProjectCard from "./components/ProjectCard"
+import ProjectList from "../assets/ProjectList.json";
+import ProjectCard from "../components/ProjectCard"
 import "./Portfolio.css";
 // M-UI
 import ImageList from '@mui/material/ImageList';
@@ -10,7 +10,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIosNew';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 // Images
-import beach from "./images/beach.png";
+import beach from "../assets/images/beach.png";
    
 export default function Portfolio() {
 

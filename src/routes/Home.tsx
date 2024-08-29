@@ -3,34 +3,34 @@ import { Link } from 'react-scroll'
 import Portfolio from "./Portfolio"
 import './Home.css';
 // Images
-import mountains from "./images/mountains.png";
-import sun from "./images/sun.png"
-// import cloudss from "./images/clouds.png";
-import cloudss from "./images/cloudss.png";
-import crescent from "./images/crescent.png"
-import stars from "./images/stars.png";
-import birds from "./images/birds.png";
-import moose from "./images/moose.png";
-import bicycle from "./images/bicycle.png";
-import rocket from "./images/rocket.png";
-import pg from "./images/pg.png";
-import airplane from "./images/airplane.png";
-import airBalloon from "./images/air-balloon.png";
-import parrot from "./images/parrot.png";
-import js from "./images/js.png";
-import react from "./images/react.png";
-import node from "./images/node.png";
-import postgresql from "./images/postgresql.png";
-import python from "./images/python.png";
-import html from "./images/html.png";
-import css from "./images/css.png";
-import git from "./images/git.png";
-import spring from "./images/spring.png";
-import mui from "./images/mui.svg";
-import sql from "./images/sql.png";
-import redux from "./images/redux.svg";
-import typescript from "./images/typescript.png";
-import java from "./images/java.png";
+import mountains from "../assets/images/mountains.png";
+import sun from "../assets/images/sun.png"
+// import cloudss from "../assets/images/clouds.png";
+import cloudss from "../assets/images/cloudss.png";
+import crescent from "../assets/images/crescent.png"
+import stars from "../assets/images/stars.png";
+import birds from "../assets/images/birds.png";
+import moose from "../assets/images/moose.png";
+import bicycle from "../assets/images/bicycle.png";
+import rocket from "../assets/images/rocket.png";
+import pg from "../assets/images/pg.png";
+import airplane from "../assets/images/airplane.png";
+import airBalloon from "../assets/images/air-balloon.png";
+import parrot from "../assets/images/parrot.png";
+import js from "../assets/images/js.png";
+import react from "../assets/images/react.png";
+import node from "../assets/images/node.png";
+import postgresql from "../assets/images/postgresql.png";
+import python from "../assets/images/python.png";
+import html from "../assets/images/html.png";
+import css from "../assets/images/css.png";
+import git from "../assets/images/git.png";
+import spring from "../assets/images/spring.png";
+import mui from "../assets/images/mui.svg";
+import sql from "../assets/images/sql.png";
+import redux from "../assets/images/redux.svg";
+import typescript from "../assets/images/typescript.png";
+import java from "../assets/images/java.png";
 
 export default function Home() {
 
