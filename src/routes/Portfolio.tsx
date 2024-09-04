@@ -30,7 +30,7 @@ export default function Portfolio() {
             Portfolio&nbsp;
             <BusinessCenterIcon
               style={{
-                margin: '0vh 0vh -.3vh 0vh ',
+                marginBottom: '-.8vh',
                 fontSize: 'clamp(1.6rem, 5vw, 2.8rem)',
               }}
             />
@@ -38,7 +38,7 @@ export default function Portfolio() {
           <Divider
             orientation="horizontal"
             color="black"
-            sx={{ width: '80%', border: 'solid .2vh' }}
+            sx={{ width: '80%', border: 'solid .15vh' }}
           />
           <span className="container-text">side work & passion projects</span>
         </Stack>

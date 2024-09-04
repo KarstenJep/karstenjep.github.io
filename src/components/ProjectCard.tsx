@@ -63,7 +63,7 @@ export default function ProjectCard({
         <Divider
           orientation="horizontal"
           color="black"
-          sx={{ width: '80%', border: 'solid .2vh' }}
+          sx={{ width: '80%', border: 'solid .15vh' }}
         />
         <Box
           sx={{ textAlign: 'center', fontSize: '2.2vh', height: '14vh' }}

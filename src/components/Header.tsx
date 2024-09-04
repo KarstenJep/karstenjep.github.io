@@ -48,19 +48,17 @@ export default function Header() {
     setAnchorElNav(null);
   };
 
-  // const handleChange = (event, newValue) => {
-  //   setValue(newValue);
-  // };
-
   return (
+    <>
     <AppBar
       position="fixed"
-      sx={{
+      sx={{ 
         backgroundColor: '#ffffff',
         opacity: '.85',
         padding: '.5vh',
         width: '80%',
         margin: '0 10%',
+        display: { xs: 'flex', md: 'flex', lg: 'flex' },
       }}
     >
       <Container maxWidth="xl">
@@ -335,5 +333,6 @@ export default function Header() {
         </Toolbar>
       </Container>
     </AppBar>
+    </>
   );
 }
