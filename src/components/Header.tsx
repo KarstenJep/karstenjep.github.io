@@ -51,17 +51,17 @@ export default function Header() {
   return (
     <>
     <AppBar
-      position="fixed"
+      // position="fixed"
       sx={{ 
         backgroundColor: '#ffffff',
         opacity: '.85',
         padding: '.5vh',
-        width: '80%',
-        margin: '0 10%',
+        width: '86%',
+        margin: '0 7%',
         display: { xs: 'flex', md: 'flex', lg: 'flex' },
       }}
     >
-      <Container maxWidth="xl">
+      <Container maxWidth={false}>
         <Toolbar disableGutters>
           {/* Title */}
           <Typography

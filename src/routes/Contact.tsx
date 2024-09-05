@@ -85,15 +85,15 @@ export default function Contact() {
               Contact Me&nbsp;
               <EmailIcon
                 style={{
-                  marginBottom: '-.8vh',
-                  fontSize: 'clamp(1.6rem, 4vw, 2.4rem)',
+                  marginBottom: '-2.5%',
+                  fontSize: 'clamp(1.5rem, 4vw, 2rem)',
                 }}
               />
             </span>
             <Divider
               orientation="horizontal"
               color="black"
-              sx={{ width: '80%', border: 'solid .15vh' }}
+              sx={{ width: '60%', border: 'solid .18vh' }}
             />
             <Stack direction={'row'} spacing={'1vh'} sx={{ width: '90%', paddingTop: '1vh' }}>
               <TextField

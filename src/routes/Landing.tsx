@@ -18,15 +18,15 @@ export default function LandingPage() {
             Welcome!&nbsp;
             <PeopleIcon
               style={{
-                marginBottom: '-.8vh',
-                fontSize: 'clamp(1.6rem, 5vw, 2.8rem)',
+                marginBottom: '-2.5%',
+                fontSize: 'clamp(1.6rem, 4vw, 2.1rem)',
               }}
             />
           </span>
           <Divider
             orientation="horizontal"
             color="black"
-            sx={{ width: '80%', border: 'solid .15vh' }}
+            sx={{ width: '60%', border: 'solid .2vh' }}
           />
           <span className="container-text">
             {`I believe in following life passions and enjoying your work. 
