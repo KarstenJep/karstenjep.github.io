@@ -20,7 +20,7 @@
   position: absolute;
   left: 36.5vw;
   width: 46vh;
-  max-width: 80%;
+  max-width: 86%;
   height: 14vh;
   margin: 23vh auto 0vh;
   padding-top: 1.5vh;
@@ -61,9 +61,9 @@
 
 @media only screen and (max-width: 600px) {
   .portfolio-container {
-    left: 10%;
+    left: 7%;
     margin-top: 22vh;
-    height: 16vh;
+    height: 15vh;
   }
   .beach {
     width: 120vw;

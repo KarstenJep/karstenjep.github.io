@@ -361,10 +361,10 @@ export default function Home() {
         <Link
           className="section"
           to="portfolio"
-          offset={3000}
+          offset={2800}
           spy={true}
           smooth={true}
-          duration={8000}
+          duration={10000}
         ></Link>
 
         <div id="portfolio"></div>

@@ -3,7 +3,7 @@ import './Landing.css';
 import FloatingCloud from '../components/animations/FloatingCloud';
 // M-UI
 import PeopleIcon from '@mui/icons-material/EmojiPeople';
-import { Stack } from '@mui/material';
+import { Divider, Stack } from '@mui/material';
 
 export default function LandingPage() {
   return (
@@ -18,11 +18,16 @@ export default function LandingPage() {
             Welcome!&nbsp;
             <PeopleIcon
               style={{
-                marginBottom: '-.6vh',
-                fontSize: 'clamp(1.6rem, 5vw, 2.8rem)',
+                marginBottom: '-2.5%',
+                fontSize: 'clamp(1.6rem, 4vw, 2.1rem)',
               }}
             />
           </span>
+          <Divider
+            orientation="horizontal"
+            color="black"
+            sx={{ width: '60%', border: 'solid .2vh' }}
+          />
           <span className="container-text">
             {`I believe in following life passions and enjoying your work. 
                         I'm fervent for responsive, modular, and intuitive frontend design. 
