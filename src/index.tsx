@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { createStore, combineReducers /*applyMiddleware*/ } from 'redux';
-import { Provider } from 'react-redux';
+// import { createStore, combineReducers /*applyMiddleware*/ } from 'redux';
+// import { Provider } from 'react-redux';
 // import createSagaMiddleware from 'redux-saga';
 // import { put, takeEvery } from 'redux-saga/effects';
 // import logger from 'redux-logger';
@@ -114,14 +114,14 @@ import App from './App';
 // const sagaMiddleware = createSagaMiddleware();
 
 // store!
-const storeInstance = createStore(
-  combineReducers({
-    // userReducer,
-    // visitorsReducer,
-    // mailReducer,
-  }),
-  // applyMiddleware(sagaMiddleware, logger),
-);
+// const storeInstance = createStore(
+//   combineReducers({
+//     // userReducer,
+//     // visitorsReducer,
+//     // mailReducer,
+//   }),
+//   // applyMiddleware(sagaMiddleware, logger),
+// );
 
 // Pass rootSaga into our sagaMiddleware
 // sagaMiddleware.run(rootSaga);
@@ -131,8 +131,8 @@ const root = createRoot(rootElement!);
 
 root.render(
   <React.StrictMode>
-    <Provider store={storeInstance}>
-      <App />
-    </Provider>
+    {/* <Provider store={storeInstance}> */}
+    <App />
+    {/* </Provider> */}
   </React.StrictMode>,
 );

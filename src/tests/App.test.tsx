@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
 import Landing from '../routes/Landing';
 import Portfolio from '../routes/Portfolio';
@@ -11,9 +11,9 @@ test('renders landing page on default route', () => {
   render(
     <HashRouter>
       <Landing />
-    </HashRouter>
+    </HashRouter>,
   );
-  
+
   // Assuming Landing is the component for the default route "/"
   expect(screen.getByText(/Welcome!/i)).toBeInTheDocument();
 });
@@ -22,9 +22,9 @@ test('renders landing page on default route', () => {
   render(
     <HashRouter>
       <Portfolio />
-    </HashRouter>
+    </HashRouter>,
   );
-  
+
   // Assuming Landing is the component for the default route "/"
   expect(screen.getByText(/side work & passion projects/i)).toBeInTheDocument();
 });
@@ -33,9 +33,9 @@ test('renders landing page on default route', () => {
   render(
     <HashRouter>
       <Contact />
-    </HashRouter>
+    </HashRouter>,
   );
-  
+
   // Assuming Landing is the component for the default route "/"
   expect(screen.getByText(/Contact Me/i)).toBeInTheDocument();
 });
@@ -44,11 +44,9 @@ test('renders Header component on default route', () => {
   render(
     <HashRouter>
       <Header />
-    </HashRouter>
+    </HashRouter>,
   );
-  
+
   // Assuming Landing is the component for the default route "/"
   expect(screen.getByText(/Karsten Jepsen/i)).toBeInTheDocument();
 });
-
-
