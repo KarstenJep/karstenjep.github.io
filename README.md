@@ -42,6 +42,7 @@ Directory Structure:
 - Prettier
 - GitHub Actions
 - Github Workflows
+- Jest
 
 ## Support
 
