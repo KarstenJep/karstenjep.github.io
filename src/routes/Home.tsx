@@ -33,6 +33,7 @@ import typescript from '../assets/images/typescript.png';
 import java from '../assets/images/java.png';
 
 export default function Home() {
+  // TODO: add loading screen until images/animations have loaded 100%
   const [scrollY, setScrollY] = useState<number>(0);
   const handleScroll = () => setScrollY(window.scrollY);
 
