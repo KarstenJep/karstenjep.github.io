@@ -7,6 +7,8 @@ import Portfolio from '../routes/Portfolio';
 import Contact from '../routes/Contact';
 import Header from '../components/Header';
 
+// All tests in this file assume Landing is the component for the default route "/"
+
 test('renders landing page on default route', () => {
   render(
     <HashRouter>
@@ -14,7 +16,6 @@ test('renders landing page on default route', () => {
     </HashRouter>,
   );
 
-  // Assuming Landing is the component for the default route "/"
   expect(screen.getByText(/Welcome!/i)).toBeInTheDocument();
 });
 
@@ -25,7 +26,6 @@ test('renders landing page on default route', () => {
     </HashRouter>,
   );
 
-  // Assuming Landing is the component for the default route "/"
   expect(screen.getByText(/side work & passion projects/i)).toBeInTheDocument();
 });
 
@@ -36,7 +36,6 @@ test('renders landing page on default route', () => {
     </HashRouter>,
   );
 
-  // Assuming Landing is the component for the default route "/"
   expect(screen.getByText(/Contact Me/i)).toBeInTheDocument();
 });
 
@@ -47,6 +46,5 @@ test('renders Header component on default route', () => {
     </HashRouter>,
   );
 
-  // Assuming Landing is the component for the default route "/"
   expect(screen.getByText(/Karsten Jepsen/i)).toBeInTheDocument();
 });
