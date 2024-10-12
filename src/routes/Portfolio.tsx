@@ -80,6 +80,7 @@ export default function Portfolio() {
               className={project.className}
               index={i}
               key={i}
+              heroku={project.heroku}
             />
           );
         })}

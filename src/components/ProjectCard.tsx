@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ProjectCard.css';
+import Tooltip from './Tooltip';
 // MUI
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -22,6 +23,7 @@ interface ProjectCardProps {
   url: string;
   className: string;
   index: number;
+  heroku: boolean;
 }
 
 export default function ProjectCard({
@@ -33,6 +35,7 @@ export default function ProjectCard({
   url,
   className,
   index,
+  heroku,
 }: ProjectCardProps) {
   const [toggleContent, setToggleContent] = useState(false);
 
@@ -87,6 +90,7 @@ export default function ProjectCard({
                   />
                 );
               })}
+          {heroku && <Tooltip />}
         </Box>
         <Button
           style={{

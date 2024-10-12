@@ -6,7 +6,8 @@
     "color": "primary",
     "image": "/images/facts.png",
     "url": "https://gen-ai-deployment-kwhwzio4da-uc.a.run.app",
-    "className": "facts"
+    "className": "facts",
+    "heroku": false
   },
   {
     "title": "Economic Lives",
@@ -24,11 +25,12 @@
     "color": "info",
     "image": "/images/oel.png",
     "url": "https://safe-plains-34698.herokuapp.com/#/home",
-    "className": "oel"
+    "className": "oel",
+    "heroku": true
   },
   {
     "title": "What's Hop'nin'?",
-    "description": "A mobile scheduling app made for Big Wood Brewery to help the brewers track hop additions!",
+    "description": "A mobile scheduling app made for Big Wood Brewery to help the brewers track hop additions.",
     "tech": [
       "ReactJS",
       "Redux",
@@ -42,7 +44,8 @@
     "color": "success",
     "image": "/images/wh.png",
     "url": "https://boiling-plains-09195.herokuapp.com/#/home",
-    "className": "wh"
+    "className": "wh",
+    "heroku": true
   },
   {
     "title": "Quote Game",
@@ -51,7 +54,8 @@
     "color": "warning",
     "image": "/images/quotation.png",
     "url": "https://karstenjep.github.io/quote-generator-api/",
-    "className": "quotation"
+    "className": "quotation",
+    "heroku": false
   },
   {
     "title": "Data Finder",
@@ -60,7 +64,8 @@
     "color": "secondary",
     "image": "/images/search.png",
     "url": "https://karstenjep.github.io/react-interview-exercise/",
-    "className": "search"
+    "className": "search",
+    "heroku": false
   },
   {
     "title": "Mario",
@@ -69,25 +74,8 @@
     "color": "error",
     "image": "/images/mario.png",
     "url": "https://karstenjep.github.io/Mario-Kaboom.js/",
-    "className": "mario"
-  },
-  {
-    "title": "Movie Gallery",
-    "description": "A movie application allowing users to add new movies, and read details!",
-    "tech": [
-      "ReactJS",
-      "Redux",
-      "Sagas",
-      "NodeJS",
-      "Express",
-      "Postgresql",
-      "Material-UI",
-      "CSS"
-    ],
-    "color": "primary",
-    "image": "/images/film.png",
-    "url": "https://afternoon-falls-30309.herokuapp.com/#/",
-    "className": "film"
+    "className": "mario",
+    "heroku": false
   },
   {
     "title": "Photo Gallery",
@@ -96,7 +84,8 @@
     "color": "info",
     "image": "/images/camera.png",
     "url": "https://shielded-plateau-72344.herokuapp.com/",
-    "className": "camera"
+    "className": "camera",
+    "heroku": false
   },
   {
     "title": "To Do List",
@@ -112,7 +101,8 @@
     ],
     "color": "success",
     "image": "/images/todolist.png",
-    "url": "https://shielded-plateau-72344.herokuapp.com/",
-    "className": "todo"
+    "url": "https://dry-shore-54453.herokuapp.com/",
+    "className": "todo",
+    "heroku": true
   }
 ]
