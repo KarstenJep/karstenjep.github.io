@@ -19,7 +19,7 @@
 .portfolio-container {
   position: absolute;
   left: 36.5vw;
-  width: 46vh;
+  width: 48vh;
   max-width: 86%;
   height: 14vh;
   margin: 23vh auto 0vh;
@@ -32,7 +32,7 @@
   grid-gap: 10vh;
   grid-template-columns:
     5vh
-    repeat(9, calc(45vh))
+    repeat(8, calc(45vh))
     5vh;
   grid-template-rows: minmax(150px, 1fr);
   margin-bottom: 0;

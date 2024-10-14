@@ -181,3 +181,23 @@ export default function TechStack() {
     </>
   );
 }
+
+// {
+//   "title": "Movie Gallery",
+//   "description": "A movie application allowing users to add new movies, and read details!",
+//   "tech": [
+//     "ReactJS",
+//     "Redux",
+//     "Sagas",
+//     "NodeJS",
+//     "Express",
+//     "Postgresql",
+//     "Material-UI",
+//     "CSS"
+//   ],
+//   "color": "primary",
+//   "image": "/images/film.png",
+//   "url": "https://afternoon-falls-30309.herokuapp.com/#/",
+//   "className": "film",
+//   "heroku": true
+// },
